@@ -48,6 +48,8 @@ function parseCombo() {
         var path = 'templates/' + special[combo]
     } else if (jQuery.inArray(combo, changeWithBuff) != -1) {
         var path = 'templates/changewithbuff.xml'
+    } else if (jQuery.inArray(combo, changeWithCD) != -1) {
+        var path = 'templates/changewithcd.xml'
     } else {
         let l = Object.keys(actions[job][combo]).length
         var path = `templates/combo${l}stage.xml`
@@ -87,8 +89,8 @@ async function parseReset() {
     } else {
         settings['is_cross'] = ''
     }
-    settings['pos_back'] = $('#pos_back').val()
-    settings['pos_current'] = $('#pos_current').val()
+    // settings['pos_back'] = $('#pos_back').val()
+    // settings['pos_current'] = $('#pos_current').val()
     for (key in settings){
         template = template.replace(new RegExp(`%${key}%`,'g'), settings[key])
     }

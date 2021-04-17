@@ -1,17 +1,16 @@
 <?xml version="1.0"?>
 <TriggernometryExport Version="1">
-  <ExportedTrigger Enabled="true" Name="重置%pos_back%-%pos_current%" Id="9021cbbe-37e3-43e5-858f-f93c2e95aee8" RegularExpression="^.{14} 00:0038:reset%pos_back%-%pos_current%">
+  <ExportedTrigger Enabled="true" Name="重置" Id="9021cbbe-37e3-43e5-858f-f93c2e95aee8" RegularExpression="^.{14} 00:0038:reset (?&lt;backup&gt;[\d]+?)-&gt;(?&lt;current&gt;[\d]+?)">
     <Actions>
-      <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar copy ${_ffxivparty[${_ffxivplayer}].job} %pos_back% ${_ffxivparty[${_ffxivplayer}].job} %pos_current%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+      <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar copy ${_ffxivparty[${_ffxivplayer}].job} ${backup} ${_ffxivparty[${_ffxivplayer}].job} ${current}" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="NamedCallback">
         <Condition Enabled="false" Grouping="Or" />
         <Conditions />
       </Action>
-      <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/e 成功重置%pos_back%-%pos_current%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+      <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/e 成功重置 ${backup}-&gt;${current}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
         <Condition Enabled="false" Grouping="Or" />
         <Conditions />
       </Action>
     </Actions>
     <Condition Enabled="false" Grouping="Or" />
-    <Conditions />
   </ExportedTrigger>
 </TriggernometryExport>
