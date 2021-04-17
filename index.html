@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/slate/bootstrap.min.css"
+            integrity="sha384-FBPbZPVh+7ks5JJ70RJmIaqyGnvMbeJ5JQfEbW0Ac6ErfvEg9yG56JQJuMNptWsH" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+        <script src="js/main.js"></script>
+        <script src="js/md5.js"></script>
+        <script src="js/actions.js"></script>
+        <title>FF14一键连击生成器</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <br />
+            <h2>最终幻想14一键连击生成器</h2>
+            <br />
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="form-group">
+                        <label for="job_selected" >选择职业</label>
+                        <select class="form-control form-control-sm" id="job_selected">
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="form-group">
+                        <label for="combo_selected">选择连击</label>
+                        <select class="form-control form-control-sm" id="combo_selected">
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <br />
+            <legend>连击设定</legend>
+            <div class="row" id="normal_parser">
+                <div class="col-lg-3">
+                    <label>连击名称</label>
+                    <input type="text" class="form-control form-control-sm" placeholder="" id="combo" value="王权连">
+                    <br />
+                    <label>位置</label>
+                    <div class=row id="position">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control form-control-sm" placeholder="热键栏" id="pos_1" value="1">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control form-control-sm" placeholder="键位" id="pos_2" value="13">
+                        </div>
+                    </div>
+                    <br />
+                    <label>操作方式</label>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="is_corss" id="is_corss_false">
+                                    键盘
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="is_corss" id="is_corss_true" checked>
+                                    手柄
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                </div>
+                <div class="col-lg-3">
+                    <label>技能1</label>
+                    <input type="text" class="form-control form-control-sm" placeholder="" id="action_1" value="">
+                    <br />
+                    <label>技能2</label>
+                    <input type="text" class="form-control form-control-sm" placeholder="" id="action_2" value="">
+                    <br />
+                    <label id="label_action_3">技能3</label>
+                    <input type="text" class="form-control form-control-sm" placeholder="" id="action_3" value="">
+                    <label class="d-none">技能4</label>
+                    <input type="text" class="form-control form-control-sm d-none" placeholder="" id="action_4" value="">
+                    <br />
+                </div>
+            </div>
+            <div class="row d-none" id="special_parser">
+                <div class="col-lg-3">
+                    <div class=row id="position">
+                        <div class="col-lg-6">
+                            <label>备份热键栏</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="备份热键栏" id="pos_back" value="8">
+                        </div>
+                        <div class="col-lg-6">
+                            <label>当前热键栏</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="当前热键栏" id="pos_current" value="1">
+                        </div>
+                    </div>
+                    <br />
+                    <label>操作方式</label>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="is_corss_reset" id="is_corss_false_reset">
+                                    键盘
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="is_corss_reset" id="is_corss_true_reset" checked>
+                                    手柄
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                </div>   
+            </div>
+            <button type="button" class="btn btn-primary" id="generate_button">生成</button>
+            <button type="button" class="btn btn-primary" id="clipboard_button">复制到剪切板</button>
+            <br />
+            <br />
+            <div class="row">
+                <div class="col-lg-9 output-anchor">
+                    <textarea class="form-control" id="trigger_output" rows="10"></textarea>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
