@@ -8,14 +8,14 @@ function fillActions() {
     } else if (l == 2){
         $("#special_parser").addClass("d-none")
         $("#normal_parser").removeClass("d-none")
-        $("#action_3").addClass("d-none")
-        $("#label_action_3").addClass("d-none")
+        // $("#action_3").addClass("d-none")
+        // $("#label_action_3").addClass("d-none")
         fillNormal(job, combo)
     } else {
         $("#special_parser").addClass("d-none")
         $("#normal_parser").removeClass("d-none")
-        $("#action_3").removeClass("d-none")
-        $("#label_action_3").removeClass("d-none")
+        // $("#action_3").removeClass("d-none")
+        // $("#label_action_3").removeClass("d-none")
         fillNormal(job, combo)
         if (jQuery.inArray(combo, changeWithBuff) != -1) {
             $("#label_action_3").val('Buff')
@@ -24,7 +24,13 @@ function fillActions() {
 }
 
 function fillNormal(job, combo) {
+    for (let i=1; i<7; i++) {
+        $(`#action_${i}`).addClass("d-none")
+        $(`#label_action_${i}`).addClass("d-none")
+    }
     for (let i in actions[job][combo]) {
+        $(`#${i}`).removeClass("d-none")
+        $(`#label_${i}`).removeClass("d-none")
         $(`#${i}`).val(actions[job][combo][i])
     }
     $("#combo").val(combo)

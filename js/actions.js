@@ -9,9 +9,15 @@ const actions = { '骑士':
      action_2: '暴乱剑',
      action_3: '沥血剑',
      action_4: '王权剑' },
+  '王权赎罪连': 
+   { action_1: '先锋剑',
+     action_2: '暴乱剑',
+     action_3: '王权剑',
+     action_4: '赎罪剑',
+     action_5: '忠义之剑',
+     action_6: '沥血剑' },
   'AOE连': { action_1: '全蚀斩', action_2: '日珥斩' },
-  '安魂-悔罪': { action_1: '安魂祈祷', action_2: '悔罪', action_3: '安魂祈祷' },
-  '赎罪-王权': { action_1: '王权剑', action_2: '赎罪剑', action_3: '忠义之剑' } },
+  '安魂-悔罪': { action_1: '安魂祈祷', action_2: '悔罪', action_3: '安魂祈祷' } },
 '战士': 
 { '绿斩连': 
    { action_1: '重劈',
@@ -23,15 +29,18 @@ const actions = { '骑士':
      action_2: '凶残裂',
      action_3: '暴风碎',
      action_4: '暴风斩' },
+  '解放-锯爆': { action_1: '原初的解放', action_2: '裂石飞环', action_3: '原初的解放' },
   'AOE连': { action_1: '超压斧', action_2: '秘银暴风' } },
 '暗黑骑士': 
 { '基础连': { action_1: '重斩', action_2: '吸收斩', action_3: '噬魂斩' },
+  '血乱-拜爆': { action_1: '血乱', action_2: '血溅', action_3: '血乱' },
   'AOE连': { action_1: '释放', action_2: '刚魂' } },
 '绝枪战士': 
 { '基础连': { action_1: '利刃斩', action_2: '残暴弹', action_3: '迅连斩' },
   '子弹连': { action_1: '烈牙', action_2: '猛兽爪', action_3: '凶禽爪' },
+  '无情-音速破': { action_1: '无情', action_2: '音速破', action_3: '无情' },
   'AOE连': { action_1: '恶魔切', action_2: '恶魔杀' },
-  'AOE-子弹': { action_1: '恶魔切', action_2: '恶魔杀', action_3: '命运之环' } },
+  'AOE+子弹': { action_1: '恶魔切', action_2: '恶魔杀', action_3: '命运之环' } },
 '龙骑士': 
 { '直刺连': 
    { action_1: '精准刺',
@@ -57,6 +66,9 @@ const actions = { '骑士':
      action_2: '绝风',
      action_3: '强甲破点突',
      action_4: '旋风刃' },
+  '三段-断绝': { action_1: '梦幻三段', action_2: '断绝', action_3: '断绝预备' },
+  '天地人-命水': { action_1: '天地人', action_2: '命水', action_3: '水遁之术' },
+  '影牙-背刺': { action_1: '影牙', action_2: '攻其不备', action_3: '水遁之术' },
   'AOE连': { action_1: '血雨飞花', action_2: '八卦无刃杀' } },
 '武僧': 
 { '背身位': { action_1: '连击', action_2: '正拳', action_3: '破碎拳' },
@@ -93,7 +105,9 @@ const actions = { '骑士':
    { action_1: '风雅',
      action_2: '满月',
      action_3: '樱花',
-     action_4: '明镜止水' } },
+     action_4: '明镜止水' },
+  '心眼-慈眼': { action_1: '心眼', action_2: '慈眼', action_3: '开眼' },
+  '震天-星眼': { action_1: '必杀剑·震天', action_2: '必杀剑·星眼', action_3: '开眼' } },
 '诗人': { '强力-辉煌': { action_1: '强力射击', action_2: '直线射击', action_3: '直线射击预备' } },
 '机工士': 
 { '普通连': { action_1: '热分裂弹', action_2: '热独头弹', action_3: '热狙击弹' },
@@ -159,7 +173,7 @@ const actions = { '骑士':
 const special = { '石-风': 'redmage.xml',
 '火-雷': 'redmage.xml',
 '魔三连': 'redmage2.xml',
-'赎罪-王权': 'paladin.xml',
+'王权赎罪连': 'paladin.xml',
 '直刺连': 'dragoon.xml',
 '樱花连': 'dragoon.xml',
 '龙45': 'dragoon2.xml',
@@ -185,6 +199,7 @@ const special = { '石-风': 'redmage.xml',
 
 const changeWithBuff = ['风-散碎', '雷-散碎', '安魂-悔罪', '高跳-幻象冲',
  '强力-辉煌', '震脚-双掌打', '即刻复活', '扇舞序-急', '扇舞破-急' ,'火1-火苗', 
- '吸收-溃烂', '鸟1-鸟2', '附体-核爆', '以太-吸收'] 
+ '吸收-溃烂', '鸟1-鸟2', '附体-核爆', '以太-吸收', '三段-断绝', '天地人-命水',
+ '影牙-背刺', '震天-星眼', '心眼-慈眼', '无情-音速破', '解放-锯爆', '血乱-拜爆'] 
 
 const changeWithCD = ['超荷-热冲击', '星灵-火3', '抽卡-重抽']
