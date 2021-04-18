@@ -8,7 +8,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 将连击或有绑定关系的多个技能放置在同一个键位
 
 
-----
+
 ## 特点介绍
 - **低耦合度，所有按键独立设置，仅修改当前按键**
 - 基于鲶鱼精邮差，不会打断游戏内宏的运行
@@ -16,7 +16,8 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 - 一定程度上的异常处理，如15秒的连击中断自动复位等
 - 按键绑定逻辑基于满级正常循环
 
-----
+
+
 ## 使用方法
 0. 安装ACT，
 [Triggernometry](https://github.com/paissaheavyindustries/Triggernometry)
@@ -38,7 +39,8 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 
     ![image](./image/导入.png)
 
-----
+
+
 ## 关于复位
 为防止意外情况，如123打到2中断去打aoe连击、黑屏过场等情况，建议备份初始热键栏，出现问题时及时复位
 
@@ -58,7 +60,8 @@ FFXIV one button combo based on Triggernometry and PostNamazu
     > /e reset 7->2
 
     按下该宏时，触发器会自动将当前职业热键栏8复制到热键栏1，热键栏7复制到热键栏2
-----
+
+
 ## 职业说明
 ### 骑士
 - 基础连击与AOE连击
