@@ -87,7 +87,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 
 ### 龙骑
 - 直刺连、樱花连与AOE连击
-- 自动替换龙4龙5
+- 断龙血时可以123循环不会卡键
 - 高跳后替换为幻象冲
 
   ![image](./image/龙骑.gif)

@@ -32,13 +32,37 @@
           <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
         </Condition>
       </Trigger>
-      <Trigger Enabled="true" Name="4%action_4%" Id="%id_action_4%" RegularExpression="^.{14} 1[56]:.{8}:(?&lt;player&gt;[^:]+?):[^:]+:%action_4%" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_5%on" Id="%id_action_5%" RegularExpression="^.{14} 1A:.{8}:(?&lt;player&gt;.+?) gains the effect of %action_5%效果提高" PrevActions="Interrupt">
         <Actions>
-          <Action OrderNumber="1" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="%id_action_2%" ActionType="Trigger">
+          <Action OrderNumber="1" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="%id_action_3%" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Action>
-          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set %action_5% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Action>
+        </Actions>
+        <Condition Enabled="true" Grouping="Or">
+          <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+        </Condition>
+        <Conditions />
+      </Trigger>
+      <Trigger Enabled="true" Name="%action_5%off" Id="%id_action_5%" RegularExpression="^.{14} 1E:.{8}:(?&lt;player&gt;.+?) loses the effect of %action_5%效果提高" PrevActions="Interrupt">
+        <Actions>
+          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Action>
+        </Actions>
+        <Condition Enabled="true" Grouping="Or">
+          <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+        </Condition>
+        <Conditions />
+      </Trigger>
+      <Trigger Enabled="true" Name="4%action_4%" Id="%id_action_4%" RegularExpression="^.{14} 1[56]:.{8}:(?&lt;player&gt;[^:]+?):[^:]+:%action_4%" PrevActions="Interrupt">
+        <Actions>
+          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Action>
@@ -53,7 +77,7 @@
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Action>
-          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="500" Asynchronous="False" RefireInterrupt="True">
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Action>
