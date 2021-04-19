@@ -10,10 +10,10 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 
 
 ## 特点介绍
-- **低耦合度，所有按键独立设置，仅修改当前按键**
-- 基于鲶鱼精邮差，不会打断游戏内宏的运行
+- **低耦合度，所有按键独立设置，仅修改当前按键，可自行选择需要使用的按键**
+- 基于鲶鱼精邮差，技能正常进入队列，且不会打断游戏内宏的运行
 - 所有按键均使用/hotbar set放置，无需占用额外按键栏
-- 一定程度上的异常处理，如15秒的连击中断自动复位等
+- 一定程度的异常处理
 - 按键绑定逻辑基于满级正常循环
 
 
@@ -42,9 +42,9 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 
 
 ## 关于复位
-为防止意外情况，如123打到2中断去打aoe连击、黑屏过场等情况，建议备份初始热键栏，出现问题时及时复位
+为防止意外情况，建议备份初始热键栏，出现问题时及时复位
 
-游戏内热键栏复制与职业绑定，不怕麻烦的话可以对每个职业写一个复位宏，或者使用我写的触发器
+游戏内热键栏复制与职业绑定，不怕麻烦的话可以对每个职业写一个复位宏，或者使用该触发器
 
 使用方法：
 1. 选择 “其他”-“重置”
@@ -65,7 +65,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 ## 职业说明
 ### 骑士
 - 基础连击与AOE连击
-- 一键王权赎罪连，支持拆赎罪循环
+- 一键王权-赎罪连，支持拆赎罪循环
 - 安魂期间安魂自动替换为悔罪
 
   ![image](./image/骑士.gif)
@@ -78,7 +78,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 
 ### 黑骑
 - 基础连击与AOE连击
-- 血乱期间解放自动替换为拜爆(血溅)
+- 血乱期间解放自动替换为拜年剑法
 
   ![image](./image/黑骑.gif)
 
@@ -132,8 +132,6 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 - 触发时自动替换 (SR->S1, S3->S2, AR->A1, A3->A2, F3->F1, F3->F2)
 - 使用舞步时自动替换四种舞步至S1, S2, A1, A2
 - ！使用舞步前确保使用掉触发，否则会浪费掉
-- ！如果使用舞步前有多个触发，
-[检查循环是否正确](https://nga.178.com/read.php?tid=18026547)
 
   ![image](./image/舞者.gif)
 
@@ -146,9 +144,9 @@ FFXIV one button combo based on Triggernometry and PostNamazu
   ![image](./image/黑魔.gif)
 
 ### 召唤
-- 一键附体！！！互锁的技能全部一个键位：附体-核爆-巴哈-喷-不死鸟-喷
+- 一键附体，互锁的技能全部一个键位：附体-核爆-巴哈-喷-不死鸟-喷
 - 鸟1鸟2自动替换
-- 以太期间替换吸收为溃烂
+- 以太期间替换吸收为溃烂，抽取替换为痛苦核爆
 - 即刻复活
 - ！不死鸟期间以鸟1收尾时，按键会变为崩裂直至灵泉状态消失
 
