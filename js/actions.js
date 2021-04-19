@@ -33,7 +33,8 @@ const actions = { '骑士':
   'AOE连': { action_1: '超压斧', action_2: '秘银暴风' } },
 '暗黑骑士': 
 { '基础连': { action_1: '重斩', action_2: '吸收斩', action_3: '噬魂斩' },
-  '血乱-拜爆': { action_1: '血乱', action_2: '血溅', action_3: '血乱' },
+  '血乱-拜年': { action_1: '血乱', action_2: '血溅', action_3: '血乱' },
+  '精雕-海胆': { action_1: '精雕怒斩', action_2: '吸血深渊', action_3: '20000' },
   'AOE连': { action_1: '释放', action_2: '刚魂' } },
 '绝枪战士': 
 { '基础连': { action_1: '利刃斩', action_2: '残暴弹', action_3: '迅连斩' },
@@ -74,7 +75,11 @@ const actions = { '骑士':
 '武僧': 
 { '背身位': { action_1: '连击', action_2: '正拳', action_3: '破碎拳' },
   '侧身位': { action_1: '双龙脚', action_2: '双掌打', action_3: '崩拳' },
-  '武僧AOE': { action_1: '破坏神冲', action_2: '四面脚', action_3: '地烈劲' },
+  '武僧AOE': {
+     action_1: '破坏神冲', 
+     action_2: '四面脚', 
+     action_3: '地烈劲', 
+     action_4: '破碎拳' },
   '震脚-双掌打': { action_1: '震脚', action_2: '双掌打', action_3: '震脚' } },
 '武士': 
 { '花连': 
@@ -113,7 +118,7 @@ const actions = { '骑士':
 '机工士': 
 { '普通连': { action_1: '热分裂弹', action_2: '热独头弹', action_3: '热狙击弹' },
   '钻-锚': { action_1: '钻头', action_2: '空气锚' },
-  '超荷-热冲击': { action_1: '超荷', action_2: '热冲击' } },
+  '超荷-热冲击': { action_1: '超荷', action_2: '热冲击', action_3: '8000' } },
 '舞者': 
 { '逆-瀑泻': 
    { action_1: '瀑泻',
@@ -138,14 +143,15 @@ const actions = { '骑士':
   '扇舞序-急': { action_1: '扇舞·序', action_2: '扇舞·急', action_3: '扇舞·急预备' },
   '扇舞破-急': { action_1: '扇舞·破', action_2: '扇舞·急', action_3: '扇舞·急预备' } },
 '黑魔法师': 
-{ '冰3-火3': { action_1: '爆炎', action_2: '冰封' },
+{ '火3-冰3': { action_1: '爆炎', action_2: '冰封' },
   '冰4-火4': { action_1: '冰澈', action_2: '炽炎' },
-  '灵极魂-绝望': { action_1: '灵极魂', action_2: '绝望' },
-  '火1-冰1': { action_1: '冰结', action_2: '火炎' },
+  '异言-绝望': { action_1: '异言', action_2: '绝望' },
+  '暴雷-火1': { action_1: '暴雷', action_2: '火炎' },
   '火1-火苗': { action_1: '火炎', action_2: '爆炎', action_3: '火苗' },
-  '星灵-火3': { action_1: '星灵移位', action_2: '爆炎' } },
+  '星灵-火3': { action_1: '星灵移位', action_2: '爆炎', action_3: '8000' } },
 '召唤师': 
 { '吸收-溃烂': { action_1: '能量吸收', action_2: '溃烂爆发', action_3: '以太超流' },
+  '抽取-核爆': { action_1: '能量抽取', action_2: '痛苦核爆', action_3: '以太超流' },
   '鸟1-鸟2': { action_1: '毁荡', action_2: '迸裂', action_3: '灵泉' },
   '一键附体': 
    { action_1: '龙神附体',
@@ -166,7 +172,7 @@ const actions = { '骑士':
 { '以太-吸收': { action_1: '以太超流', action_2: '能量吸收', action_3: '以太超流' },
   '即刻复活': { action_1: '即刻咏唱', action_2: '复生', action_3: '即刻咏唱' } },
 '占星师': 
-{ '抽卡-重抽': { action_1: '抽卡', action_2: '重抽' },
+{ '抽卡-重抽': { action_1: '抽卡', action_2: '重抽', action_3: '15000' },
   '即刻复活': { action_1: '即刻咏唱', action_2: '生辰', action_3: '即刻咏唱' } },
 '其他': { '重置': { pos_back: 8, pos_current: 1 } } }
 
@@ -189,10 +195,10 @@ const special = { '石-风': 'redmage.xml',
 '坠-喷泉': 'dancer.xml',
 '升-风车': 'dancer.xml',
 '落-血雨': 'dancer.xml',
-'冰3-火3': 'blackmage.xml',
+'火3-冰3': 'blackmage.xml',
 '冰4-火4': 'blackmage.xml',
-'灵极魂-绝望': 'blackmage.xml',
-'火1-冰1': 'blackmage.xml',
+'异言-绝望': 'blackmage.xml',
+'暴雷-火1': 'blackmage.xml',
 '一键附体': 'summoner.xml' }
 
 
@@ -200,6 +206,7 @@ const special = { '石-风': 'redmage.xml',
 const changeWithBuff = ['风-散碎', '雷-散碎', '安魂-悔罪', '高跳-幻象冲',
  '强力-辉煌', '震脚-双掌打', '即刻复活', '扇舞序-急', '扇舞破-急' ,'火1-火苗', 
  '吸收-溃烂', '鸟1-鸟2', '附体-核爆', '以太-吸收', '三段-断绝', '天地人-命水',
- '影牙-背刺', '震天-星眼', '心眼-慈眼', '无情-音速破', '解放-锯爆', '血乱-拜爆'] 
+ '影牙-背刺', '震天-星眼', '心眼-慈眼', '无情-音速破', '解放-锯爆', '血乱-拜爆',
+ '抽取-核爆' ] 
 
-const changeWithCD = ['超荷-热冲击', '星灵-火3', '抽卡-重抽']
+const changeWithCD = ['超荷-热冲击', '星灵-火3', '抽卡-重抽', '精雕-海胆']

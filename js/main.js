@@ -68,7 +68,8 @@ async function parseNormal(job, combo, path) {
     let template = await fetch(path).then(response => response.text())
     var settings = {}
     for (let i in actions[job][combo]) {
-        settings[i] = actions[job][combo][i]
+        // settings[i] = actions[job][combo][i]
+        settings[i] = $(`#${i}`).val()
         let s = combo + '-' + settings[i]
         settings[`id_${i}`] = $.md5(s)
     }

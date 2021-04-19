@@ -6,7 +6,7 @@
         <Condition Enabled="false" Grouping="Or" />
         <Conditions />
       </Action>
-      <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/e 成功重置 ${backup}-&gt;${current}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+      <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/e 成功重置 ${_ffxivparty[${_ffxivplayer}].job} ${backup}-&gt;${current}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
         <Condition Enabled="false" Grouping="Or" />
         <Conditions />
       </Action>
