@@ -5,10 +5,10 @@
     <Triggers>
       <Trigger Enabled="true" Name="1%action_1%" Id="%id_action_1%" RegularExpression="^.{14} 1[56]:.{8}:(?&lt;player&gt;[^:]+?):[^:]+:%action_1%" PrevActions="Interrupt">
         <Actions>
-          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set %action_2% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_2% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
-          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="15000" Asynchronous="False" RefireInterrupt="True">
+          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="15000" Asynchronous="False" RefireInterrupt="True">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
         </Actions>
@@ -21,10 +21,10 @@
           <Action OrderNumber="1" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="%id_action_1%" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
-          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set %action_3% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_3% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
-          <Action OrderNumber="3" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="15000" Asynchronous="False" RefireInterrupt="True">
+          <Action OrderNumber="3" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="15000" Asynchronous="False" RefireInterrupt="True">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
         </Actions>
@@ -38,7 +38,7 @@
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Action>
-          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Action>
@@ -53,7 +53,7 @@
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Action>
-          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Action>
