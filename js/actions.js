@@ -75,10 +75,10 @@ const actions = { '骑士':
 '武僧': 
 { '背身位': { action_1: '连击', action_2: '正拳', action_3: '破碎拳' },
   '侧身位': { action_1: '双龙脚', action_2: '双掌打', action_3: '崩拳' },
-  '武僧AOE': {
-     action_1: '破坏神冲', 
-     action_2: '四面脚', 
-     action_3: '地烈劲', 
+  '武僧AOE': 
+   { action_1: '破坏神冲',
+     action_2: '四面脚',
+     action_3: '地烈劲',
      action_4: '破碎拳' },
   '震脚-双掌打': { action_1: '震脚', action_2: '双掌打', action_3: '震脚' } },
 '武士': 
@@ -120,26 +120,12 @@ const actions = { '骑士':
   '钻-锚': { action_1: '钻头', action_2: '空气锚' },
   '超荷-热冲击': { action_1: '超荷', action_2: '热冲击', action_3: '8000' } },
 '舞者': 
-{ '逆-瀑泻': 
-   { action_1: '瀑泻',
-     action_2: '逆瀑泻',
-     action_3: '瀑泻',
-     action_4: '瀑泻' },
-  '坠-喷泉': 
-   { action_1: '喷泉',
-     action_2: '坠喷泉',
-     action_3: '喷泉',
-     action_4: '喷泉' },
-  '升-风车': 
-   { action_1: '风车',
-     action_2: '升风车',
-     action_3: '逆瀑泻',
-     action_4: '风车' },
-  '落-血雨': 
-   { action_1: '落刃雨',
-     action_2: '落血雨',
-     action_3: '坠喷泉',
-     action_4: '落刃雨' },
+{ '标准舞步': { action_1: '标准舞步' },
+  '技巧舞步': { action_1: '技巧舞步' },
+  '逆-瀑泻': { action_1: '瀑泻', action_2: '逆瀑泻', action_3: '逆瀑泻预备' },
+  '坠-喷泉': { action_1: '喷泉', action_2: '坠喷泉', action_3: '坠喷泉预备' },
+  '升-风车': { action_1: '风车', action_2: '升风车', action_3: '升风车预备' },
+  '落-血雨': { action_1: '落刃雨', action_2: '落血雨', action_3: '落血雨预备' },
   '扇舞序-急': { action_1: '扇舞·序', action_2: '扇舞·急', action_3: '扇舞·急预备' },
   '扇舞破-急': { action_1: '扇舞·破', action_2: '扇舞·急', action_3: '扇舞·急预备' } },
 '黑魔法师': 
@@ -191,15 +177,13 @@ const special = { '石-风': 'redmage.xml',
 '背身位': 'monk.xml',
 '侧身位': 'monk.xml',
 '武僧AOE': 'monk2.xml',
-'逆-瀑泻': 'dancer.xml',
-'坠-喷泉': 'dancer.xml',
-'升-风车': 'dancer.xml',
-'落-血雨': 'dancer.xml',
 '火3-冰3': 'blackmage.xml',
 '冰4-火4': 'blackmage.xml',
 '异言-绝望': 'blackmage.xml',
 '暴雷-火1': 'blackmage.xml',
-'一键附体': 'summoner.xml' }
+'一键附体': 'summoner.xml',
+'标准舞步': 'dancer.xml',
+'技巧舞步': 'dancer2.xml' }
 
 
 
@@ -207,6 +191,6 @@ const changeWithBuff = ['风-散碎', '雷-散碎', '安魂-悔罪', '高跳-幻
  '强力-辉煌', '震脚-双掌打', '即刻复活', '扇舞序-急', '扇舞破-急' ,'火1-火苗', 
  '吸收-溃烂', '鸟1-鸟2', '附体-核爆', '以太-吸收', '三段-断绝', '天地人-命水',
  '影牙-背刺', '震天-星眼', '心眼-慈眼', '无情-音速破', '解放-锯爆', '血乱-拜爆',
- '抽取-核爆' ] 
+ '抽取-核爆',  '逆-瀑泻', '坠-喷泉', '升-风车', '落-血雨'] 
 
 const changeWithCD = ['超荷-热冲击', '星灵-火3', '抽卡-重抽', '精雕-海胆']

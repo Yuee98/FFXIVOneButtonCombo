@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <TriggernometryExport Version="1">
-  <ExportedFolder Id="%id_combo%" Name="%combo%" Enabled="true">
+  <ExportedFolder Id="79b0585f-73c9-4c94-afb0-50d0975bdb78" Name="%action_1%" Enabled="true">
     <Folders />
     <Triggers>
-      <Trigger Enabled="true" Name="%action_2%" Id="%id_action_2%" RegularExpression="^.{14} 1A:.{8}:(?&lt;player&gt;.+?) gains the effect of %action_2%预备" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_1%2" Id="1c72cb1d-26e2-433f-93c1-70e547fb9537" RegularExpression="^.{14} 1F:.{8}:(?&lt;player&gt;[^:]+?):(?&lt;s1&gt;[1-4])[^:]*:20{5}(?&lt;s2&gt;[1-4]):">
         <Actions>
-          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set %action_2% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set %action_1% %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Action>
@@ -15,10 +15,30 @@
         </Condition>
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="%action_1%" Id="%id_action_1%" RegularExpression="^.{14} 1E:.{8}:(?&lt;player&gt;.+?) loses the effect of %action_2%预备" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_1%on" Id="a5cb1649-42e6-49fd-be45-10c85f67fecb" RegularExpression="^.{14} 1F:.{8}:(?&lt;player&gt;[^:]+?):(?&lt;s1&gt;[1-4])[^:]*:0(?&lt;s2&gt;[1-4]):">
         <Actions>
-          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
-            <Condition Enabled="false" Grouping="Or" />
+          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set 瀑泻 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${s1}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+            <Conditions />
+          </Action>
+          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set 喷泉 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${s1}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+            <Conditions />
+          </Action>
+          <Action OrderNumber="3" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set 逆瀑泻 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${s1}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+            <Conditions />
+          </Action>
+          <Action OrderNumber="4" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set 坠喷泉 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${s1}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
             <Conditions />
           </Action>
         </Actions>
@@ -27,10 +47,30 @@
         </Condition>
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="舞步on" Id="%id_action_3%" RegularExpression="^.{14} 1A:.{8}:(?&lt;player&gt;.+?) gains the effect of (标准|技巧)舞步 " PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_1%1" Id="45faac7e-caec-4a4d-8d1a-c207d666dd1e" RegularExpression="^.{14} 1F:.{8}:(?&lt;player&gt;[^:]+?):(?&lt;s1&gt;[1-4])[^:]*:10{5}(?&lt;s2&gt;[1-4]):">
         <Actions>
-          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set %action_3% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
-            <Condition Enabled="false" Grouping="Or" />
+          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set 瀑泻 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${s2}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+            <Conditions />
+          </Action>
+          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set 喷泉 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${s2}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+            <Conditions />
+          </Action>
+          <Action OrderNumber="3" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set 逆瀑泻 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${s2}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+            <Conditions />
+          </Action>
+          <Action OrderNumber="4" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set 坠喷泉 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${s2}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
             <Conditions />
           </Action>
         </Actions>
@@ -39,9 +79,9 @@
         </Condition>
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="舞步off" Id="%id_action_4%" RegularExpression="^.{14} 1E:.{8}:(?&lt;player&gt;.+?) loses the effect of (标准|技巧)舞步 " PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_1%off" Id="0bcd6555-4fd8-4fc2-a3ef-8e9e0dde65a1" RegularExpression="^.{14} 1E:.{8}:(?&lt;player&gt;.+?) loses the effect of %action_1% ">
         <Actions>
-          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set %action_4% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set %action_1% %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Action>

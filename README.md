@@ -130,8 +130,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 ### 舞者
 - 连击不替换
 - 触发时自动替换 (SR->S1, S3->S2, AR->A1, A3->A2, F3->F1, F3->F2)
-- 使用舞步时自动替换四种舞步至S1, S2, A1, A2
-- ！使用舞步前确保使用掉触发，否则会浪费掉
+- 一键跳舞
 
   ![image](./image/舞者.gif)
 
@@ -154,7 +153,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 
 ### 赤魔
 - 魔三连
-- 自动选择：石-风、火-雷以及风雷AOE-散碎
+- 根据顺发状态自动选择石-风、火-雷、风雷AOE-散碎
 - 即刻复活
 
   ![image](./image/赤魔.gif)
