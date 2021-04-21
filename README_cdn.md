@@ -1,6 +1,6 @@
 # 最终幻想14一键连击生成器
 FFXIV one button combo based on Triggernometry and PostNamazu
-### 地址: [点击这里](https://yuee98.github.io/FFXIVOneButtonCombo/)
+### 地址: [[点击这里](https://ffxiv-one-button-combo.vercel.app/)] [[或者这里](https://yuee98.github.io/FFXIVOneButtonCombo/)]
 ****
 
 
@@ -25,7 +25,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 [PostNamazu](https://github.com/Natsukage/PostNamazu/) ([鲶鱼精邮差](https://nga.178.com/read.php?tid=19724323))
 插件
 
-1. [[点击这里](https://yuee98.github.io/FFXIVOneButtonCombo/)]
+1. [[点击这里](https://ffxiv-one-button-combo.vercel.app/)] [[或者这里](https://yuee98.github.io/FFXIVOneButtonCombo/)]
 
 2. 选择职业和连击
 
