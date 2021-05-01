@@ -29,15 +29,15 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 
 2. 选择职业和连击
 
-    ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@0.1/image/选择.png)
+    ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/选择.png)
 
 3. 选择设置该连击的键位和操作方式，点击生成
 
-    ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@0.1/image/设置.png)
+    ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/设置.png)
 
 4. 复制到剪切板，导入Triggernometry
 
-    ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@0.1/image/导入.png)
+    ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/导入.png)
 
 
 
@@ -50,7 +50,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 1. 选择 “其他”-“重置”
 2. 选择操作方式
 
-    ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@0.1/image/重置.png)
+    ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/重置.png)
 3. 游戏内编写宏，格式为
     > /e reset 备份的热键栏->当前热键栏
     
@@ -68,71 +68,71 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 - 一键王权-赎罪连，支持拆赎罪循环
 - 安魂期间安魂自动替换为悔罪
 
-  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@0.1/image/骑士.gif)
+  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/骑士.gif)
 
 ### 战士
 - 基础连击与AOE连击
 - 解放期间解放自动替换为锯爆
 
-  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@0.1/image/战士.gif)
+  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/战士.gif)
 
 ### 黑骑
 - 基础连击与AOE连击
 - 血乱期间解放自动替换为拜年剑法
 
-  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@0.1/image/黑骑.gif)
+  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/黑骑.gif)
 
 ### 绝枪
 - 基础连击、子弹连与AOE连击
 - 无情期间无情自动替换为音速破
 
-  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@0.1/image/枪刃.gif)
+  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/枪刃.gif)
 
 ### 龙骑
 - 直刺连、樱花连与AOE连击
 - 断龙血时可以123循环不会卡键
 - 高跳后替换为幻象冲
 
-  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@0.1/image/龙骑.gif)
+  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/龙骑.gif)
 
 ### 忍者
 - 基础连击与AOE连击
 - 三段后替换为断绝
 - 水遁期间替换天地人为命水、影牙为背刺
 
-  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@0.1/image/忍者.gif)
+  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/忍者.gif)
 
 ### 武僧
 - 背身位、侧身位与AOE连击
-- 震脚、演武时替换为爆发技能(连击、双龙、双掌、破碎拳)
+- (5.4更新)一键军体拳，适配震脚爆发
 
-  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@0.1/image/武僧.gif)
+  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/武僧.gif)
 
 ### 武士
 - 雪、月、花三连与AOE连击
 - 明镜时替换为雪、月、花
 - 触发心眼后替换心眼为慈眼、震天为星眼
 
-  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@0.1/image/武士.gif)
+  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/武士.gif)
 
 ### 诗人
 - 触发辉煌时自动替换
 
-  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@0.1/image/诗人.gif)
+  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/诗人.gif)
 
 ### 机工
 - 普通连击
 - 钻头-空气锚二连
 - 超荷时替换超荷为热冲击
 
-  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@0.1/image/机工.gif)
+  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/机工.gif)
 
 ### 舞者
 - 连击不替换
 - 触发时自动替换 (SR->S1, S3->S2, AR->A1, A3->A2, F3->F1, F3->F2)
 - 一键跳舞
 
-  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@0.1/image/舞者.gif)
+  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/舞者.gif)
 
 ### 黑魔
 - 使用冰3、玄冰后替换为冰状态技能
@@ -140,7 +140,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 - 触发火苗时替换火1为火3
 - 支持星灵循环，使用星灵后替换星灵为火3
 
-  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@0.1/image/黑魔.gif)
+  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/黑魔.gif)
 
 ### 召唤
 - 一键附体，互锁的技能全部一个键位：附体-核爆-巴哈-喷-不死鸟-喷
@@ -149,30 +149,30 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 - 即刻复活
 - ！不死鸟期间以鸟1收尾时，按键会变为崩裂直至灵泉状态消失
 
-  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@0.1/image/召唤0.gif)  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@0.1/image/召唤1.gif)
+  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/召唤0.gif)  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/召唤1.gif)
 
 ### 赤魔
 - 魔三连
 - 根据顺发状态自动选择石-风、火-雷、风雷AOE-散碎
 - 即刻复活
 
-  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@0.1/image/赤魔.gif)
+  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/赤魔.gif)
 
 ### 白魔
 - 即刻复活
 
-  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@0.1/image/白魔.gif)
+  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/白魔.gif)
 
 ### 学者
 - 即刻复活
 - 以太期间替换以太为吸收
 
-  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@0.1/image/学者.gif)
+  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/学者.gif)
 
 ### 占星
 - 即刻复活
 - 抽卡后10s内替换为重抽
 
-  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@0.1/image/占星.gif)
+  ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/占星.gif)
 
 

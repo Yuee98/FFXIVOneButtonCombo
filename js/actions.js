@@ -111,15 +111,17 @@ const actions = { '骑士':
    { actions: { action_1: '血雨飞花', action_2: '八卦无刃杀' },
      key_levels: [ 52 ] } },
 '武僧': 
-{ '背身位': { actions: { action_1: '连击', action_2: '正拳', action_3: '破碎拳' } },
-  '侧身位': { actions: { action_1: '双龙脚', action_2: '双掌打', action_3: '崩拳' } },
-  '武僧AOE': 
+{ '一键军体拳': 
    { actions: 
-      { action_1: '破坏神冲',
-        action_2: '四面脚',
-        action_3: '地烈劲',
-        action_4: '破碎拳' } },
-  '震脚-双掌打': { actions: { action_1: '震脚', action_2: '双掌打', action_3: '震脚' } } },
+      { action_1: '连击',
+        action_2: '正拳',
+        action_3: '破碎拳',
+        action_4: '双龙脚',
+        action_5: '双掌打',
+        action_6: '崩拳' } },
+  '背身位': { actions: { action_1: '连击', action_2: '正拳', action_3: '破碎拳' } },
+  '侧身位': { actions: { action_1: '双龙脚', action_2: '双掌打', action_3: '崩拳' } },
+  '武僧AOE': { actions: { action_1: '破坏神冲', action_2: '四面脚', action_3: '地烈劲' } } },
 '武士': 
 { '花连': 
    { actions: 
@@ -235,7 +237,8 @@ const special = { '石-风': 'redmage.xml',
 'AOE月连': 'samurai2.xml',
 '背身位': 'monk.xml',
 '侧身位': 'monk.xml',
-'武僧AOE': 'monk2.xml',
+'武僧AOE': 'monk.xml',
+'一键军体拳': 'monk2.xml',
 '火3-冰3': 'blackmage.xml',
 '冰4-火4': 'blackmage.xml',
 '异言-绝望': 'blackmage.xml',
@@ -248,7 +251,7 @@ const special = { '石-风': 'redmage.xml',
 
 
 const changeWithBuff = ['风-散碎', '雷-散碎', '安魂-悔罪', '高跳-幻象冲',
- '强力-辉煌', '震脚-双掌打', '即刻复活', '扇舞序-急', '扇舞破-急' ,'火1-火苗', 
+ '强力-辉煌', '即刻复活', '扇舞序-急', '扇舞破-急' ,'火1-火苗', 
  '吸收-溃烂', '鸟1-鸟2', '附体-核爆', '以太-吸收', '三段-断绝', '天地人-命水',
  '影牙-背刺', '震天-星眼', '心眼-慈眼', '无情-音速破', '解放-锯爆', '血乱-拜爆',
  '抽取-核爆',  '逆-瀑泻', '坠-喷泉', '升-风车', '落-血雨'] 

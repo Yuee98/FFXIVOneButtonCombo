@@ -104,7 +104,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 
 ### 武僧
 - 背身位、侧身位与AOE连击
-- 震脚、演武时替换为爆发技能(连击、双龙、双掌、破碎拳)
+- (5.4更新)一键军体拳，适配震脚爆发
 
   ![image](./image/武僧.gif)
 
