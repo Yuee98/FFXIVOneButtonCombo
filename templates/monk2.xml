@@ -102,7 +102,7 @@
             </Condition>
             <Conditions />
           </Action>
-          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set %action_4% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set %action_4% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="100" RefireInterrupt="True">
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="${var:isLeadenFist}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
             </Condition>
@@ -136,7 +136,7 @@
       </Trigger>
       <Trigger Enabled="true" Name="震脚off" Id="da695ede-7199-4688-b5b5-fe7c8bfe1e04" RegularExpression="^.{14} 1E:.{8}:(?&lt;player&gt;.+?) loses the effect of 震脚" PrevActions="Interrupt">
         <Actions>
-          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set %action_4% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/chotbar set %action_4% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="100" RefireInterrupt="True">
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="${var:isLeadenFist}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
             </Condition>
