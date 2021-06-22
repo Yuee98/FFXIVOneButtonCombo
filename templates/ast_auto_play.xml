@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+<TriggernometryExport Version="1">
+  <ExportedFolder Id="%id_combo%" Name="自动发卡(测试)" Enabled="true">
+    <Folders />
+    <Triggers>
+      <Trigger Enabled="true" Name="优先级排序-初始化" Id="0a853d54-89f5-4aaf-a283-99a97ca7c94c" RegularExpression="^.{14} 00:0038:s(?&lt;o1&gt;[1-8])(?&lt;o2&gt;[1-8])(?&lt;o3&gt;[1-8])(?&lt;o4&gt;[1-8])">
+        <Actions>
+          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetString" VariableName="melee" VariableExpression="DRG:DRK:GNB:MNK:NIN:PLD:SAM:WAR" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Action>
+          <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetString" VariableName="ranged" VariableExpression="AST:BLM:BRD:DNC:MCH:RDM:SCH:SMN:WHM" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Action>
+          <Action OrderNumber="3" ListVariableOp="Split" ListVariableName="melee" ListVariableExpression=":" ListVariableTarget="list_melee" LogLevel="-1" MouseX="" MouseY="" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="ListVariable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Action>
+          <Action OrderNumber="4" ListVariableOp="Split" ListVariableName="ranged" ListVariableExpression=":" ListVariableTarget="list_ranged" LogLevel="-1" MouseX="" MouseY="" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="ListVariable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Action>
+          <Action OrderNumber="5" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetString" VariableName="priority" VariableExpression="${o1}:${o2}:${o3}:${o4}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Action>
+          <Action OrderNumber="6" ListVariableOp="Split" ListVariableName="priority" ListVariableExpression=":" ListVariableTarget="list_priority" LogLevel="-1" MouseX="" MouseY="" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="ListVariable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Action>
+          <Action OrderNumber="7" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetString" VariableName="hasCard" VariableExpression="0:0:0:0:0:0:0:0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Action>
+          <Action OrderNumber="8" ListVariableOp="Split" ListVariableName="hasCard" ListVariableExpression=":" ListVariableTarget="list_hasCard" LogLevel="-1" MouseX="" MouseY="" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="ListVariable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Action>
+          <Action OrderNumber="9" LogLevel="-1" MouseX="" MouseY="" NamedCallbackName="command" NamedCallbackParam="/e 优先级 ${lvar:list_priority[1]}-&gt;${lvar:list_priority[2]}-&gt;${lvar:list_priority[3]}-&gt;${lvar:list_priority[4]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
+      </Trigger>
+      <Trigger Enabled="true" Name="判断目标角色是否有卡" Id="4d66aa05-c820-4d72-bb47-473f75c698f5" RegularExpression="^.{14} 1(?&lt;effect&gt;A|E):.{8}:(?&lt;target&gt;.+?) (gain|lose)s the effect of (太阳神之衡|放浪神之箭|战争神之枪|世界树之干|河流神之瓶|建筑神之塔|王冠之领主|王冠之贵妇) from (?&lt;player&gt;.+?)">
+        <Actions>
+          <Action OrderNumber="1" ListVariableOp="Set" ListVariableExpressionType="Numeric" ListVariableName="list_hasCard" ListVariableExpression="1" ListVariableIndex="${_ffxivparty[${target}].order}" LogLevel="-1" MouseX="" MouseY="" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="ListVariable">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${effect}" ExpressionTypeL="String" ExpressionR="A" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+            <Conditions />
+          </Action>
+          <Action OrderNumber="2" ListVariableOp="Set" ListVariableExpressionType="Numeric" ListVariableName="list_hasCard" ListVariableExpression="0" ListVariableIndex="${_ffxivparty[${target}].order}" LogLevel="-1" MouseX="" MouseY="" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="ListVariable">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${effect}" ExpressionTypeL="String" ExpressionR="E" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+            <Conditions />
+          </Action>
+        </Actions>
+        <Condition Enabled="true" Grouping="And">
+          <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${target}].inparty}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+          <ConditionSingle Enabled="false" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+        </Condition>
+        <Conditions />
+      </Trigger>
+      <Trigger Enabled="true" Name="发卡" Id="54b42e96-c296-4a76-9f22-137f5ccabc50" RegularExpression="^.{14} 00:0038:自动发卡" PrevActions="Interrupt">
+        <Actions>
+          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetString" VariableName="ta" VariableExpression="t" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Action>
+          <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetNumeric" VariableName="ta" VariableExpression="${lvar:list_priority[4]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:list_hasCard[${lvar:list_priority[4]}]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+              <ConditionGroup Enabled="true" Grouping="Or">
+                <ConditionGroup Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="list_melee" ExpressionTypeL="String" ExpressionR="${_ffxivparty[${lvar:list_priority[4]}].job}" ExpressionTypeR="String" ConditionType="ListContains" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:cardType}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+                <ConditionGroup Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="list_ranged" ExpressionTypeL="String" ExpressionR="${_ffxivparty[${lvar:list_priority[4]}].job}" ExpressionTypeR="String" ConditionType="ListContains" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:cardType}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+              </ConditionGroup>
+            </Condition>
+            <Conditions />
+          </Action>
+          <Action OrderNumber="3" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetNumeric" VariableName="ta" VariableExpression="${lvar:list_priority[3]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:list_hasCard[${lvar:list_priority[3]}]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+              <ConditionGroup Enabled="true" Grouping="Or">
+                <ConditionGroup Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="list_melee" ExpressionTypeL="String" ExpressionR="${_ffxivparty[${lvar:list_priority[3]}].job}" ExpressionTypeR="String" ConditionType="ListContains" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:cardType}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+                <ConditionGroup Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="list_ranged" ExpressionTypeL="String" ExpressionR="${_ffxivparty[${lvar:list_priority[3]}].job}" ExpressionTypeR="String" ConditionType="ListContains" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:cardType}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+              </ConditionGroup>
+            </Condition>
+            <Conditions />
+          </Action>
+          <Action OrderNumber="4" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetNumeric" VariableName="ta" VariableExpression="${lvar:list_priority[2]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:list_hasCard[${lvar:list_priority[2]}]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+              <ConditionGroup Enabled="true" Grouping="Or">
+                <ConditionGroup Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="list_melee" ExpressionTypeL="String" ExpressionR="${_ffxivparty[${lvar:list_priority[2]}].job}" ExpressionTypeR="String" ConditionType="ListContains" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:cardType}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+                <ConditionGroup Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="list_ranged" ExpressionTypeL="String" ExpressionR="${_ffxivparty[${lvar:list_priority[2]}].job}" ExpressionTypeR="String" ConditionType="ListContains" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:cardType}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+              </ConditionGroup>
+            </Condition>
+            <Conditions />
+          </Action>
+          <Action OrderNumber="5" LogLevel="-1" MouseX="" MouseY="" NamedCallbackName="command" NamedCallbackParam="/e p1:${lvar:list_priority[1]}" VariableOp="SetNumeric" VariableName="ta" VariableExpression="${lvar:list_priority[1]}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${lvar:list_hasCard[${lvar:list_priority[1]}]}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionGroup Enabled="true" Grouping="Or">
+                <ConditionGroup Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="list_melee" ExpressionTypeL="String" ExpressionR="${_ffxivparty[${lvar:list_priority[1]}].job}" ExpressionTypeR="String" ConditionType="ListContains" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:cardType}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+                <ConditionGroup Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="list_ranged" ExpressionTypeL="String" ExpressionR="${_ffxivparty[${lvar:list_priority[1]}].job}" ExpressionTypeR="String" ConditionType="ListContains" />
+                  <ConditionSingle Enabled="true" ExpressionL="${var:cardType}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+              </ConditionGroup>
+            </Condition>
+            <Conditions />
+          </Action>
+          <Action OrderNumber="6" LogLevel="-1" MouseX="" MouseY="" NamedCallbackName="command" NamedCallbackParam="/ac 出卡 &lt;${var:ta}&gt;" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${var:playType}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="String" ConditionType="NumericNotEqual" />
+            </Condition>
+            <Conditions />
+          </Action>
+          <Action OrderNumber="7" LogLevel="-1" MouseX="" MouseY="" NamedCallbackName="command" NamedCallbackParam="/ac 小奥秘卡 &lt;${var:ta}&gt;" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${var:playType}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="String" ConditionType="NumericEqual" />
+            </Condition>
+            <Conditions />
+          </Action>
+          <Action OrderNumber="8" LogLevel="-1" MouseX="" MouseY="" NamedCallbackName="command" NamedCallbackParam="/e 自动出卡 -&gt; ${_ffxivparty[${var:ta}].job} &lt;${var:ta}&gt; " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
+      </Trigger>
+      <Trigger Enabled="true" Name="判断花色" Id="f9ffacf7-72f5-4ca9-b568-c5c8e0367a0d" RegularExpression="^.{14} 1F:[^:]*:[^:]*:21:((?&lt;seal2&gt;[0-9])0(?&lt;seal1&gt;[0-9])0?(?&lt;card&gt;[0-9])00:(0(?&lt;seal3&gt;[0-9])|[^0]([^:]+?))|(?&lt;seal1&gt;[0-9])0(?&lt;card&gt;[0-9])00:|(?&lt;card&gt;.?)00:)">
+        <Actions>
+          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetNumeric" VariableName="playType" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionGroup Enabled="true" Grouping="And">
+                <ConditionGroup Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${card}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${card}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+                <ConditionGroup Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${seal1}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${seal2}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${seal3}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                </ConditionGroup>
+              </ConditionGroup>
+              <ConditionGroup Enabled="true" Grouping="And">
+                <ConditionGroup Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${card}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${card}" ExpressionTypeL="Numeric" ExpressionR="5" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+                <ConditionGroup Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${seal1}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${seal2}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${seal3}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                </ConditionGroup>
+              </ConditionGroup>
+              <ConditionGroup Enabled="true" Grouping="And">
+                <ConditionGroup Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${card}" ExpressionTypeL="Numeric" ExpressionR="4" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${card}" ExpressionTypeL="Numeric" ExpressionR="6" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+                <ConditionGroup Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${seal1}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${seal2}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${seal3}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                </ConditionGroup>
+              </ConditionGroup>
+              <ConditionSingle Enabled="true" ExpressionL="${card}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+            <Conditions />
+          </Action>
+          <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetNumeric" VariableName="playType" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionGroup Enabled="true" Grouping="And">
+                <ConditionGroup Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${card}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${card}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+                <ConditionGroup Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${seal1}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${seal2}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${seal3}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+              </ConditionGroup>
+              <ConditionGroup Enabled="true" Grouping="And">
+                <ConditionGroup Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${card}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${card}" ExpressionTypeL="Numeric" ExpressionR="5" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+                <ConditionGroup Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${seal1}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${seal2}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${seal3}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+              </ConditionGroup>
+              <ConditionGroup Enabled="true" Grouping="And">
+                <ConditionGroup Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${card}" ExpressionTypeL="Numeric" ExpressionR="4" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${card}" ExpressionTypeL="Numeric" ExpressionR="6" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+                <ConditionGroup Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${seal1}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${seal2}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                  <ConditionSingle Enabled="true" ExpressionL="${seal3}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                </ConditionGroup>
+              </ConditionGroup>
+            </Condition>
+            <Conditions />
+          </Action>
+          <Action OrderNumber="3" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetNumeric" VariableName="cardType" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${card}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${card}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${card}" ExpressionTypeL="Numeric" ExpressionR="4" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+            <Conditions />
+          </Action>
+          <Action OrderNumber="4" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetNumeric" VariableName="cardType" VariableExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${card}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${card}" ExpressionTypeL="Numeric" ExpressionR="5" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${card}" ExpressionTypeL="Numeric" ExpressionR="6" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+            <Conditions />
+          </Action>
+        </Actions>
+        <Condition Enabled="true" Grouping="Or">
+          <ConditionSingle Enabled="true" ExpressionL="${card}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+        </Condition>
+        <Conditions />
+      </Trigger>
+    </Triggers>
+  </ExportedFolder>
+</TriggernometryExport>

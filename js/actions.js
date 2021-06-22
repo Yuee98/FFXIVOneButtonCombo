@@ -219,7 +219,9 @@ const actions = { '骑士':
 { '以太-吸收': { actions: { action_1: '以太超流', action_2: '能量吸收', action_3: '以太超流' } },
   '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '复生', action_3: '即刻咏唱' } } },
 '占星师': 
-{ '抽卡-重抽': { actions: { action_1: '抽卡', action_2: '重抽', action_3: '15000' } },
+{ '抽卡-重抽': { actions: { action_1: '抽卡', action_2: '重抽' } },
+  '出卡-小奥秘卡': { actions: { action_1: '出卡', action_2: '小奥秘卡' } },
+  '自动发卡(测试)': { actions: { action_1: '无需设置位置，需自行写宏，详见说明' } },
   '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '生辰', action_3: '即刻咏唱' } } },
 '其他': { '重置': { actions: null } } }
 
@@ -246,7 +248,10 @@ const special = { '石-风': 'redmage.xml',
 '一键附体': 'summoner.xml',
 '标准舞步': 'dancer.xml',
 '技巧舞步': 'dancer2.xml',
-'机工子弹连': 'mechanist.xml' }
+'机工子弹连': 'mechanist.xml',
+'抽卡-重抽': 'astrologian.xml',
+'出卡-小奥秘卡': 'astrologian2.xml',
+'自动发卡(测试)': 'ast_auto_play.xml' }
 
 
 
