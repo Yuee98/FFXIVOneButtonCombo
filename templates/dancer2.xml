@@ -17,25 +17,25 @@
       </Trigger>
       <Trigger Enabled="true" Name="%action_1%on" Id="ac1645de-fb77-4249-ae9d-5dddc4dfdfbb" RegularExpression="^.{14} 1F:.{8}:(?&lt;player&gt;[^:]+?):(?&lt;step&gt;[1-4])[^:]*:[1-4]0[1-4]0[1-4]:">
         <Actions>
-          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set 瀑泻 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_2% %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="${step}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
             </Condition>
             <Conditions />
           </Action>
-          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set 喷泉 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_3% %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="${step}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
             </Condition>
             <Conditions />
           </Action>
-          <Action OrderNumber="3" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set 逆瀑泻 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+          <Action OrderNumber="3" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_4% %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="${step}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
             </Condition>
             <Conditions />
           </Action>
-          <Action OrderNumber="4" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set 坠喷泉 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+          <Action OrderNumber="4" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_5% %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="${step}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
             </Condition>
@@ -61,25 +61,25 @@
       </Trigger>
       <Trigger Enabled="true" Name="%action_1%1" Id="5c308ac8-96be-451a-8207-a043d8923f81" RegularExpression="^.{14} 1F:.{8}:(?&lt;player&gt;[^:]+?):[1-4][^:]*:10[1-4]0[1-4]0(?&lt;step&gt;[1-4]):">
         <Actions>
-          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set 瀑泻 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_2% %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="${step}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
             </Condition>
             <Conditions />
           </Action>
-          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set 喷泉 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_3% %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="${step}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
             </Condition>
             <Conditions />
           </Action>
-          <Action OrderNumber="3" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set 逆瀑泻 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+          <Action OrderNumber="3" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_4% %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="${step}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
             </Condition>
             <Conditions />
           </Action>
-          <Action OrderNumber="4" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set 坠喷泉 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+          <Action OrderNumber="4" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_5% %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="${step}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
             </Condition>
@@ -93,25 +93,25 @@
       </Trigger>
       <Trigger Enabled="true" Name="%action_1%3" Id="889a5ee5-ae17-4cbc-b9c6-4c6c8ddb8abd" RegularExpression="^.{14} 1F:.{8}:(?&lt;player&gt;[^:]+?):[1-4][^:]*:30(?&lt;step&gt;[1-4])0[1-4]0[1-4]:">
         <Actions>
-          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set 瀑泻 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_2% %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="${step}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
             </Condition>
             <Conditions />
           </Action>
-          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set 喷泉 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_3% %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="${step}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
             </Condition>
             <Conditions />
           </Action>
-          <Action OrderNumber="3" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set 逆瀑泻 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+          <Action OrderNumber="3" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_4% %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="${step}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
             </Condition>
             <Conditions />
           </Action>
-          <Action OrderNumber="4" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set 坠喷泉 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+          <Action OrderNumber="4" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_5% %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="${step}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
             </Condition>
@@ -125,25 +125,25 @@
       </Trigger>
       <Trigger Enabled="true" Name="%action_1%2" Id="98d693bc-f7dc-4e9c-9458-5929cab827a8" RegularExpression="^.{14} 1F:.{8}:(?&lt;player&gt;[^:]+?):[1-4][^:]*:20[1-4]0(?&lt;step&gt;[1-4])0[1-4]:">
         <Actions>
-          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set 瀑泻 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_2% %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="${step}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
             </Condition>
             <Conditions />
           </Action>
-          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set 喷泉 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_3% %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="${step}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
             </Condition>
             <Conditions />
           </Action>
-          <Action OrderNumber="3" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set 逆瀑泻 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+          <Action OrderNumber="3" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_4% %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="${step}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
             </Condition>
             <Conditions />
           </Action>
-          <Action OrderNumber="4" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set 坠喷泉 %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+          <Action OrderNumber="4" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_5% %position%" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="${step}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
             </Condition>

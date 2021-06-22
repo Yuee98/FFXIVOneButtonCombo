@@ -75,7 +75,9 @@ const actions = { '骑士':
         action_2: '贯通刺',
         action_3: '直刺',
         action_4: '樱花怒放',
-        action_5: '龙牙龙爪' },
+        action_5: '龙牙龙爪',
+        action_6: '龙眼雷电',
+        action_7: '龙牙龙爪效果提高' },
      key_levels: [ 4, 26 ] },
   '樱花连': 
    { actions: 
@@ -83,7 +85,9 @@ const actions = { '骑士':
         action_2: '开膛枪',
         action_3: '樱花怒放',
         action_4: '直刺',
-        action_5: '龙尾大回旋' },
+        action_5: '龙尾大回旋',
+        action_6: '龙眼雷电',
+        action_7: '龙尾大回旋效果提高' },
      key_levels: [ 18, 50 ] },
   '高跳-幻象冲': { actions: { action_1: '高跳', action_2: '幻象冲', action_3: '幻象冲预备' } },
   'AOE连': 
@@ -118,10 +122,42 @@ const actions = { '骑士':
         action_3: '破碎拳',
         action_4: '双龙脚',
         action_5: '双掌打',
-        action_6: '崩拳' } },
-  '背身位': { actions: { action_1: '连击', action_2: '正拳', action_3: '破碎拳' } },
-  '侧身位': { actions: { action_1: '双龙脚', action_2: '双掌打', action_3: '崩拳' } },
-  '武僧AOE': { actions: { action_1: '破坏神冲', action_2: '四面脚', action_3: '地烈劲' } } },
+        action_6: '崩拳',
+        action_7: '魔猿形',
+        action_8: '盗龙形',
+        action_9: '猛豹形',
+        action_10: '震脚',
+        action_11: '连击效果提高' } },
+  '背身位': 
+   { actions: 
+      { action_1: '连击',
+        action_2: '正拳',
+        action_3: '破碎拳',
+        action_4: '魔猿形',
+        action_5: '盗龙形',
+        action_6: '猛豹形',
+        action_7: '震脚',
+        action_8: '无相身形' } },
+  '侧身位': 
+   { actions: 
+      { action_1: '双龙脚',
+        action_2: '双掌打',
+        action_3: '崩拳',
+        action_4: '魔猿形',
+        action_5: '盗龙形',
+        action_6: '猛豹形',
+        action_7: '震脚',
+        action_8: '无相身形' } },
+  '武僧AOE': 
+   { actions: 
+      { action_1: '破坏神冲',
+        action_2: '四面脚',
+        action_3: '地烈劲',
+        action_4: '魔猿形',
+        action_5: '盗龙形',
+        action_6: '猛豹形',
+        action_7: '震脚',
+        action_8: '无相身形' } } },
 '武士': 
 { '花连': 
    { actions: 
@@ -168,15 +204,33 @@ const actions = { '骑士':
 '诗人': { '强力-辉煌': { actions: { action_1: '强力射击', action_2: '直线射击', action_3: '直线射击预备' } } },
 '机工士': 
 { '机工子弹连': 
-   { actions: { action_1: '分裂弹', action_2: '独头弹', action_3: '狙击弹' },
+   { actions: 
+      { action_1: '分裂弹',
+        action_2: '独头弹',
+        action_3: '狙击弹',
+        action_4: '热分裂弹',
+        action_5: '热独头弹',
+        action_6: '热狙击弹' },
      key_levels: [ 2, 26 ] },
   '钻-锚': 
    { actions: { action_1: '钻头', action_2: '空气锚' },
      key_levels: [ 58 ] },
   '超荷-热冲击': { actions: { action_1: '超荷', action_2: '热冲击', action_3: '8000' } } },
 '舞者': 
-{ '标准舞步': { actions: { action_1: '标准舞步' } },
-  '技巧舞步': { actions: { action_1: '技巧舞步' } },
+{ '标准舞步': 
+   { actions: 
+      { action_1: '标准舞步',
+        action_2: '瀑泻',
+        action_3: '喷泉',
+        action_4: '逆瀑泻',
+        action_5: '坠喷泉' } },
+  '技巧舞步': 
+   { actions: 
+      { action_1: '技巧舞步',
+        action_2: '瀑泻',
+        action_3: '喷泉',
+        action_4: '逆瀑泻',
+        action_5: '坠喷泉' } },
   '逆-瀑泻': { actions: { action_1: '瀑泻', action_2: '逆瀑泻', action_3: '逆瀑泻预备' } },
   '坠-喷泉': { actions: { action_1: '喷泉', action_2: '坠喷泉', action_3: '坠喷泉预备' } },
   '升-风车': { actions: { action_1: '风车', action_2: '升风车', action_3: '升风车预备' } },
@@ -202,12 +256,33 @@ const actions = { '骑士':
         action_4: '龙神迸发' } },
   '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '复生', action_3: '即刻咏唱' } } },
 '赤魔法师': 
-{ '魔三连': { actions: { action_1: '回刺', action_2: '交击斩', action_3: '连攻' } },
+{ '魔三连': 
+   { actions: 
+      { action_1: '回刺',
+        action_2: '交击斩',
+        action_3: '连攻',
+        action_4: '魔回刺',
+        action_5: '魔交击斩',
+        action_6: '魔连攻' } },
   '石-风': 
-   { actions: { action_1: '赤飞石', action_2: '赤疾风' },
+   { actions: 
+      { action_1: '赤飞石',
+        action_2: '赤疾风',
+        action_3: '魔连攻',
+        action_4: '赤核爆',
+        action_5: '赤神圣',
+        action_6: '连续咏唱',
+        action_7: '即刻咏唱' },
      key_levels: [ 70 ] },
   '火-雷': 
-   { actions: { action_1: '赤火炎', action_2: '赤闪雷' },
+   { actions: 
+      { action_1: '赤火炎',
+        action_2: '赤闪雷',
+        action_3: '魔连攻',
+        action_4: '赤核爆',
+        action_5: '赤神圣',
+        action_6: '连续咏唱',
+        action_7: '即刻咏唱' },
      key_levels: [ 70 ] },
   '风-散碎': { actions: { action_1: '赤烈风', action_2: '散碎', action_3: '(连续|即刻)咏唱' } },
   '雷-散碎': { actions: { action_1: '赤震雷', action_2: '散碎', action_3: '(连续|即刻)咏唱' } },
@@ -219,7 +294,18 @@ const actions = { '骑士':
 '占星师': 
 { '抽卡-重抽': { actions: { action_1: '抽卡', action_2: '重抽' } },
   '出卡-小奥秘卡': { actions: { action_1: '出卡', action_2: '小奥秘卡' } },
-  '自动发卡(测试)': { actions: { action_1: '出卡', action_2: '小奥秘卡', action_3: '太阳神之衡|放浪神之箭|战争神之枪|世界树之干|河流神之瓶|建筑神之塔|王冠之领主|王冠之贵妇'} },
+  '自动发卡(测试)': 
+   { actions: 
+      { action_1: '出卡',
+        action_2: '小奥秘卡',
+        action_3: '太阳神之衡',
+        action_4: '放浪神之箭',
+        action_5: '战争神之枪',
+        action_6: '世界树之干',
+        action_7: '河流神之瓶',
+        action_8: '建筑神之塔',
+        action_9: '王冠之领主',
+        action_10: '王冠之贵妇' } },
   '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '生辰', action_3: '即刻咏唱' } } },
 '其他': { '重置': { actions: null } } }
 

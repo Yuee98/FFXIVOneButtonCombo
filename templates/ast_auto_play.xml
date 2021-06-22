@@ -45,7 +45,7 @@
         <Condition Enabled="false" Grouping="Or" />
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="判断目标角色是否有卡" Id="4d66aa05-c820-4d72-bb47-473f75c698f5" RegularExpression="^.{14} 1(?&lt;effect&gt;A|E):.{8}:(?&lt;target&gt;.+?) (gain|lose)s the effect of (%action_3%) from (?&lt;player&gt;.+?)">
+      <Trigger Enabled="true" Name="判断目标角色是否有卡" Id="4d66aa05-c820-4d72-bb47-473f75c698f5" RegularExpression="^.{14} 1(?&lt;effect&gt;A|E):.{8}:(?&lt;target&gt;.+?) (gain|lose)s the effect of (%action_3%|%action_4%|%action_5%|%action_6%|%action_7%|%action_8%|%action_9%|%action_10%|) from (?&lt;player&gt;.+?)">
         <Actions>
           <Action OrderNumber="1" ListVariableOp="Set" ListVariableExpressionType="Numeric" ListVariableName="list_hasCard" ListVariableExpression="1" ListVariableIndex="${_ffxivparty[${target}].order}" LogLevel="-1" MouseX="" MouseY="" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="ListVariable">
             <Condition Enabled="true" Grouping="Or">

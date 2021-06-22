@@ -3,7 +3,7 @@
   <ExportedFolder Id="%id_combo%" Name="%combo%" Enabled="true">
     <Folders />
     <Triggers>
-      <Trigger Enabled="true" Name="1%action_1%" Id="%id_action_1%" RegularExpression="^.{14} 1[56]:.{8}:(?&lt;player&gt;[^:]+?):[^:]+:(%action_1%|龙眼雷电)" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="1%action_1%" Id="%id_action_1%" RegularExpression="^.{14} 1[56]:.{8}:(?&lt;player&gt;[^:]+?):[^:]+:(%action_1%|%action_6%)" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_2% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
             <Condition Enabled="false" Grouping="Or" />
@@ -41,7 +41,7 @@
           <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
         </Condition>
       </Trigger>
-      <Trigger Enabled="true" Name="%action_5%on" Id="%id_action_5%" RegularExpression="^.{14} 1A:.{8}:(?&lt;player&gt;.+?) gains the effect of %action_5%效果提高" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_5%on" Id="%id_action_5%" RegularExpression="^.{14} 1A:.{8}:(?&lt;player&gt;.+?) gains the effect of %action_7%" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="%id_action_3%" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
@@ -57,7 +57,7 @@
         </Condition>
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="%action_5%off" Id="%id_action_5%" RegularExpression="^.{14} 1E:.{8}:(?&lt;player&gt;.+?) loses the effect of %action_5%效果提高" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_5%off" Id="%id_action_5%" RegularExpression="^.{14} 1E:.{8}:(?&lt;player&gt;.+?) loses the effect of %action_7%" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
             <Condition Enabled="false" Grouping="Or" />

@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <TriggernometryExport Version="1">
-  <ExportedFolder Id="786a93f4-9bdd-42f5-b25a-eca4d2216a5e" Name="%combo%" Enabled="true">
+  <ExportedFolder Id="%id_combo%" Name="%combo%" Enabled="true">
     <Folders>
-      <Folder Id="77a57b73-cb36-4f4e-a36a-9991dcbf57fb" Name="var" Enabled="true">
+      <Folder Id="%id_action_4%" Name="var" Enabled="true">
         <Folders />
         <Triggers>
-          <Trigger Enabled="true" Name="连击效果提高" Id="302a7b66-99e8-43db-9254-2f992577f07e" RegularExpression="^.{14} 1(?&lt;effect&gt;A|E):.{8}:(?&lt;player&gt;.+?) (gain|lose)s the effect of 连击效果提高" PrevActions="Interrupt">
+          <Trigger Enabled="true" Name="%action_11%" Id="%id_action_11%" RegularExpression="^.{14} 1(?&lt;effect&gt;A|E):.{8}:(?&lt;player&gt;.+?) (gain|lose)s the effect of %action_11%" PrevActions="Interrupt">
             <Actions>
               <Action OrderNumber="1" LogLevel="-1" VariableOp="SetNumeric" VariableName="isLeadenFist" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                 <Condition Enabled="true" Grouping="Or">
@@ -25,7 +25,7 @@
             </Condition>
             <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="双掌打" Id="13d02e64-3542-4440-8b76-45a1856d8784" RegularExpression="^.{14} 1A:.{8}:(?&lt;player&gt;.+?) gains the effect of 双掌打" PrevActions="Interrupt">
+          <Trigger Enabled="true" Name="%action_5%" Id="%id_action_5%" RegularExpression="^.{14} 1A:.{8}:(?&lt;player&gt;.+?) gains the effect of %action_5%" PrevActions="Interrupt">
             <Actions>
               <Action OrderNumber="1" LogLevel="-1" VariableOp="SetNumeric" VariableName="timeTwinSnakes" VariableExpression="15000+${_timestampms}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
@@ -37,7 +37,7 @@
             </Condition>
             <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="破碎拳" Id="346a83c1-d8a5-4083-8bf2-0a11515fcdc4" RegularExpression="^.{14} 1A:.{8}:(?&lt;target&gt;.+?) gains the effect of 破碎拳 from (?&lt;player&gt;.+?) for">
+          <Trigger Enabled="true" Name="%action_3%" Id="%id_action_3%" RegularExpression="^.{14} 1A:.{8}:(?&lt;target&gt;.+?) gains the effect of %action_3% from (?&lt;player&gt;.+?) for">
             <Actions>
               <Action OrderNumber="1" LogLevel="-1" VariableOp="SetNumeric" VariableName="timeDemolish" VariableExpression="17000+${_timestampms}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
@@ -53,7 +53,7 @@
       </Folder>
     </Folders>
     <Triggers>
-      <Trigger Enabled="true" Name="盗龙形" Id="74a3f1ea-ab17-4209-85fb-8c612c42b31b" RegularExpression="^.{14} 1A:.{8}:(?&lt;player&gt;.+?) gains the effect of 盗龙形" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_8%" Id="%id_action_8%" RegularExpression="^.{14} 1A:.{8}:(?&lt;player&gt;.+?) gains the effect of %action_8%" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_2% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
             <Condition Enabled="true" Grouping="Or">
@@ -74,7 +74,7 @@
         </Condition>
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="猛豹形" Id="23e309d8-3904-4b4f-aa12-4e491c20aca5" RegularExpression="^.{14} 1A:.{8}:(?&lt;player&gt;.+?) gains the effect of 猛豹形" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_9%" Id="%id_action_9%" RegularExpression="^.{14} 1A:.{8}:(?&lt;player&gt;.+?) gains the effect of %action_9%" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_3% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
             <Condition Enabled="true" Grouping="Or">
@@ -94,7 +94,7 @@
         </Condition>
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="震脚" Id="1fb686e1-94c0-4530-a9fd-473523fee5b0" RegularExpression="^.{14} 1A:.{8}:(?&lt;player&gt;.+?) gains the effect of 震脚" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_10%" Id="%id_action_10%" RegularExpression="^.{14} 1A:.{8}:(?&lt;player&gt;.+?) gains the effect of %action_10%" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="100" RefireInterrupt="True">
             <Condition Enabled="true" Grouping="Or">
@@ -114,7 +114,7 @@
         </Condition>
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="震脚on" Id="17f4ec11-8038-4012-b27c-d9e19290a634" RegularExpression="^.{14} 1[56]:.{8}:(?&lt;player&gt;[^:]+?):[^:]+:震脚" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_10%on" Id="%id_action_1%" RegularExpression="^.{14} 1[56]:.{8}:(?&lt;player&gt;[^:]+?):[^:]+:%action_10%" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
             <Condition Enabled="true" Grouping="Or">
@@ -134,7 +134,7 @@
         </Condition>
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="震脚off" Id="da695ede-7199-4688-b5b5-fe7c8bfe1e04" RegularExpression="^.{14} 1E:.{8}:(?&lt;player&gt;.+?) loses the effect of 震脚" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_10%off" Id="%id_action_2%" RegularExpression="^.{14} 1E:.{8}:(?&lt;player&gt;.+?) loses the effect of %action_10%" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_4% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="100" RefireInterrupt="True">
             <Condition Enabled="true" Grouping="Or">
@@ -148,7 +148,7 @@
         </Condition>
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="魔猿形" Id="ee05c28d-1157-4bd4-acbc-618f321e40b0" RegularExpression="^.{14} 1A:.{8}:(?&lt;player&gt;.+?) gains the effect of 魔猿形" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_7%" Id="%id_action_7%" RegularExpression="^.{14} 1A:.{8}:(?&lt;player&gt;.+?) gains the effect of %action_7%" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
             <Condition Enabled="true" Grouping="Or">
