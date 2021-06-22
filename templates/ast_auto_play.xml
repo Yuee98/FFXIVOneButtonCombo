@@ -45,7 +45,7 @@
         <Condition Enabled="false" Grouping="Or" />
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="判断目标角色是否有卡" Id="4d66aa05-c820-4d72-bb47-473f75c698f5" RegularExpression="^.{14} 1(?&lt;effect&gt;A|E):.{8}:(?&lt;target&gt;.+?) (gain|lose)s the effect of (太阳神之衡|放浪神之箭|战争神之枪|世界树之干|河流神之瓶|建筑神之塔|王冠之领主|王冠之贵妇) from (?&lt;player&gt;.+?)">
+      <Trigger Enabled="true" Name="判断目标角色是否有卡" Id="4d66aa05-c820-4d72-bb47-473f75c698f5" RegularExpression="^.{14} 1(?&lt;effect&gt;A|E):.{8}:(?&lt;target&gt;.+?) (gain|lose)s the effect of (%action_3%) from (?&lt;player&gt;.+?)">
         <Actions>
           <Action OrderNumber="1" ListVariableOp="Set" ListVariableExpressionType="Numeric" ListVariableName="list_hasCard" ListVariableExpression="1" ListVariableIndex="${_ffxivparty[${target}].order}" LogLevel="-1" MouseX="" MouseY="" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="ListVariable">
             <Condition Enabled="true" Grouping="Or">
@@ -136,13 +136,13 @@
             </Condition>
             <Conditions />
           </Action>
-          <Action OrderNumber="6" LogLevel="-1" MouseX="" MouseY="" NamedCallbackName="command" NamedCallbackParam="/ac 出卡 &lt;${var:ta}&gt;" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+          <Action OrderNumber="6" LogLevel="-1" MouseX="" MouseY="" NamedCallbackName="command" NamedCallbackParam="/ac %action_1% &lt;${var:ta}&gt;" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="${var:playType}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="String" ConditionType="NumericNotEqual" />
             </Condition>
             <Conditions />
           </Action>
-          <Action OrderNumber="7" LogLevel="-1" MouseX="" MouseY="" NamedCallbackName="command" NamedCallbackParam="/ac 小奥秘卡 &lt;${var:ta}&gt;" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+          <Action OrderNumber="7" LogLevel="-1" MouseX="" MouseY="" NamedCallbackName="command" NamedCallbackParam="/ac %action_2% &lt;${var:ta}&gt;" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="${var:playType}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="String" ConditionType="NumericEqual" />
             </Condition>

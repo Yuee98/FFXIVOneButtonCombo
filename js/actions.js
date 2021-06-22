@@ -219,7 +219,7 @@ const actions = { '骑士':
 '占星师': 
 { '抽卡-重抽': { actions: { action_1: '抽卡', action_2: '重抽' } },
   '出卡-小奥秘卡': { actions: { action_1: '出卡', action_2: '小奥秘卡' } },
-  '自动发卡(测试)': { actions: { action_1: '无需设置位置，需自行写宏，详见说明' } },
+  '自动发卡(测试)': { actions: { action_1: '出卡', action_2: '小奥秘卡', action_3: '太阳神之衡|放浪神之箭|战争神之枪|世界树之干|河流神之瓶|建筑神之塔|王冠之领主|王冠之贵妇'} },
   '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '生辰', action_3: '即刻咏唱' } } },
 '其他': { '重置': { actions: null } } }
 
