@@ -241,9 +241,7 @@ const actions = { '骑士':
 { '火3-冰3': { actions: { action_1: '爆炎', action_2: '冰封' } },
   '天语-冰4-火4': { actions: { action_1: '冰澈', action_2: '炽炎', action_3: '天语', action_4: '绝望' } },
   '异言-绝望': { actions: { action_1: '异言', action_2: '绝望' } },
-  '暴雷-火1': { actions: { action_1: '暴雷', action_2: '火炎' } },
-  '火1-火苗': { actions: { action_1: '火炎', action_2: '爆炎', action_3: '火苗' } },
-  '星灵-火3': { actions: { action_1: '星灵移位', action_2: '爆炎', action_3: '8000' } } },
+  '暴雷-火1': { actions: { action_1: '暴雷', action_2: '火炎', action_3: '爆炎', action_4: '火苗' } } },
 '召唤师': 
 { '吸收-溃烂': { actions: { action_1: '能量吸收', action_2: '溃烂爆发', action_3: '以太超流' } },
   '抽取-核爆': { actions: { action_1: '能量抽取', action_2: '痛苦核爆', action_3: '以太超流' } },
@@ -327,7 +325,7 @@ const special = { '石-风': 'redmage.xml',
 '一键军体拳': 'monk2.xml',
 '火3-冰3': 'blackmage.xml',
 '异言-绝望': 'blackmage.xml',
-'暴雷-火1': 'blackmage.xml',
+'暴雷-火1': 'blackmage3.xml',
 '天语-冰4-火4': 'blackmage2.xml',
 '一键附体': 'summoner.xml',
 '鸟1-鸟2': 'summoner2.xml',
@@ -341,9 +339,9 @@ const special = { '石-风': 'redmage.xml',
 
 
 const changeWithBuff = ['风-散碎', '雷-散碎', '安魂-悔罪', '高跳-幻象冲',
- '强力-辉煌', '即刻复活', '扇舞序-急', '扇舞破-急' ,'火1-火苗', 
+ '强力-辉煌', '即刻复活', '扇舞序-急', '扇舞破-急' , 
  '吸收-溃烂', '鸟1-鸟2', '附体-核爆', '以太-吸收', '三段-断绝', '天地人-命水',
  '影牙-背刺', '震天-星眼', '心眼-慈眼', '无情-音速破', '解放-锯爆', '血乱-拜爆',
  '抽取-核爆',  '逆-瀑泻', '坠-喷泉', '升-风车', '落-血雨'] 
 
-const changeWithCD = ['超荷-热冲击', '星灵-火3', '抽卡-重抽', '精雕-海胆']
+const changeWithCD = ['超荷-热冲击', '精雕-海胆']
