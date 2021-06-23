@@ -20,28 +20,13 @@
           <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
         </Condition>
       </Trigger>
-      <Trigger Enabled="true" Name="4%action_4%" Id="%id_action_4%" RegularExpression="^.{14} 1[56]:.{8}:(?&lt;player&gt;[^:]+?):[^:]+:%action_4%" PrevActions="Interrupt">
-        <Actions>
-          <Action OrderNumber="1" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="%id_action_1%" ActionType="Trigger">
-            <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
-          </Action>
-          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="100" RefireInterrupt="True">
-            <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
-          </Action>
-        </Actions>
-        <Condition Enabled="true" Grouping="Or">
-          <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-        </Condition>
-      </Trigger>
       <Trigger Enabled="true" Name="3%action_3%" Id="%id_action_3%" RegularExpression="^.{14} 1[56]:.{8}:(?&lt;player&gt;[^:]+?):[^:]+:%action_3%" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="%id_action_1%" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Action>
-          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="100" RefireInterrupt="True">
+          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="10" RefireInterrupt="True">
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Action>
@@ -56,7 +41,7 @@
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Action>
-          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="100" RefireInterrupt="True">
+          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="10" RefireInterrupt="True">
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Action>
@@ -66,7 +51,7 @@
         </Condition>
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="%action_5%on" Id="%id_action_5%" RegularExpression="^.{14} 1A:.{8}:(?&lt;player&gt;.+?) gains the effect of %action_5%" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_4%on" Id="%id_action_4%" RegularExpression="^.{14} 1A:.{8}:(?&lt;player&gt;.+?) gains the effect of %action_4%" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="%id_action_2%" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />
@@ -76,11 +61,7 @@
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Action>
-          <Action OrderNumber="3" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="%id_action_4%" ActionType="Trigger">
-            <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
-          </Action>
-          <Action OrderNumber="4" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_2% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+          <Action OrderNumber="3" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_2% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Action>
@@ -90,7 +71,7 @@
         </Condition>
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="%action_5%off" Id="%id_action_5%" RegularExpression="^.{14} 1E:.{8}:(?&lt;player&gt;.+?) loses the effect of %action_5%" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_4%off" Id="%id_action_4%" RegularExpression="^.{14} 1E:.{8}:(?&lt;player&gt;.+?) loses the effect of %action_4%" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
             <Condition Enabled="false" Grouping="Or" />
