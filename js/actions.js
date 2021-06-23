@@ -228,7 +228,9 @@ const actions = { '骑士':
   '钻-锚': 
    { actions: { action_1: '钻头', action_2: '空气锚' },
      key_levels: [ 58 ] },
-  '超荷-热冲击': { actions: { action_1: '超荷', action_2: '热冲击', action_3: '8000' } } },
+  '超荷-热冲击': { actions: { action_1: '超荷', action_2: '热冲击' } },
+  '散射-自动弩': { actions: { action_1: '散射', action_2: '自动弩' } },
+  '炮塔-自爆': { actions: { action_1: '后式自走人偶', action_2: '超档后式人偶' } } },
 '舞者': 
 { '标准舞步': 
    { actions: 
@@ -345,7 +347,10 @@ const special = { '石-风': 'redmage.xml',
 '鸟1-鸟2': 'summoner2.xml',
 '标准舞步': 'dancer.xml',
 '技巧舞步': 'dancer2.xml',
-'机工子弹连': 'mechanist.xml',
+'机工子弹连': 'machinist.xml',
+'超荷-热冲击': 'machinist_heat.xml',
+'散射-自动弩': 'machinist_heat.xml',
+'炮塔-自爆': 'machinist_battery.xml',
 '抽卡-重抽': 'astrologian.xml',
 '出卡-小奥秘卡': 'astrologian2.xml',
 '自动发卡(测试)': 'ast_auto_play.xml',
