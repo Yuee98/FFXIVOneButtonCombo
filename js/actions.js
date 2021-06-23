@@ -201,7 +201,14 @@ const actions = { '骑士':
      key_levels: [ 35 ] },
   '心眼-慈眼': { actions: { action_1: '心眼', action_2: '慈眼', action_3: '开眼' } },
   '震天-星眼': { actions: { action_1: '必杀剑·震天', action_2: '必杀剑·星眼', action_3: '开眼' } } },
-'诗人': { '强力-辉煌': { actions: { action_1: '强力射击', action_2: '直线射击', action_3: '直线射击预备' } } },
+'诗人': 
+{ '强力-辉煌': { actions: { action_1: '强力射击', action_2: '直线射击', action_3: '直线射击预备' } },
+  '歌曲循环': 
+   { actions: 
+      { action_1: '放浪神的小步舞曲',
+        action_2: '贤者的叙事谣',
+        action_3: '军神的赞美歌',
+        action_4: '完美音调' } } },
 '机工士': 
 { '机工子弹连': 
    { actions: 
@@ -334,7 +341,8 @@ const special = { '石-风': 'redmage.xml',
 '机工子弹连': 'mechanist.xml',
 '抽卡-重抽': 'astrologian.xml',
 '出卡-小奥秘卡': 'astrologian2.xml',
-'自动发卡(测试)': 'ast_auto_play.xml' }
+'自动发卡(测试)': 'ast_auto_play.xml',
+'歌曲循环': 'bard.xml' }
 
 
 
