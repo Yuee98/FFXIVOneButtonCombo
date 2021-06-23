@@ -113,7 +113,10 @@ const actions = { '骑士':
   '影牙-背刺': { actions: { action_1: '影牙', action_2: '攻其不备', action_3: '水遁之术' } },
   'AOE连': 
    { actions: { action_1: '血雨飞花', action_2: '八卦无刃杀' },
-     key_levels: [ 52 ] } },
+     key_levels: [ 52 ] },
+  '天之印': { actions: { action_1: '天之印', action_2: '忍术', action_3: '结印' } },
+  '地之印': { actions: { action_1: '地之印', action_2: '忍术', action_3: '结印' } },
+  '人之印': { actions: { action_1: '人之印', action_2: '忍术', action_3: '结印' } } },
 '武僧': 
 { '一键军体拳': 
    { actions: 
@@ -342,7 +345,10 @@ const special = { '石-风': 'redmage.xml',
 '抽卡-重抽': 'astrologian.xml',
 '出卡-小奥秘卡': 'astrologian2.xml',
 '自动发卡(测试)': 'ast_auto_play.xml',
-'歌曲循环': 'bard.xml' }
+'歌曲循环': 'bard.xml',
+'天之印': 'ninja.xml',
+'地之印': 'ninja.xml',
+'人之印': 'ninja.xml' }
 
 
 
