@@ -5,7 +5,7 @@
     <Triggers>
       <Trigger Enabled="true" Name="%action_1%" Id="%id_action_1%" RegularExpression="^.{14} 1F:[^:]*:[^:]*:21:((?&lt;seal2&gt;[0-9])0(?&lt;seal1&gt;[0-9])0?(?&lt;card&gt;[0-9])00:(0(?&lt;seal3&gt;[0-9])|[^0]([^:]+?))|(?&lt;seal1&gt;[0-9])0(?&lt;card&gt;[0-9])00:|(?&lt;card&gt;.?)00:)">
         <Actions>
-          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_1% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+          <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_1%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="true" Grouping="Or">
               <ConditionGroup Enabled="true" Grouping="And">
                 <ConditionGroup Enabled="true" Grouping="Or">
@@ -44,7 +44,7 @@
             </Condition>
             <Conditions />
           </Action>
-          <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_2% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+          <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_2%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="true" Grouping="Or">
               <ConditionGroup Enabled="true" Grouping="And">
                 <ConditionGroup Enabled="true" Grouping="Or">
