@@ -303,6 +303,7 @@ const actions = { '骑士':
 '白魔法师': { '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '复活', action_3: '即刻咏唱' } } },
 '学者': 
 { '以太-吸收': { actions: { action_1: '以太超流', action_2: '能量吸收', action_3: '以太超流' } },
+  '祥光-慰藉': { actions: { action_1: '异想的祥光', action_2: '慰藉' } },
   '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '复生', action_3: '即刻咏唱' } } },
 '占星师': 
 { '抽卡-重抽': { actions: { action_1: '抽卡', action_2: '重抽' } },
@@ -357,7 +358,8 @@ const special = { '石-风': 'redmage.xml',
 '歌曲循环': 'bard.xml',
 '天之印': 'ninja.xml',
 '地之印': 'ninja.xml',
-'人之印': 'ninja.xml' }
+'人之印': 'ninja.xml',
+'祥光-慰藉': 'scholar.xml' }
 
 
 

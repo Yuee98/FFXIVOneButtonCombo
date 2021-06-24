@@ -30,15 +30,15 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 
 2. 选择职业和连击
 
-    ![image](./image/选择.png)
+    ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/选择.png)
 
 3. 选择设置该连击的键位和操作方式，点击生成
 
-    ![image](./image/设置.png)
+    ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/设置.png)
 
 4. 复制到剪切板，导入Triggernometry
 
-    ![image](./image/导入.png)
+    ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/导入.png)
 
 
 
@@ -51,7 +51,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 1. 选择 “其他”-“重置”
 2. 选择操作方式
 
-    ![image](./image/重置.png)
+    ![image](https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/重置.png)
 3. 游戏内编写宏，格式为
     > /e reset 备份的热键栏->当前热键栏
     
@@ -82,7 +82,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 </ul>
 </li>
 <li><p>预览</p>
-<p><img src="./image/骑士.gif" alt="image"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/骑士.gif" alt="image"></p>
 </li>
 </ul>
 </details>
@@ -99,7 +99,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 </ul>
 </li>
 <li><p>预览</p>
-<p><img src="./image/战士.gif" alt="image"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/战士.gif" alt="image"></p>
 </li>
 </ul>
 </details>
@@ -121,7 +121,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 </ul>
 </li>
 <li><p>预览</p>
-<p><img src="./image/黑骑.gif" alt="image"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/黑骑.gif" alt="image"></p>
 </li>
 </ul>
 </details>
@@ -143,7 +143,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 </ul>
 </li>
 <li><p>预览</p>
-<p><img src="./image/枪刃.gif" alt="image"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/枪刃.gif" alt="image"></p>
 </li>
 </ul>
 </details>
@@ -166,7 +166,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 </ul>
 </li>
 <li><p>预览</p>
-<p><img src="./image/龙骑.gif" alt="image"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/龙骑.gif" alt="image"></p>
 </li>
 </ul>
 </details>
@@ -192,7 +192,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 </ul>
 </li>
 <li><p>预览</p>
-<p><img src="./image/忍者0.gif" alt="image">  <img src="./image/忍者1.gif" alt="image"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/忍者0.gif" alt="image">  <img src="https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/忍者1.gif" alt="image"></p>
 </li>
 </ul>
 </details>
@@ -213,7 +213,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 </ul>
 </li>
 <li><p>预览</p>
-<p><img src="./image/武僧0.gif" alt="image">  <img src="./image/武僧1.gif" alt="image"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/武僧0.gif" alt="image">  <img src="https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/武僧1.gif" alt="image"></p>
 </li>
 </ul>
 </details>
@@ -236,7 +236,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 </ul>
 </li>
 <li><p>预览</p>
-<p><img src="./image/武士.gif" alt="image"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/武士.gif" alt="image"></p>
 </li>
 </ul>
 </details>
@@ -257,7 +257,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 </ul>
 </li>
 <li><p>预览</p>
-<p><img src="./image/诗人.gif" alt="image"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/诗人.gif" alt="image"></p>
 </li>
 </ul>
 </details>
@@ -284,7 +284,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 </ul>
 </li>
 <li><p>预览</p>
-<p><img src="./image/机工.gif" alt="image"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/机工.gif" alt="image"></p>
 </li>
 </ul>
 </details>
@@ -303,7 +303,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 </ul>
 </li>
 <li><p>预览</p>
-<p><img src="./image/舞者.gif" alt="image"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/舞者.gif" alt="image"></p>
 </li>
 </ul>
 </details>
@@ -331,7 +331,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 </ul>
 </li>
 <li><p>预览</p>
-<p><img src="./image/黑魔.gif" alt="image"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/黑魔.gif" alt="image"></p>
 </li>
 </ul>
 </details>
@@ -357,7 +357,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 </ul>
 </li>
 <li><p>预览</p>
-<p><img src="./image/召唤0.gif" alt="image">  <img src="./image/召唤1.gif" alt="image"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/召唤0.gif" alt="image">  <img src="https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/召唤1.gif" alt="image"></p>
 </li>
 </ul>
 </details>
@@ -384,7 +384,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 </ul>
 </li>
 <li><p>预览</p>
-<p><img src="./image/赤魔.gif" alt="image"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/赤魔.gif" alt="image"></p>
 </li>
 </ul>
 </details>
@@ -396,7 +396,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 </ul>
 </li>
 <li><p>预览</p>
-<p><img src="./image/白魔.gif" alt="image"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/白魔.gif" alt="image"></p>
 </li>
 </ul>
 </details>
@@ -416,7 +416,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 </ul>
 </li>
 <li><p>预览</p>
-<p><img src="./image/学者.gif" alt="image"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/学者.gif" alt="image"></p>
 </li>
 </ul>
 </details>
@@ -442,7 +442,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 </ul>
 </li>
 <li><p>预览</p>
-<p><img src="./image/占星.gif" alt="image"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Yuee98/FFXIVOneButtonCombo@master/image/占星.gif" alt="image"></p>
 </li>
 </ul>
 </details>
