@@ -1,6 +1,8 @@
 # 最终幻想14一键连击生成器
 FFXIV one button combo based on Triggernometry and PostNamazu
 ### 地址: [[点击这里](https://ffxiv-one-button-combo.vercel.app/)] [[或者这里](https://yuee98.github.io/FFXIVOneButtonCombo/)]
+
+### 视频预览: [[bilibili](https://www.bilibili.com/video/BV1av411L7xG)]
 ****
 
 
@@ -24,7 +26,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 [Triggernometry](https://github.com/paissaheavyindustries/Triggernometry)
 和
 [PostNamazu](https://github.com/Natsukage/PostNamazu/) ([鲶鱼精邮差](https://nga.178.com/read.php?tid=19724323))
-插件
+插件，其中**Triggernometry版本需要大于(不能等于) 1.1.3.1**
 
 1. [[点击这里](https://ffxiv-one-button-combo.vercel.app/)] [[或者这里](https://yuee98.github.io/FFXIVOneButtonCombo/)]
 
