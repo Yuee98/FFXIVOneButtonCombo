@@ -436,7 +436,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 <li>花色重复时会自动改发小奥秘卡</li>
 <li>根据职业远近发对应卡</li>
 <li>避免同一角色卡片覆盖</li>
-<li>详细设置见<a href="./docs/ast_auto_play.doc">这里</a></li>
+<li>详细设置见<a href="./docs/ast_auto_play.md">这里</a></li>
 </ul>
 </li>
 <li>即刻复活<ul>
