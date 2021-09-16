@@ -159,7 +159,7 @@
           <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
         </Condition>
       </Trigger>
-      <Trigger Enabled="true" Name="var" Id="%id_action_7%" RegularExpression="^.{14} 1F:[^:]*:[^:]*:[^:]*22:(?&lt;sen&gt;[0-7]?)(0(?&lt;med&gt;[0-3]))?.{2}:">
+      <Trigger Enabled="true" Name="var" Id="%id_action_7%" RegularExpression="^.{14} 1F:[^:]*:[^:]*:[^:]*22:((?&lt;sen&gt;[0-7])0)?(?&lt;med&gt;[0-3]?).{2}:">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetNumeric" VariableName="%action_3%" VariableExpression="floor(${sen}/4)%2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
             <Condition Enabled="false" Grouping="Or" />
