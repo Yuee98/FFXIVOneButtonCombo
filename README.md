@@ -3,6 +3,8 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 ### 地址: [[点击这里](https://ffxiv-one-button-combo.vercel.app/)] [[或者这里](https://yuee98.github.io/FFXIVOneButtonCombo/)]
 
 ### 视频预览: [[bilibili](https://www.bilibili.com/video/BV1av411L7xG)]
+
+### 6.0 更新: 国服开放6.0后根据我满级的进度更新
 ****
 
 
