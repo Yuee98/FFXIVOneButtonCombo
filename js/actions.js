@@ -41,7 +41,7 @@ const actions = { '骑士':
         action_3: '暴风碎',
         action_4: '暴风斩' },
      key_levels: [ 4, 50 ] },
-  '解放-锯爆': { actions: { action_1: '原初的解放', action_2: '裂石飞环', action_3: '原初的解放' } },
+  '解放-崩裂': { actions: { action_1: '原初的解放', action_2: '蛮荒崩裂', action_3: '原初的解放' } },
   'AOE连': 
    { actions: { action_1: '超压斧', action_2: '秘银暴风' },
      key_levels: [ 40 ] } },
@@ -58,9 +58,9 @@ const actions = { '骑士':
 { '基础连': 
    { actions: { action_1: '利刃斩', action_2: '残暴弹', action_3: '迅连斩' },
      key_levels: [ 4, 26 ] },
-  '子弹连': 
-   { actions: { action_1: '烈牙', action_2: '猛兽爪', action_3: '凶禽爪' },
-     key_levels: [ 60, 60 ] },
+//   '子弹连': 
+//    { actions: { action_1: '烈牙', action_2: '猛兽爪', action_3: '凶禽爪' },
+//      key_levels: [ 60, 60 ] },
   '无情-音速破': { actions: { action_1: '无情', action_2: '音速破', action_3: '无情' } },
   'AOE连': 
    { actions: { action_1: '恶魔切', action_2: '恶魔杀' },
@@ -77,7 +77,9 @@ const actions = { '骑士':
         action_4: '樱花怒放',
         action_5: '龙牙龙爪',
         action_6: '龙眼雷电',
-        action_7: '龙牙龙爪效果提高' },
+        action_7: '龙牙龙爪预备',
+        action_8: '苍穹刺',
+        action_9: '樱花缭乱' },
      key_levels: [ 4, 26 ] },
   '樱花连': 
    { actions: 
@@ -87,7 +89,9 @@ const actions = { '骑士':
         action_4: '直刺',
         action_5: '龙尾大回旋',
         action_6: '龙眼雷电',
-        action_7: '龙尾大回旋效果提高' },
+        action_7: '龙尾大回旋预备',
+        action_8: '樱花缭乱',
+        action_9: '苍穹刺' },
      key_levels: [ 18, 50 ] },
   '高跳-幻象冲': { actions: { action_1: '高跳', action_2: '幻象冲', action_3: '幻象冲预备' } },
   'AOE连': 
@@ -117,50 +121,50 @@ const actions = { '骑士':
   '天之印': { actions: { action_1: '天之印', action_2: '忍术', action_3: '结印' } },
   '地之印': { actions: { action_1: '地之印', action_2: '忍术', action_3: '结印' } },
   '人之印': { actions: { action_1: '人之印', action_2: '忍术', action_3: '结印' } } },
-'武僧': 
-{ '一键军体拳': 
-   { actions: 
-      { action_1: '连击',
-        action_2: '正拳',
-        action_3: '破碎拳',
-        action_4: '双龙脚',
-        action_5: '双掌打',
-        action_6: '崩拳',
-        action_7: '魔猿形',
-        action_8: '盗龙形',
-        action_9: '猛豹形',
-        action_10: '震脚',
-        action_11: '连击效果提高' } },
-  '背身位': 
-   { actions: 
-      { action_1: '连击',
-        action_2: '正拳',
-        action_3: '破碎拳',
-        action_4: '魔猿形',
-        action_5: '盗龙形',
-        action_6: '猛豹形',
-        action_7: '震脚',
-        action_8: '无相身形' } },
-  '侧身位': 
-   { actions: 
-      { action_1: '双龙脚',
-        action_2: '双掌打',
-        action_3: '崩拳',
-        action_4: '魔猿形',
-        action_5: '盗龙形',
-        action_6: '猛豹形',
-        action_7: '震脚',
-        action_8: '无相身形' } },
-  '武僧AOE': 
-   { actions: 
-      { action_1: '破坏神冲',
-        action_2: '四面脚',
-        action_3: '地烈劲',
-        action_4: '魔猿形',
-        action_5: '盗龙形',
-        action_6: '猛豹形',
-        action_7: '震脚',
-        action_8: '无相身形' } } },
+// '武僧': 
+// { '一键军体拳': 
+//    { actions: 
+//       { action_1: '连击',
+//         action_2: '正拳',
+//         action_3: '破碎拳',
+//         action_4: '双龙脚',
+//         action_5: '双掌打',
+//         action_6: '崩拳',
+//         action_7: '魔猿形',
+//         action_8: '盗龙形',
+//         action_9: '猛豹形',
+//         action_10: '震脚',
+//         action_11: '连击效果提高' } },
+//   '背身位': 
+//    { actions: 
+//       { action_1: '连击',
+//         action_2: '正拳',
+//         action_3: '破碎拳',
+//         action_4: '魔猿形',
+//         action_5: '盗龙形',
+//         action_6: '猛豹形',
+//         action_7: '震脚',
+//         action_8: '无相身形' } },
+//   '侧身位': 
+//    { actions: 
+//       { action_1: '双龙脚',
+//         action_2: '双掌打',
+//         action_3: '崩拳',
+//         action_4: '魔猿形',
+//         action_5: '盗龙形',
+//         action_6: '猛豹形',
+//         action_7: '震脚',
+//         action_8: '无相身形' } },
+//   '武僧AOE': 
+//    { actions: 
+//       { action_1: '破坏神冲',
+//         action_2: '四面脚',
+//         action_3: '地烈劲',
+//         action_4: '魔猿形',
+//         action_5: '盗龙形',
+//         action_6: '猛豹形',
+//         action_7: '震脚',
+//         action_8: '无相身形' } } },
 '武士': 
 { '花连': 
    { actions: 
@@ -195,26 +199,38 @@ const actions = { '骑士':
       { action_1: '风雅',
         action_2: '樱花',
         action_3: '满月',
-        action_4: '明镜止水' },
+        action_4: '明镜止水',
+        action_5: '风光' },
      key_levels: [ 45 ] },
   'AOE月连': 
    { actions: 
       { action_1: '风雅',
         action_2: '满月',
         action_3: '樱花',
-        action_4: '明镜止水' },
+        action_4: '明镜止水',
+        action_5: '风光' },
      key_levels: [ 35 ] },
-  '心眼-慈眼': { actions: { action_1: '心眼', action_2: '慈眼', action_3: '开眼' } },
-  '震天-星眼': { actions: { action_1: '必杀剑·震天', action_2: '必杀剑·星眼', action_3: '开眼' } },
+//   '心眼-慈眼': { actions: { action_1: '心眼', action_2: '慈眼', action_3: '开眼' } },
+//   '震天-星眼': { actions: { action_1: '必杀剑·震天', action_2: '必杀剑·星眼', action_3: '开眼' } },
   '默想-照破': { actions: { action_1: '默想', action_2: '照破' } } },
+'钐镰客':
+{
+   '基础连': { actions: { action_1: '切割', action_2: '增盈切割', action_3: '地狱切割' },
+   key_levels: [ 5, 30 ] },
+   'AOE连': { actions: { action_1: '旋转钐割', action_2: '噩梦钐割'},
+   key_levels: [ 25 ] },
+   '绞决-缢杀': { actions: { action_1: '绞决', action_2: '缢杀', action_3: '缢杀效果提高' }}
+},
+
 '诗人': 
 { '强力-辉煌': { actions: { action_1: '强力射击', action_2: '直线射击', action_3: '直线射击预备' } },
-  '歌曲循环': 
-   { actions: 
-      { action_1: '放浪神的小步舞曲',
-        action_2: '贤者的叙事谣',
-        action_3: '军神的赞美歌',
-        action_4: '完美音调' } } },
+//   '歌曲循环': 
+//    { actions: 
+//       { action_1: '放浪神的小步舞曲',
+//         action_2: '贤者的叙事谣',
+//         action_3: '军神的赞美歌',
+//         action_4: '完美音调' } } 
+      },
 '机工士': 
 { '机工子弹连': 
    { actions: 
@@ -246,27 +262,31 @@ const actions = { '骑士':
         action_3: '喷泉',
         action_4: '逆瀑泻',
         action_5: '坠喷泉' } },
-  '逆-瀑泻': { actions: { action_1: '瀑泻', action_2: '逆瀑泻', action_3: '逆瀑泻预备' } },
-  '坠-喷泉': { actions: { action_1: '喷泉', action_2: '坠喷泉', action_3: '坠喷泉预备' } },
-  '升-风车': { actions: { action_1: '风车', action_2: '升风车', action_3: '升风车预备' } },
-  '落-血雨': { actions: { action_1: '落刃雨', action_2: '落血雨', action_3: '落血雨预备' } },
+  '逆-瀑泻': { actions: { action_1: '瀑泻', action_2: '逆瀑泻', action_3: '对称投掷' } },
+  '坠-喷泉': { actions: { action_1: '喷泉', action_2: '坠喷泉', action_3: '非对称投掷' } },
+  '升-风车': { actions: { action_1: '风车', action_2: '升风车', action_3: '对称投掷' } },
+  '落-血雨': { actions: { action_1: '落刃雨', action_2: '落血雨', action_3: '非对称投掷' } },
   '扇舞序-急': { actions: { action_1: '扇舞·序', action_2: '扇舞·急', action_3: '扇舞·急预备' } },
-  '扇舞破-急': { actions: { action_1: '扇舞·破', action_2: '扇舞·急', action_3: '扇舞·急预备' } } },
+  '扇舞破-急': { actions: { action_1: '扇舞·破', action_2: '扇舞·急', action_3: '扇舞·急预备' } },
+  '百花-终': { actions: { action_1: '百花争艳', action_2: '扇舞·终', action_3: '扇舞·终预备' } },
+  '探戈-流星舞': { actions: { action_1: '进攻之探戈', action_2: '流星舞', action_3: '流星舞预备' } } },
 '黑魔法师': 
-{ '火3-冰3': { actions: { action_1: '爆炎', action_2: '冰封' } },
-  '天语-冰4-火4': { actions: { action_1: '冰澈', action_2: '炽炎', action_3: '天语', action_4: '绝望' } },
-  '异言-绝望': { actions: { action_1: '异言', action_2: '绝望' } },
-  '暴雷-火1': { actions: { action_1: '暴雷', action_2: '火炎', action_3: '爆炎', action_4: '火苗' } } },
+{ '(冰)火3-(火)冰3': { actions: { action_1: '爆炎', action_2: '冰封' } },
+  '(冰)冰2-(火)火2': { actions: { action_1: '冰冻', action_2: '烈炎' } },
+  '(冰)冰4-(火)火4': { actions: { action_1: '冰澈', action_2: '炽炎', action_3: '绝望', action_4: '4000'  } },
+  '(冰)玄冰-(火)绝望': { actions: { action_1: '玄冰', action_2: '绝望' } },
+//   '暴雷-火1': { actions: { action_1: '暴雷', action_2: '火炎', action_3: '爆炎', action_4: '火苗' } } 
+},
 '召唤师': 
 { '吸收-溃烂': { actions: { action_1: '能量吸收', action_2: '溃烂爆发', action_3: '以太超流' } },
   '抽取-核爆': { actions: { action_1: '能量抽取', action_2: '痛苦核爆', action_3: '以太超流' } },
-  '鸟1-鸟2': { actions: { action_1: '毁荡', action_2: '迸裂', action_3: '灵泉' } },
-  '一键附体': 
-   { actions: 
-      { action_1: '龙神附体',
-        action_2: '死星核爆',
-        action_3: '龙神召唤',
-        action_4: '龙神迸发' } },
+//   '鸟1-鸟2': { actions: { action_1: '毁荡', action_2: '迸裂', action_3: '灵泉' } },
+//   '一键附体': 
+//    { actions: 
+//       { action_1: '龙神附体',
+//         action_2: '死星核爆',
+//         action_3: '龙神召唤',
+//         action_4: '龙神迸发' } },
   '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '复生', action_3: '即刻咏唱' } } },
 '赤魔法师': 
 { '魔三连': 
@@ -285,7 +305,8 @@ const actions = { '骑士':
         action_4: '赤核爆',
         action_5: '赤神圣',
         action_6: '连续咏唱',
-        action_7: '即刻咏唱' },
+        action_7: '即刻咏唱',
+        action_8: '促进' },
      key_levels: [ 70 ] },
   '火-雷': 
    { actions: 
@@ -295,10 +316,33 @@ const actions = { '骑士':
         action_4: '赤核爆',
         action_5: '赤神圣',
         action_6: '连续咏唱',
-        action_7: '即刻咏唱' },
+        action_7: '即刻咏唱',
+        action_8: '促进' },
      key_levels: [ 70 ] },
-  '风-散碎': { actions: { action_1: '赤烈风', action_2: '散碎', action_3: '(连续|即刻)咏唱' } },
-  '雷-散碎': { actions: { action_1: '赤震雷', action_2: '散碎', action_3: '(连续|即刻)咏唱' } },
+  '风-散碎': 
+  { actions: 
+     { action_1: '赤烈风',
+       action_2: '散碎',
+       action_3: '魔连攻',
+       action_4: '赤核爆',
+       action_5: '赤神圣',
+       action_6: '连续咏唱',
+       action_7: '即刻咏唱',
+       action_8: '促进' },
+    key_levels: [ 70 ] }, 
+   //  { actions: { action_1: '赤烈风', action_2: '散碎', action_3: '(连续|即刻)咏唱' } },
+  '雷-散碎': 
+  { actions: 
+     { action_1: '赤震雷',
+       action_2: '散碎',
+       action_3: '魔连攻',
+       action_4: '赤核爆',
+       action_5: '赤神圣',
+       action_6: '连续咏唱',
+       action_7: '即刻咏唱',
+       action_8: '促进' },
+    key_levels: [ 70 ] }, 
+   //  { actions: { action_1: '赤震雷', action_2: '散碎', action_3: '(连续|即刻)咏唱' } },
   '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '赤复活', action_3: '即刻咏唱' } } },
 '白魔法师': { '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '复活', action_3: '即刻咏唱' } } },
 '学者': 
@@ -306,26 +350,30 @@ const actions = { '骑士':
   '祥光-慰藉': { actions: { action_1: '异想的祥光', action_2: '慰藉' } },
   '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '复生', action_3: '即刻咏唱' } } },
 '占星师': 
-{ '抽卡-重抽': { actions: { action_1: '抽卡', action_2: '重抽' } },
-  '出卡-小奥秘卡': { actions: { action_1: '出卡', action_2: '小奥秘卡' } },
-  '自动发卡(测试)': 
-   { actions: 
-      { action_1: '出卡',
-        action_2: '小奥秘卡',
-        action_3: '太阳神之衡',
-        action_4: '放浪神之箭',
-        action_5: '战争神之枪',
-        action_6: '世界树之干',
-        action_7: '河流神之瓶',
-        action_8: '建筑神之塔',
-        action_9: '王冠之领主',
-        action_10: '王冠之贵妇' } },
+{ 
+//   '抽卡-重抽': { actions: { action_1: '抽卡', action_2: '重抽' } },
+//   '出卡-小奥秘卡': { actions: { action_1: '出卡', action_2: '小奥秘卡' } },
+//   '自动发卡(测试)': 
+//    { actions: 
+//       { action_1: '出卡',
+//         action_2: '小奥秘卡',
+//         action_3: '太阳神之衡',
+//         action_4: '放浪神之箭',
+//         action_5: '战争神之枪',
+//         action_6: '世界树之干',
+//         action_7: '河流神之瓶',
+//         action_8: '建筑神之塔',
+//         action_9: '王冠之领主',
+//         action_10: '王冠之贵妇' } },
   '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '生辰', action_3: '即刻咏唱' } } },
+'贤者': { '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '复苏', action_3: '即刻咏唱' } } },
 '其他': { '重置': { actions: null } } }
 
  
 const special = { '石-风': 'redmage.xml',
 '火-雷': 'redmage.xml',
+'风-散碎': 'redmage.xml',
+'雷-散碎': 'redmage.xml',
 '魔三连': 'redmage2.xml',
 '王权赎罪连': 'paladin.xml',
 '直刺连': 'dragoon.xml',
@@ -340,10 +388,11 @@ const special = { '石-风': 'redmage.xml',
 '侧身位': 'monk.xml',
 '武僧AOE': 'monk.xml',
 '一键军体拳': 'monk2.xml',
-'火3-冰3': 'blackmage.xml',
-'异言-绝望': 'blackmage.xml',
-'暴雷-火1': 'blackmage3.xml',
-'天语-冰4-火4': 'blackmage2.xml',
+'(冰)火3-(火)冰3': 'blackmage.xml',
+'(冰)冰2-(火)火2': 'blackmage.xml',
+'(冰)玄冰-(火)绝望': 'blackmage.xml',
+// '暴雷-火1': 'blackmage3.xml',
+'(冰)冰4-(火)火4': 'blackmage2.xml',
 '一键附体': 'summoner.xml',
 '鸟1-鸟2': 'summoner2.xml',
 '标准舞步': 'dancer.xml',
@@ -363,10 +412,11 @@ const special = { '石-风': 'redmage.xml',
 
 
 
-const changeWithBuff = ['风-散碎', '雷-散碎', '安魂-悔罪', '高跳-幻象冲',
+const changeWithBuff = ['安魂-悔罪', '高跳-幻象冲',
  '强力-辉煌', '即刻复活', '扇舞序-急', '扇舞破-急' , 
  '吸收-溃烂', '鸟1-鸟2', '附体-核爆', '以太-吸收', '三段-断绝', '天地人-命水',
- '影牙-背刺', '震天-星眼', '心眼-慈眼', '无情-音速破', '解放-锯爆', '血乱-拜爆',
- '抽取-核爆',  '逆-瀑泻', '坠-喷泉', '升-风车', '落-血雨'] 
+ '影牙-背刺', '震天-星眼', '心眼-慈眼', '无情-音速破', '解放-崩裂', '血乱-拜爆',
+ '抽取-核爆',  '逆-瀑泻', '坠-喷泉', '升-风车', '落-血雨', '百花-终', '百花-终',
+ '探戈-流星舞', '绞决-缢杀'] 
 
-const changeWithCD = ['超荷-热冲击', '精雕-海胆']
+const changeWithCD = ['精雕-海胆']

@@ -3,7 +3,7 @@
   <ExportedFolder Id="%id_combo%" Name="%combo%" Enabled="true">
     <Folders />
     <Triggers>
-      <Trigger Enabled="true" Name="%action_4%" Id="%id_action_4%" RegularExpression="^.{14} 1F:[^:]*:[^:]*:[^:]*?17:(?&lt;song&gt;.?)[^:]{2}:">
+      <Trigger Enabled="true" Name="%action_4%" Id="%id_action_4%" RegularExpression="^.{14} Gauge 1F:[^:]*:[^:]*?17:(?&lt;song&gt;.?)[^:]{2}:">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_1%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="true" Grouping="Or">

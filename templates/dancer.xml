@@ -3,19 +3,17 @@
   <ExportedFolder Id="%id_combo%" Name="%combo%" Enabled="true">
     <Folders />
     <Triggers>
-      <Trigger Enabled="true" Name="%action_1% end" Id="%id_action_2%" RegularExpression="^.{14} 1F:.{8}:(?&lt;player&gt;[^:]+?):(?&lt;s1&gt;[1-4])[^:]*:20{5}(?&lt;s2&gt;[1-4]):">
+      <Trigger Enabled="true" Name="%action_1% end" Id="%id_action_2%" RegularExpression="^.{14} Gauge 1F:[^:]*:(?&lt;s1&gt;[1-4])[^:]*:20{5}(?&lt;s2&gt;[1-4]):">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_1%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Action>
         </Actions>
-        <Condition Enabled="true" Grouping="Or">
-          <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-        </Condition>
+        <Condition Enabled="false" Grouping="Or" />
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="%action_1% on" Id="%id_action_1%" RegularExpression="^.{14} 1F:.{8}:(?&lt;player&gt;[^:]+?):((?&lt;step&gt;[1-4])[^:]*:0[1-4]:|[1-4][^:]*:10{5}(?&lt;step&gt;[1-4]):)">>
+      <Trigger Enabled="true" Name="%action_1% on" Id="%id_action_1%" RegularExpression="^.{14} Gauge 1F:[^:]*:((?&lt;step&gt;[1-4])[^:]*:0[1-4]:|[1-4][^:]*:10{5}(?&lt;step&gt;[1-4]):)">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_2%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="true" Grouping="Or">
@@ -42,12 +40,10 @@
             <Conditions />
           </Action>
         </Actions>
-        <Condition Enabled="true" Grouping="Or">
-          <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-        </Condition>
+        <Condition Enabled="false" Grouping="Or" />
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="%action_1% off" Id="%id_action_3%" RegularExpression="^.{14} 1E:.{8}:(?&lt;player&gt;.+?) loses the effect of %action_1% ">
+      <Trigger Enabled="true" Name="%action_1% off" Id="%id_action_3%" RegularExpression="^.{14} StatusRemove 1E:[^:]*:%action_1%:(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?)">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_1%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="false" Grouping="Or" />

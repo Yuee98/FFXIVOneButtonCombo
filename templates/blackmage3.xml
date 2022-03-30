@@ -3,7 +3,7 @@
   <ExportedFolder Id="%id_combo%" Name="%combo%" Enabled="true">
     <Folders />
     <Triggers>
-      <Trigger Enabled="true" Name="%action_1%-%action_2%" Id="%id_action_1%" RegularExpression="^.{14} 1F:[^:]*:[^:]*:[^:]*19:[^:]*?(?&lt;n&gt;[^:]{0,2})[^:]{2}:" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_1%-%action_2%" Id="%id_action_1%" RegularExpression="^.{14} Gauge 1F:[^:]*:[^:]*19:[^:]*?(?&lt;n&gt;[^:]{0,2})[^:]{2}:" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_1%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
             <Condition Enabled="true" Grouping="Or">
@@ -32,7 +32,7 @@
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
       </Trigger>
-      <Trigger Enabled="true" Name="%action_4%" Id="%id_action_2%" RegularExpression="^.{14} 1(?&lt;effect&gt;A|E):.{8}:(?&lt;player&gt;.+?) (gain|lose)s the effect of %action_4% from .+?(\.| for (?&lt;duration&gt;[\d+.]*))" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_4%" Id="%id_action_2%" RegularExpression="^.{14} StatusAdd 1(?&lt;effect&gt;A|E):[^:]*:%action_4%:(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?)" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetNumeric" VariableName="t_Firestarter" VariableExpression="${duration}*1000+${_timestampms}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
             <Condition Enabled="true" Grouping="Or">
