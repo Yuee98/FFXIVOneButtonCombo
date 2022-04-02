@@ -43,7 +43,7 @@
         <Condition Enabled="false" Grouping="Or" />
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="%action_1% off" Id="%id_action_3%" RegularExpression="^.{14} StatusRemove 1E:[^:]*:%action_1%:(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?)">
+      <Trigger Enabled="true" Name="%action_1% off" Id="%id_action_3%" RegularExpression="^.{14} StatusRemove 1E:[^:]*:%action_1%:(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_1%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="false" Grouping="Or" />
