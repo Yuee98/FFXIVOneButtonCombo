@@ -3,11 +3,11 @@
   <ExportedFolder Id="%id_combo%" Name="%combo%" Enabled="true">
     <Folders />
     <Triggers>
-      <Trigger Enabled="true" Name="%action_1%-%action_2%" Id="%id_action_1%" RegularExpression="^.{14} Gauge 1F*:[^:]*:[^:]*19:[^:]*?(?&lt;n&gt;[^:]{0,2})[^:]{2}:[^:]*(?&lt;eno&gt;0|1):" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_1%-%action_2%" Id="%id_action_1%" RegularExpression="^.{14} Gauge 1F*:[^:]*:[^:]*19:[^:]*?(?&lt;n&gt;[^:]{0,2})[^:]{2}:[^:]*(?&lt;eno&gt;[0-3]):" PrevActions="Interrupt">
         <Actions>
-          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_2%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_3%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
             <Condition Enabled="true" Grouping="Or">
-              <ConditionSingle Enabled="true" ExpressionL="${eno}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${eno}%2" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
               <ConditionSingle Enabled="true" ExpressionL="${n}" ExpressionTypeL="String" ExpressionR="" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
               <ConditionSingle Enabled="true" ExpressionL="hex2dec(${n})" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
@@ -20,7 +20,7 @@
                 <ConditionSingle Enabled="true" ExpressionL="hex2dec(${n})" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                 <ConditionSingle Enabled="true" ExpressionL="${n}" ExpressionTypeL="String" ExpressionR="" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
               </ConditionGroup>
-              <ConditionSingle Enabled="true" ExpressionL="${eno}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${eno}%2" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
             <Conditions />
           </Action>
@@ -28,7 +28,7 @@
             <Condition Enabled="true" Grouping="And">
               <ConditionSingle Enabled="true" ExpressionL="hex2dec(${n})" ExpressionTypeL="Numeric" ExpressionR="128" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
               <ConditionSingle Enabled="true" ExpressionL="hex2dec(${n})" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
-              <ConditionSingle Enabled="true" ExpressionL="${eno}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${eno}%2" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
               <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].currentmp}" ExpressionTypeL="Numeric" ExpressionR="4000" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
             </Condition>
             <Conditions />
@@ -37,11 +37,11 @@
         <Condition Enabled="false" Grouping="Or" />
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="%action_3%" Id="%id_action_2%" RegularExpression="^.{14} StartsCasting 14:[^:]*:(?&lt;player&gt;[^:]+?):[^:]*:%action_2%" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_4%" Id="%id_action_2%" RegularExpression="^.{14} StartsCasting 14:[^:]*:(?&lt;player&gt;[^:]+?):[^:]*:%action_2%" PrevActions="Interrupt">
         <Actions>
-          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_3%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_4%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
             <Condition Enabled="true" Grouping="And">
-              <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].currentmp}" ExpressionTypeL="Numeric" ExpressionR="%action_4%" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+              <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].currentmp}" ExpressionTypeL="Numeric" ExpressionR="%action_5%" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
               <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="72" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
             </Condition>
             <Conditions />
@@ -52,7 +52,7 @@
         </Condition>
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="%action_3% done" Id="%id_action_3%" RegularExpression="^.{14} (AOE)?ActionEffect 1[56]:.{8}:(?&lt;player&gt;[^:]+?):[^:]+:%action_3%">
+      <Trigger Enabled="true" Name="%action_4% done" Id="%id_action_4%" RegularExpression="^.{14} (AOE)?ActionEffect 1[56]:.{8}:(?&lt;player&gt;[^:]+?):[^:]+:%action_4%">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_2%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="false" Grouping="Or" />
