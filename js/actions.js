@@ -50,7 +50,7 @@ const actions = { '骑士':
    { actions: { action_1: '重斩', action_2: '吸收斩', action_3: '噬魂斩' },
      key_levels: [ 2, 26 ] },
   '血乱-拜年': { actions: { action_1: '血乱', action_2: '血溅', action_3: '血乱' } },
-  '精雕-海胆': { actions: { action_1: '精雕怒斩', action_2: '吸血深渊', action_3: '20000' } },
+//   '精雕-海胆': { actions: { action_1: '精雕怒斩', action_2: '吸血深渊', action_3: '20000' } },
   'AOE连': 
    { actions: { action_1: '释放', action_2: '刚魂' },
      key_levels: [ 72 ] } },
@@ -112,9 +112,9 @@ const actions = { '骑士':
         action_3: '强甲破点突',
         action_4: '旋风刃' },
      key_levels: [ 4, 54 ] },
-  '三段-断绝': { actions: { action_1: '梦幻三段', action_2: '断绝', action_3: '断绝预备' } },
+//   '三段-断绝': { actions: { action_1: '梦幻三段', action_2: '断绝', action_3: '断绝预备' } },
   '天地人-命水': { actions: { action_1: '天地人', action_2: '命水', action_3: '水遁之术' } },
-  '影牙-背刺': { actions: { action_1: '影牙', action_2: '攻其不备', action_3: '水遁之术' } },
+//   '影牙-背刺': { actions: { action_1: '影牙', action_2: '攻其不备', action_3: '水遁之术' } },
   'AOE连': 
    { actions: { action_1: '血雨飞花', action_2: '八卦无刃杀' },
      key_levels: [ 52 ] },
