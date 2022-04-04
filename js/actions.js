@@ -275,7 +275,7 @@ const actions = { '骑士':
   '(冰)冰2-(火)火2': { actions: { action_1: '冰冻', action_2: '烈炎', action_3: '烈炎' } },
   '(冰)冰4-(火)火4-绝望': { actions: { action_1: '冰澈', action_2: '炽炎', action_3: '魔罩', action_4: '绝望', action_5: '4000'  } },
   '(冰)灵极魂-(火)绝望': { actions: { action_1: '灵极魂', action_2: '绝望', action_3: '绝望' } },
-  '(冰)玄冰-(火)核爆': { actions: { action_1: '玄冰', action_2: '核爆', action_3: '绝望' } },
+  '(冰)玄冰-(火)核爆': { actions: { action_1: '玄冰', action_2: '核爆', action_3: '核爆' } },
   '(冰)冰1-(火)火1-火苗': { actions: { action_1: '冰结', action_2: '火炎', action_3: '冰结', action_4: '爆炎', action_5: '火苗' } } 
 },
 '召唤师': 
