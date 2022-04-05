@@ -272,7 +272,7 @@ const actions = { '骑士':
   '落-血雨': { actions: { action_1: '落刃雨', action_2: '落血雨', action_3: '非对称投掷' } },
   '扇舞序-急': { actions: { action_1: '扇舞·序', action_2: '扇舞·急', action_3: '扇舞·急预备' } },
   '扇舞破-急': { actions: { action_1: '扇舞·破', action_2: '扇舞·急', action_3: '扇舞·急预备' } },
-  '百花-终': { actions: { action_1: '百花争艳', action_2: '扇舞·终', action_3: '扇舞·终预备' } },
+  '百花-终': { actions: { action_1: '百花争艳', action_2: '扇舞·终', action_3: '扇舞·终' } },
   '探戈-流星舞': { actions: { action_1: '进攻之探戈', action_2: '流星舞', action_3: '流星舞预备' } } },
 '黑魔法师': 
 { '(冰)火3-(火)冰3': { actions: { action_1: '爆炎', action_2: '冰封', action_3: '冰封' } },
