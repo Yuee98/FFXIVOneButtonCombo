@@ -223,7 +223,7 @@ const actions = { '骑士':
    key_levels: [ 5, 30 ] },
    'AOE连': { actions: { action_1: '旋转钐割', action_2: '噩梦钐割'},
    key_levels: [ 25 ] },
-   '绞决-缢杀': { actions: { action_1: '绞决', action_2: '缢杀', action_3: '绞决效果提高', action_4: '缢杀效果提高' }}
+   '绞决-缢杀': { actions: { action_1: '绞决', action_2: '缢杀', action_3: '绞决效果提高', action_4: '缢杀效果提高', action_5: '虚无收割效果提高', action_6: '交错收割效果提高' }}
 },
 
 '诗人': 
