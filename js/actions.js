@@ -221,9 +221,18 @@ const actions = { '骑士':
 {
    '基础连': { actions: { action_1: '切割', action_2: '增盈切割', action_3: '地狱切割' },
    key_levels: [ 5, 30 ] },
-   'AOE连': { actions: { action_1: '旋转钐割', action_2: '噩梦钐割'},
+   'AOE连': { actions: { action_1: '旋转钐割', action_2: '噩梦钐割' },
    key_levels: [ 25 ] },
-   '绞决-缢杀': { actions: { action_1: '绞决', action_2: '缢杀', action_3: '绞决效果提高', action_4: '缢杀效果提高', action_5: '虚无收割效果提高', action_6: '交错收割效果提高' }}
+   '绞决-缢杀-隐匿挥割': { actions: { 
+      action_1: '绞决', 
+      action_2: '缢杀', 
+      action_3: '绞决效果提高', 
+      action_4: '缢杀效果提高', 
+      action_5: '虚无收割效果提高', 
+      action_6: '交错收割效果提高', 
+      action_7: '隐匿挥割', 
+      action_8: '妖异之镰' }},
+   '束缚挥割-断首': { actions: { action_1: '束缚挥割', action_2: '断首', action_3: '妖异之镰' }},
 },
 
 '诗人': 
@@ -393,7 +402,7 @@ const special = { '石-风': 'redmage_base.xml',
 '侧身位': 'monk.xml',
 '武僧AOE': 'monk.xml',
 '一键军体拳': 'monk2.xml',
-'绞决-缢杀': 'reaper_buff.xml',
+'绞决-缢杀-隐匿挥割': 'reaper_buff.xml',
 '(冰)火3-(火)冰3': 'blackmage_base.xml',
 '(冰)冰2-(火)火2': 'blackmage_base.xml',
 '(冰)玄冰-(火)核爆': 'blackmage_base.xml',
@@ -426,6 +435,6 @@ const changeWithBuff = ['安魂-悔罪', '高跳-幻象冲',
  '吸收-溃烂', '鸟1-鸟2', '附体-核爆', '以太-吸收', '三段-断绝', '天地人-命水',
  '影牙-背刺', '震天-星眼', '心眼-慈眼', '无情-音速破', '解放-崩裂', '血乱-拜爆',
  '抽取-核爆',  '逆-瀑泻', '坠-喷泉', '升-风车', '落-血雨', '百花-终', '百花-终',
- '探戈-流星舞'] 
+ '探戈-流星舞', '束缚挥割-断首'] 
 
 const changeWithCD = ['精雕-海胆']
