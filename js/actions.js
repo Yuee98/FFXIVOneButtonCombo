@@ -58,9 +58,14 @@ const actions = { '骑士':
 { '基础连': 
    { actions: { action_1: '利刃斩', action_2: '残暴弹', action_3: '迅连斩' },
      key_levels: [ 4, 26 ] },
-//   '子弹连': 
-//    { actions: { action_1: '烈牙', action_2: '猛兽爪', action_3: '凶禽爪' },
-//      key_levels: [ 60, 60 ] },
+  '子弹连': 
+   { actions: 
+      { action_1: '烈牙', 
+        action_2: '续剑', 
+        action_3: '撕喉预备', 
+        action_4: '裂膛预备', 
+        action_5: '穿目预备' } },
+  '爆发击-超高速': { actions: { action_1: '爆发击', action_2: '超高速', action_3: '超高速预备' } },
   '无情-音速破': { actions: { action_1: '无情', action_2: '音速破', action_3: '无情' } },
   'AOE连': 
    { actions: { action_1: '恶魔切', action_2: '恶魔杀' },
@@ -390,6 +395,7 @@ const special = { '石-风': 'redmage_base.xml',
 '雷-散碎': 'redmage_base.xml',
 '魔三连': 'redmage_3x.xml',
 '王权赎罪连': 'paladin.xml',
+'子弹连': 'gunbreaker.xml',
 '直刺连': 'dragoon.xml',
 '樱花连': 'dragoon.xml',
 '花连': 'samurai_ka.xml',
@@ -435,6 +441,6 @@ const changeWithBuff = ['安魂-悔罪', '高跳-幻象冲',
  '吸收-溃烂', '鸟1-鸟2', '附体-核爆', '以太-吸收', '三段-断绝', '天地人-命水',
  '影牙-背刺', '震天-星眼', '心眼-慈眼', '无情-音速破', '解放-崩裂', '血乱-拜爆',
  '抽取-核爆',  '逆-瀑泻', '坠-喷泉', '升-风车', '落-血雨', '百花-终', '百花-终',
- '探戈-流星舞', '束缚挥割-断首'] 
+ '探戈-流星舞', '束缚挥割-断首', '爆发击-超高速'] 
 
 const changeWithCD = ['精雕-海胆']
