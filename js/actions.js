@@ -227,7 +227,7 @@ const actions = { '骑士':
    '基础连': { actions: { action_1: '切割', action_2: '增盈切割', action_3: '地狱切割' },
    key_levels: [ 5, 30 ] },
    'AOE连': { actions: { action_1: '旋转钐割', action_2: '噩梦钐割' },
-   key_levels: [ 25 ] },
+   key_levels: [ 45 ] },
    '绞决-缢杀-隐匿挥割': { actions: { 
       action_1: '绞决', 
       action_2: '缢杀', 
