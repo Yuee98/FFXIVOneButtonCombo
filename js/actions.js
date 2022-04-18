@@ -99,8 +99,8 @@ const actions = { '骑士':
         action_9: '苍穹刺' },
      key_levels: [ 18, 50 ] },
   '高跳-幻象冲': { actions: { action_1: '高跳', action_2: '幻象冲', action_3: '幻象冲预备' } },
-  'AOE连': 
-   { actions: { action_1: '死天枪', action_2: '音速刺', action_3: '山境酷刑' },
+  '龙骑AOE': 
+   { actions: { action_1: '死天枪', action_2: '音速刺', action_3: '山境酷刑', action_4: '龙眼苍穹' },
      key_levels: [ 62, 72 ] } },
 '忍者': 
 { '普通连': 
@@ -398,6 +398,7 @@ const special = { '石-风': 'redmage_base.xml',
 '子弹连': 'gunbreaker.xml',
 '直刺连': 'dragoon.xml',
 '樱花连': 'dragoon.xml',
+'龙骑AOE': 'dragoon_aoe.xml',
 '花连': 'samurai_ka.xml',
 '月连': 'samurai_getsu.xml',
 '雪连': 'samurai_setsu.xml',
