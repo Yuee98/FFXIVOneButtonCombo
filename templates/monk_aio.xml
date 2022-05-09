@@ -5,7 +5,7 @@
       <Folder Id="%id_action_4%" Name="var" Enabled="true">
         <Folders />
         <Triggers>
-          <Trigger Enabled="true" Name="%action_11%" Id="%id_action_11%" RegularExpression="^.{14} 1(?&lt;effect&gt;A|E):.{8}:(?&lt;player&gt;.+?) (gain|lose)s the effect of %action_11%" PrevActions="Interrupt">
+          <Trigger Enabled="true" Name="%action_11%" Id="%id_action_11%" RegularExpression="^.{14} Status(Add|Remove) 1(?&lt;effect&gt;A|E):[^:]*:%action_11%:(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):" PrevActions="Interrupt">
             <Actions>
               <Action OrderNumber="1" LogLevel="-1" VariableOp="SetNumeric" VariableName="isLeadenFist" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                 <Condition Enabled="true" Grouping="Or">
@@ -25,9 +25,9 @@
             </Condition>
             <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="%action_5%" Id="%id_action_5%" RegularExpression="^.{14} 1A:.{8}:(?&lt;player&gt;.+?) gains the effect of %action_5%" PrevActions="Interrupt">
+          <Trigger Enabled="true" Name="%action_12%" Id="%id_action_5%" RegularExpression="^.{14} StatusAdd 1A:[^:]*:%action_12%:(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):" PrevActions="Interrupt">
             <Actions>
-              <Action OrderNumber="1" LogLevel="-1" VariableOp="SetNumeric" VariableName="timeTwinSnakes" VariableExpression="30000+${_timestampms}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+              <Action OrderNumber="1" LogLevel="-1" VariableOp="SetNumeric" VariableName="timeTwinSnakes" VariableExpression="${duration}+${_timestampms}-3000" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
@@ -37,9 +37,9 @@
             </Condition>
             <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="%action_3%" Id="%id_action_3%" RegularExpression="^.{14} 1A:.{8}:(?&lt;target&gt;.+?) gains the effect of %action_3% from (?&lt;player&gt;.+?) for">
+          <Trigger Enabled="true" Name="%action_3%" Id="%id_action_3%" RegularExpression="^.{14} StatusAdd 1A:[^:]*:%action_3%:(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):">
             <Actions>
-              <Action OrderNumber="1" LogLevel="-1" VariableOp="SetNumeric" VariableName="timeDemolish" VariableExpression="17000+${_timestampms}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+              <Action OrderNumber="1" LogLevel="-1" VariableOp="SetNumeric" VariableName="timeDemolish" VariableExpression="${duration}+${_timestampms}-3000" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
@@ -53,7 +53,7 @@
       </Folder>
     </Folders>
     <Triggers>
-      <Trigger Enabled="true" Name="%action_8%" Id="%id_action_8%" RegularExpression="^.{14} 1A:.{8}:(?&lt;player&gt;.+?) gains the effect of %action_8%" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_8%" Id="%id_action_8%" RegularExpression="^.{14} StatusAdd 1A:[^:]*:%action_8%:(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_2%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
             <Condition Enabled="true" Grouping="Or">
@@ -74,7 +74,7 @@
         </Condition>
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="%action_9%" Id="%id_action_9%" RegularExpression="^.{14} 1A:.{8}:(?&lt;player&gt;.+?) gains the effect of %action_9%" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_9%" Id="%id_action_9%" RegularExpression="^.{14} StatusAdd 1A:[^:]*:%action_9%:(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_3%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
             <Condition Enabled="true" Grouping="Or">
@@ -94,7 +94,7 @@
         </Condition>
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="%action_10%" Id="%id_action_10%" RegularExpression="^.{14} 1A:.{8}:(?&lt;player&gt;.+?) gains the effect of %action_10%" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_10%" Id="%id_action_10%" RegularExpression="^.{14} StatusAdd 1A:[^:]*:%action_10%:(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_1%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="100" RefireInterrupt="True">
             <Condition Enabled="true" Grouping="Or">
@@ -114,7 +114,7 @@
         </Condition>
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="%action_10%on" Id="%id_action_1%" RegularExpression="^.{14} 1[56]:.{8}:(?&lt;player&gt;[^:]+?):[^:]+:%action_10%" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_10%on" Id="%id_action_1%" RegularExpression="^.{14} (AOE)?ActionEffect 1[56]:.{8}:(?&lt;player&gt;[^:]+?):[^:]+:%action_10%" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_1%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
             <Condition Enabled="true" Grouping="Or">
@@ -134,7 +134,7 @@
         </Condition>
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="%action_10%off" Id="%id_action_2%" RegularExpression="^.{14} 1E:.{8}:(?&lt;player&gt;.+?) loses the effect of %action_10%" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_10%off" Id="%id_action_2%" RegularExpression="^.{14} StatusRemove 1E:[^:]*:%action_10%:(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_4%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="100" RefireInterrupt="True">
             <Condition Enabled="true" Grouping="Or">
@@ -148,7 +148,7 @@
         </Condition>
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="%action_7%" Id="%id_action_7%" RegularExpression="^.{14} 1A:.{8}:(?&lt;player&gt;.+?) gains the effect of %action_7%" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_7%" Id="%id_action_7%" RegularExpression="^.{14} StatusAdd 1A:[^:]*:%action_7%:(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_1%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
             <Condition Enabled="true" Grouping="Or">

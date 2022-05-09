@@ -130,20 +130,21 @@ const actions = { '骑士':
   '天之印': { actions: { action_1: '天之印', action_2: '忍术', action_3: '结印' } },
   '地之印': { actions: { action_1: '地之印', action_2: '忍术', action_3: '结印' } },
   '人之印': { actions: { action_1: '人之印', action_2: '忍术', action_3: '结印' } } },
-// '武僧': 
-// { '一键军体拳': 
-//    { actions: 
-//       { action_1: '连击',
-//         action_2: '正拳',
-//         action_3: '破碎拳',
-//         action_4: '双龙脚',
-//         action_5: '双掌打',
-//         action_6: '崩拳',
-//         action_7: '魔猿形',
-//         action_8: '盗龙形',
-//         action_9: '猛豹形',
-//         action_10: '震脚',
-//         action_11: '连击效果提高' } },
+'武僧': 
+{ '一键军体拳': 
+   { actions: 
+      { action_1: '连击',
+        action_2: '正拳',
+        action_3: '破碎拳',
+        action_4: '双龙脚',
+        action_5: '双掌打',
+        action_6: '崩拳',
+        action_7: '魔猿形',
+        action_8: '盗龙形',
+        action_9: '猛豹形',
+        action_10: '震脚',
+        action_11: '连击效果提高',
+        action_12: '功力' } },
 //   '背身位': 
 //    { actions: 
 //       { action_1: '连击',
@@ -164,16 +165,16 @@ const actions = { '骑士':
 //         action_6: '猛豹形',
 //         action_7: '震脚',
 //         action_8: '无相身形' } },
-//   '武僧AOE': 
-//    { actions: 
-//       { action_1: '破坏神冲',
-//         action_2: '四面脚',
-//         action_3: '地烈劲',
-//         action_4: '魔猿形',
-//         action_5: '盗龙形',
-//         action_6: '猛豹形',
-//         action_7: '震脚',
-//         action_8: '无相身形' } } },
+  '武僧AOE': 
+   { actions: 
+      { action_1: '破坏神冲',
+        action_2: '四面脚',
+        action_3: '地烈劲',
+        action_4: '魔猿形',
+        action_5: '盗龙形',
+        action_6: '猛豹形',
+        action_7: '震脚',
+        action_8: '无相身形' } } },
 '武士': 
 { '花连': 
    { actions: 
@@ -417,7 +418,7 @@ const special = { '石-风': 'redmage_base.xml',
 '背身位': 'monk.xml',
 '侧身位': 'monk.xml',
 '武僧AOE': 'monk.xml',
-'一键军体拳': 'monk2.xml',
+'一键军体拳': 'monk_aio.xml',
 '绞决-缢杀-隐匿挥割': 'reaper_buff.xml',
 '绞决-缢杀-暴食': 'reaper_ano.xml',
 '(冰)火3-(火)冰3': 'blackmage_base.xml',
