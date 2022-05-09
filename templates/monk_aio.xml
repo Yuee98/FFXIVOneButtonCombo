@@ -27,7 +27,7 @@
           </Trigger>
           <Trigger Enabled="true" Name="%action_12%" Id="%id_action_5%" RegularExpression="^.{14} StatusAdd 1A:[^:]*:%action_12%:(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):" PrevActions="Interrupt">
             <Actions>
-              <Action OrderNumber="1" LogLevel="-1" VariableOp="SetNumeric" VariableName="timeTwinSnakes" VariableExpression="${duration}+${_timestampms}-3000" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+              <Action OrderNumber="1" LogLevel="-1" VariableOp="SetNumeric" VariableName="timeTwinSnakes" VariableExpression="${duration}*1000+${_timestampms}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
@@ -39,7 +39,7 @@
           </Trigger>
           <Trigger Enabled="true" Name="%action_3%" Id="%id_action_3%" RegularExpression="^.{14} StatusAdd 1A:[^:]*:%action_3%:(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):">
             <Actions>
-              <Action OrderNumber="1" LogLevel="-1" VariableOp="SetNumeric" VariableName="timeDemolish" VariableExpression="${duration}+${_timestampms}-3000" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+              <Action OrderNumber="1" LogLevel="-1" VariableOp="SetNumeric" VariableName="timeDemolish" VariableExpression="${duration}*1000+${_timestampms}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
