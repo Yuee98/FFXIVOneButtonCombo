@@ -131,7 +131,7 @@ const actions = { '骑士':
   '地之印': { actions: { action_1: '地之印', action_2: '忍术', action_3: '结印' } },
   '人之印': { actions: { action_1: '人之印', action_2: '忍术', action_3: '结印' } } },
 '武僧': 
-{ '一键军体拳': 
+{ '军体拳-连击': 
    { actions: 
       { action_1: '连击',
         action_2: '正拳',
@@ -145,7 +145,44 @@ const actions = { '骑士':
         action_10: '震脚',
         action_11: '连击效果提高',
         action_12: '功力',
-        action_13: '无相身形' } },
+        action_13: '无相身形',
+        action_14: 7000 } },
+   '(旧)军体拳-震脚': 
+   { actions: 
+      { action_1: '震脚',
+         action_2: '正拳',
+         action_3: '双掌打',
+         action_4: '无相身形',
+         action_5: 950,
+         action_6: 7000 } },
+   '(旧)军体拳-必杀': 
+   { actions: 
+      { action_1: '破碎拳',
+         action_2: '崩拳',
+         action_3: '必杀技',
+         action_4: 7000 } },
+   '军体拳-演武': 
+   { actions: 
+      { action_1: '震脚',
+         action_2: '正拳',
+         action_3: '双掌打',
+         action_4: '演武',
+         action_5: '无相身形',
+         action_6: 7000,
+         action_7: 'timeTwinSnakes' } },
+   '军体拳-星导脚': 
+   { actions: 
+      { action_1: '震脚',
+         action_2: '崩拳',
+         action_3: '破碎拳',
+         action_4: '六合星导脚',
+         action_5: '无相身形',
+         action_6: 7000,
+         action_7: 'timeDemolish' } },
+   '震脚-必杀技': 
+   { actions: 
+      { action_1: '震脚',
+         action_2: '必杀技'} },
 //   '背身位': 
 //    { actions: 
 //       { action_1: '连击',
@@ -419,7 +456,12 @@ const special = { '石-风': 'redmage_base.xml',
 '背身位': 'monk.xml',
 '侧身位': 'monk.xml',
 '武僧AOE': 'monk.xml',
-'一键军体拳': 'monk_aio.xml',
+'军体拳-连击': 'monk_aio.xml',
+'(旧)军体拳-震脚': 'monk_old_aux.xml',
+'(旧)军体拳-必杀': 'monk_old_aux2.xml',
+'军体拳-星导脚': 'monk_aux.xml',
+'军体拳-演武': 'monk_aux.xml',
+'震脚-必杀技': 'monk_blitz.xml',
 '绞决-缢杀-隐匿挥割': 'reaper_buff.xml',
 '绞决-缢杀-暴食': 'reaper_ano.xml',
 '(冰)火3-(火)冰3': 'blackmage_base.xml',
