@@ -26,7 +26,7 @@ function fillActions() {
 }
 
 function fillNormal(job, combo) {
-    for (let i=1; i<=12; i++) {
+    for (let i=1; i<=15; i++) {
         $(`#action_${i}`).addClass("d-none")
         $(`#label_action_${i}`).addClass("d-none")
     }
