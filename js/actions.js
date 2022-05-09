@@ -144,7 +144,8 @@ const actions = { '骑士':
         action_9: '猛豹形',
         action_10: '震脚',
         action_11: '连击效果提高',
-        action_12: '功力' } },
+        action_12: '功力',
+        action_13: '无相身形' } },
 //   '背身位': 
 //    { actions: 
 //       { action_1: '连击',
