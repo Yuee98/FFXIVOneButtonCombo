@@ -169,26 +169,28 @@ const actions = { '骑士':
    { actions: 
       { action_1: '震脚',
          action_2: '必杀技'} },
-//   '背身位': 
-//    { actions: 
-//       { action_1: '连击',
-//         action_2: '正拳',
-//         action_3: '破碎拳',
-//         action_4: '魔猿形',
-//         action_5: '盗龙形',
-//         action_6: '猛豹形',
-//         action_7: '震脚',
-//         action_8: '无相身形' } },
-//   '侧身位': 
-//    { actions: 
-//       { action_1: '双龙脚',
-//         action_2: '双掌打',
-//         action_3: '崩拳',
-//         action_4: '魔猿形',
-//         action_5: '盗龙形',
-//         action_6: '猛豹形',
-//         action_7: '震脚',
-//         action_8: '无相身形' } },
+  '(旧)背身位': 
+   { actions: 
+      { action_1: '连击',
+        action_2: '正拳',
+        action_3: '破碎拳',
+        action_4: '魔猿形',
+        action_5: '盗龙形',
+        action_6: '猛豹形',
+        action_7: '震脚',
+        action_8: '无相身形',
+        action_9: '连击' } },
+  '(旧)侧身位': 
+   { actions: 
+      { action_1: '双龙脚',
+        action_2: '双掌打',
+        action_3: '崩拳',
+        action_4: '魔猿形',
+        action_5: '盗龙形',
+        action_6: '猛豹形',
+        action_7: '震脚',
+        action_8: '无相身形',
+        action_9: '双龙脚' } },
   '武僧AOE': 
    { actions: 
       { action_1: '破坏神冲',
@@ -198,7 +200,8 @@ const actions = { '骑士':
         action_5: '盗龙形',
         action_6: '猛豹形',
         action_7: '震脚',
-        action_8: '无相身形' } } },
+        action_8: '无相身形',
+        action_9: '地烈劲' } } },
 '武士': 
 { '花连': 
    { actions: 
@@ -439,8 +442,8 @@ const special = { '石-风': 'redmage_base.xml',
 'AOE花连': 'samurai_aoe.xml',
 'AOE月连': 'samurai_aoe.xml',
 '默想-照破': 'samurai_meditate.xml',
-'背身位': 'monk.xml',
-'侧身位': 'monk.xml',
+'(旧)背身位': 'monk.xml',
+'(旧)侧身位': 'monk.xml',
 '武僧AOE': 'monk.xml',
 '军体拳-连击': 'monk_aio.xml',
 '军体拳-星导脚': 'monk_aux.xml',
