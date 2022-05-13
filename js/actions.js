@@ -337,7 +337,12 @@ const actions = { '骑士':
 //         action_4: '龙神迸发' } },
   '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '复生', action_3: '即刻咏唱' } } },
 '赤魔法师': 
-{ '魔三连': 
+{ '赤魔-基础(必须)': 
+   { actions: 
+      { action_1: '连续咏唱',
+        action_2: '即刻咏唱',
+        action_3: '促进', } },
+   '魔三连': 
    { actions: 
       { action_1: '回刺',
         action_2: '交击斩',
@@ -349,47 +354,59 @@ const actions = { '骑士':
    { actions: 
       { action_1: '赤飞石',
         action_2: '赤疾风',
-        action_3: '魔连攻',
+        action_3: '摇荡',
         action_4: '赤核爆',
         action_5: '赤神圣',
         action_6: '连续咏唱',
         action_7: '即刻咏唱',
-        action_8: '促进' },
-     key_levels: [ 70 ] },
+        action_8: '促进',
+        action_9: '焦热',
+        action_10: '决断',
+        action_11: '赤疾风' },
+     key_levels: [ 70, 80, 90 ] },
   '火-雷': 
    { actions: 
       { action_1: '赤火炎',
         action_2: '赤闪雷',
-        action_3: '魔连攻',
+        action_3: '摇荡',
         action_4: '赤核爆',
         action_5: '赤神圣',
         action_6: '连续咏唱',
         action_7: '即刻咏唱',
-        action_8: '促进' },
-     key_levels: [ 70 ] },
-  '风-散碎': 
+        action_8: '促进',
+        action_9: '焦热',
+        action_10: '决断',
+        action_11: '赤闪雷' },
+     key_levels: [ 68, 80, 90 ] },
+  'AOE风-散碎': 
   { actions: 
      { action_1: '赤烈风',
        action_2: '散碎',
-       action_3: '魔连攻',
+       action_3: '散碎',
        action_4: '赤核爆',
        action_5: '赤神圣',
        action_6: '连续咏唱',
        action_7: '即刻咏唱',
-       action_8: '促进' },
-    key_levels: [ 70 ] }, 
+       action_8: '促进',
+       action_9: '焦热',
+       action_10: '决断',
+       action_11: '赤烈风' },
+    key_levels: [ 70, 80, 90 ] },
    //  { actions: { action_1: '赤烈风', action_2: '散碎', action_3: '(连续|即刻)咏唱' } },
-  '雷-散碎': 
+  'AOE雷-散碎': 
   { actions: 
      { action_1: '赤震雷',
        action_2: '散碎',
-       action_3: '魔连攻',
+       action_3: '散碎',
        action_4: '赤核爆',
        action_5: '赤神圣',
        action_6: '连续咏唱',
        action_7: '即刻咏唱',
-       action_8: '促进' },
-    key_levels: [ 70 ] }, 
+       action_8: '促进',
+       action_9: '焦热',
+       action_10: '决断',
+       action_11: '赤震雷' },
+    key_levels: [ 68, 80, 90 ] },
    //  { actions: { action_1: '赤震雷', action_2: '散碎', action_3: '(连续|即刻)咏唱' } },
   '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '赤复活', action_3: '即刻咏唱' } } },
 '白魔法师': { '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '复活', action_3: '即刻咏唱' } } },
@@ -418,10 +435,12 @@ const actions = { '骑士':
 '其他': { '重置': { actions: null } } }
 
  
-const special = { '石-风': 'redmage_base.xml',
+const special = { 
+'赤魔-基础(必须)': 'redmage_var.xml',
+'石-风': 'redmage_base.xml',
 '火-雷': 'redmage_base.xml',
-'风-散碎': 'redmage_base.xml',
-'雷-散碎': 'redmage_base.xml',
+'AOE风-散碎': 'redmage_base.xml',
+'AOE雷-散碎': 'redmage_base.xml',
 '魔三连': 'redmage_3x.xml',
 '王权赎罪连': 'paladin.xml',
 '子弹连': 'gunbreaker.xml',
