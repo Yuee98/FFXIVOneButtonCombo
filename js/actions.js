@@ -251,21 +251,38 @@ const actions = { '骑士':
 //   '震天-星眼': { actions: { action_1: '必杀剑·震天', action_2: '必杀剑·星眼', action_3: '开眼' } },
   '默想-照破': { actions: { action_1: '默想', action_2: '照破' } } },
 '钐镰客':
-{
+{ '镰刀-基础(※)': 
+   { actions: 
+      { action_1: '绞决', 
+        action_2: '缢杀', 
+        action_3: '绞决效果提高', 
+        action_4: '缢杀效果提高' }},
    '基础连': { actions: { action_1: '切割', action_2: '增盈切割', action_3: '地狱切割' },
    key_levels: [ 5, 30 ] },
    'AOE连': { actions: { action_1: '旋转钐割', action_2: '噩梦钐割' },
    key_levels: [ 45 ] },
-   '绞决-缢杀-隐匿挥割': { actions: { 
-      action_1: '绞决', 
-      action_2: '缢杀', 
-      action_3: '绞决效果提高', 
-      action_4: '缢杀效果提高', 
-      action_5: '虚无收割效果提高', 
-      action_6: '交错收割效果提高', 
-      action_7: '隐匿挥割', 
-      action_8: '妖异之镰',
-      action_9: '夜游魂' }},
+   '※绞决-缢杀-隐匿挥割': 
+   { actions: 
+      { action_1: '绞决', 
+        action_2: '缢杀', 
+        action_3: '绞决效果提高', 
+        action_4: '缢杀效果提高', 
+        action_5: '虚无收割效果提高', 
+        action_6: '交错收割效果提高', 
+        action_7: '隐匿挥割', 
+        action_8: '妖异之镰',
+        action_9: '夜游魂' }},
+   '※绞决-缢杀-暴食': 
+   { actions: 
+      { action_1: '绞决', 
+         action_2: '缢杀', 
+         action_3: '绞决效果提高', 
+         action_4: '缢杀效果提高', 
+         action_5: '虚无收割效果提高', 
+         action_6: '交错收割效果提高', 
+         action_7: '暴食', 
+         action_8: '妖异之镰',
+         action_9: '夜游魂' }},
    '束缚挥割-断首': { actions: { action_1: '束缚挥割', action_2: '断首', action_3: '妖异之镰', action_4: '夜游魂' }},
 },
 
@@ -436,6 +453,7 @@ const actions = { '骑士':
 
 const base = { 
    '赤魔-基础(※)': 'redmage_var.xml',
+   '镰刀-基础(※)': 'reaper_var.xml',
 }
  
 const special = { 
@@ -462,7 +480,8 @@ const special = {
 '军体拳-星导脚': 'monk_aux.xml',
 '军体拳-演武': 'monk_aux.xml',
 '震脚-必杀技': 'monk_blitz.xml',
-'绞决-缢杀-隐匿挥割': 'reaper_buff.xml',
+'※绞决-缢杀-隐匿挥割': 'reaper_buff.xml',
+'※绞决-缢杀-暴食': 'reaper_buff.xml',
 '束缚挥割-断首': 'reaper_buff_aoe.xml',
 '(冰)火3-(火)冰3': 'blackmage_base.xml',
 '(冰)冰2-(火)火2': 'blackmage_base.xml',
