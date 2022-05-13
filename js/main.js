@@ -49,8 +49,6 @@ function parseCombo() {
         var path = 'templates/' + special[combo]
     } else if (jQuery.inArray(combo, changeWithBuff) != -1) {
         var path = 'templates/changewithbuff.xml'
-    } else if (jQuery.inArray(combo, changeWithCD) != -1) {
-        var path = 'templates/changewithcd.xml'
     } else {
         let l = Object.keys(actions[job][combo]['actions']).length
         var path = `templates/combo${l}stage.xml`
