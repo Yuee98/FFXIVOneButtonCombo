@@ -434,9 +434,11 @@ const actions = { '骑士':
 '贤者': { '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '复苏', action_3: '即刻咏唱' } } },
 '其他': { '重置': { actions: null } } }
 
+const base = { 
+   '赤魔-基础(必须)': 'redmage_var.xml',
+}
  
 const special = { 
-'赤魔-基础(必须)': 'redmage_var.xml',
 '石-风': 'redmage_base.xml',
 '火-雷': 'redmage_base.xml',
 'AOE风-散碎': 'redmage_base.xml',

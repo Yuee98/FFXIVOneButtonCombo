@@ -5,24 +5,15 @@ function fillActions() {
     if (combo == '重置') {
         fillReset()
         return
-    }
-    let l = Object.keys(actions[job][combo]['actions']).length
-    if (l == 2){
-        $("#special_parser").addClass("d-none")
-        $("#normal_parser").removeClass("d-none")
-        // $("#action_3").addClass("d-none")
-        // $("#label_action_3").addClass("d-none")
-        fillNormal(job, combo)
+    } 
+    if (jQuery.inArray(combo, Object.keys(base)) != -1) {
+        $('.need-hid').attr("disabled", true)
     } else {
-        $("#special_parser").addClass("d-none")
-        $("#normal_parser").removeClass("d-none")
-        // $("#action_3").removeClass("d-none")
-        // $("#label_action_3").removeClass("d-none")
-        fillNormal(job, combo)
-        if (jQuery.inArray(combo, changeWithBuff) != -1) {
-            $("#label_action_3").val('Buff')
-        }
+        $('.need-hid').attr("disabled", false)
     }
+    $("#special_parser").addClass("d-none")
+    $("#normal_parser").removeClass("d-none")
+    fillNormal(job, combo)
 }
 
 function fillNormal(job, combo) {
@@ -39,10 +30,9 @@ function fillNormal(job, combo) {
 }   
 
 function fillReset() {
-    $("#special_parser").removeClass("d-none")
+    $("#is_corss_false").removeClass("d-none")
     $("#normal_parser").addClass("d-none")
 }
-
 
 function parseCombo() {
     let job = $("#job_selected").val()
@@ -52,7 +42,7 @@ function parseCombo() {
     if (combo == '重置') {
         parseReset()
         return
-    }else if (isSpecial != -1){
+    } else if (isSpecial != -1){
         var path = 'templates/' + special[combo]
     } else if (jQuery.inArray(combo, changeWithBuff) != -1) {
         var path = 'templates/changewithbuff.xml'
