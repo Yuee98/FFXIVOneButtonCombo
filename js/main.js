@@ -38,10 +38,13 @@ function parseCombo() {
     let job = $("#job_selected").val()
     let combo = $("#combo_selected").val()
     var isSpecial = jQuery.inArray(combo, Object.keys(special))
+    var isBase = jQuery.inArray(combo, Object.keys(base))
     
     if (combo == '重置') {
         parseReset()
         return
+    } else if (isBase != -1){
+        var path = 'templates/' + base[combo]
     } else if (isSpecial != -1){
         var path = 'templates/' + special[combo]
     } else if (jQuery.inArray(combo, changeWithBuff) != -1) {
@@ -73,8 +76,12 @@ async function parseNormal(job, combo, path) {
         }
     }
     settings['position'] = $("#pos_1").val() + ' ' + $("#pos_2").val()
-    settings['combo'] = $("#combo").val() + ' ' + settings['position']
-    settings['id_combo'] = $.md5($("#job").val()+settings['combo'])
+    if (jQuery.inArray(combo, Object.keys(base)) != -1) {
+        settings['combo'] = $("#combo").val()
+    } else {
+        settings['combo'] = $("#combo").val() + ' ' + settings['position']
+    }
+    settings['id_combo'] = $.md5($("#job").val() + settings['combo'])
     if ($('#is_corss_true').prop('checked')) {
         settings['is_cross'] = 'c'
     } else {
