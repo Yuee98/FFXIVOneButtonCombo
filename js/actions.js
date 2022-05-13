@@ -128,7 +128,12 @@ const actions = { '骑士':
   '地之印': { actions: { action_1: '地之印', action_2: '忍术', action_3: '结印' } },
   '人之印': { actions: { action_1: '人之印', action_2: '忍术', action_3: '结印' } } },
 '武僧': 
-{ '军体拳-连击': 
+{ '武僧-基础(※)': 
+   { actions: 
+      { action_1: '连击效果提高',
+      action_2: '破碎拳',
+      action_3: '功力' } },
+   '※军体拳-连击': 
    { actions: 
       { action_1: '连击',
         action_2: '正拳',
@@ -140,11 +145,9 @@ const actions = { '骑士':
         action_8: '盗龙形',
         action_9: '猛豹形',
         action_10: '震脚',
-        action_11: '连击效果提高',
-        action_12: '功力',
-        action_13: '无相身形',
-        action_14: 7000 } },
-   '军体拳-演武': 
+        action_11: '无相身形',
+        action_12: 7000 } },
+   '※军体拳-演武': 
    { actions: 
       { action_1: '震脚',
          action_2: '正拳',
@@ -153,7 +156,7 @@ const actions = { '骑士':
          action_5: '无相身形',
          action_6: 7000,
          action_7: 'timeTwinSnakes' } },
-   '军体拳-星导脚': 
+   '※军体拳-星导脚': 
    { actions: 
       { action_1: '震脚',
          action_2: '崩拳',
@@ -449,6 +452,7 @@ const actions = { '骑士':
 const base = { 
    '赤魔-基础(※)': 'redmage_var.xml',
    '镰刀-基础(※)': 'reaper_var.xml',
+   '武僧-基础(※)': 'monk_var.xml',
 }
  
 const special = { 
@@ -471,9 +475,9 @@ const special = {
 '(旧)背身位': 'monk.xml',
 '(旧)侧身位': 'monk.xml',
 '武僧AOE': 'monk.xml',
-'军体拳-连击': 'monk_aio.xml',
-'军体拳-星导脚': 'monk_aux.xml',
-'军体拳-演武': 'monk_aux.xml',
+'※军体拳-连击': 'monk_aio.xml',
+'※军体拳-星导脚': 'monk_aux.xml',
+'※军体拳-演武': 'monk_aux.xml',
 '震脚-必杀技': 'monk_blitz.xml',
 '※绞决-缢杀-隐匿挥割': 'reaper_buff.xml',
 '※绞决-缢杀-暴食': 'reaper_buff.xml',
