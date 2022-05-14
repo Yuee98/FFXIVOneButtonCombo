@@ -341,15 +341,27 @@ const actions = { '骑士':
   '(冰)冰1-(火)火1-火苗': { actions: { action_1: '冰结', action_2: '火炎', action_3: '冰结', action_4: '爆炎', action_5: '火苗' } } 
 },
 '召唤师': 
-{ '吸收-溃烂': { actions: { action_1: '能量吸收', action_2: '溃烂爆发', action_3: '以太超流' } },
-  '抽取-核爆': { actions: { action_1: '能量抽取', action_2: '痛苦核爆', action_3: '以太超流' } },
-//   '鸟1-鸟2': { actions: { action_1: '毁荡', action_2: '迸裂', action_3: '灵泉' } },
-//   '一键附体': 
-//    { actions: 
-//       { action_1: '龙神附体',
-//         action_2: '死星核爆',
-//         action_3: '龙神召唤',
-//         action_4: '龙神迸发' } },
+{ '毁灭-宝石耀': { actions: { action_1: '毁灭', action_2: '宝石耀' } },
+  '迸裂-宝石辉-星极超流': 
+   { actions: 
+      { action_1: '迸裂',
+        action_2: '宝石辉',
+        action_3: '星极超流',
+        action_4: '山崩预备',
+        action_5: '螺旋气流预备',
+        action_6: '深红旋风预备',
+        action_7: '深红强袭' } },
+   '三神-龙神-迸发': 
+   { actions: 
+      { action_1: '龙神召唤',
+         action_2: '龙神迸发',
+         action_3: '黄宝石召唤',
+         action_4: '红宝石召唤',
+         action_5: '绿宝石召唤' } },
+   '毁绝-星极超流': { actions: { action_1: '毁绝', action_2: '星极超流' } },
+   '龙神-迸发': { actions: { action_1: '龙神召唤', action_2: '龙神迸发' } },
+   '吸收-溃烂': { actions: { action_1: '能量吸收', action_2: '溃烂爆发', action_3: '以太超流' } },
+   '抽取-核爆': { actions: { action_1: '能量抽取', action_2: '痛苦核爆', action_3: '以太超流' } },
   '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '复生', action_3: '即刻咏唱' } } },
 '赤魔法师': 
 { '赤魔-基础(※)': 
@@ -488,8 +500,11 @@ const special = {
 '(冰)灵极魂-(火)绝望': 'blackmage_base.xml',
 '(冰)冰1-(火)火1-火苗': 'blackmage_buff.xml',
 '(冰)冰4-(火)火4-绝望': 'blackmage_mp.xml',
-'一键附体': 'summoner.xml',
-'鸟1-鸟2': 'summoner2.xml',
+'毁灭-宝石耀': 'summoner_gcd.xml',
+'迸裂-宝石辉-星极超流': 'summoner_aoe.xml',
+'龙神-迸发': 'summoner_baha.xml',
+'毁绝-星极超流': 'summoner_baha.xml',
+'三神-龙神-迸发':  'summoner_tri.xml',
 '标准舞步': 'dancer_std.xml',
 '技巧舞步': 'dancer_tech.xml',
 '机工子弹连': 'machinist.xml',
