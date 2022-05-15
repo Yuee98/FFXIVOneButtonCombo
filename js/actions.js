@@ -447,6 +447,7 @@ const actions = { '骑士':
 { 
   '抽卡-重抽': { actions: { action_1: '抽卡', action_2: '重抽' } },
   '出卡-星力': { actions: { action_1: '出卡', action_2: '星力' } },
+  '小奥秘-王冠': { actions: { action_1: '出王冠卡', action_2: '小奥秘卡' } },
   '自动发卡(测试)': 
    { actions: 
       { action_1: '出卡',
@@ -514,6 +515,7 @@ const special = {
 '炮塔-自爆': 'machinist_battery.xml',
 '抽卡-重抽': 'astrologian_draw.xml',
 '出卡-星力': 'astrologian_play.xml',
+'小奥秘-王冠': 'astrologian_crown.xml',
 '歌曲循环': 'bard_song.xml',
 '普通连': 'ninja_3x1.xml',
 '风遁连': 'ninja_3x1.xml',
