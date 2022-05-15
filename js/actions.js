@@ -445,20 +445,20 @@ const actions = { '骑士':
   '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '复生', action_3: '即刻咏唱' } } },
 '占星师': 
 { 
-//   '抽卡-重抽': { actions: { action_1: '抽卡', action_2: '重抽' } },
+  '抽卡-重抽': { actions: { action_1: '抽卡', action_2: '重抽' } },
 //   '出卡-小奥秘卡': { actions: { action_1: '出卡', action_2: '小奥秘卡' } },
-//   '自动发卡(测试)': 
-//    { actions: 
-//       { action_1: '出卡',
-//         action_2: '小奥秘卡',
-//         action_3: '太阳神之衡',
-//         action_4: '放浪神之箭',
-//         action_5: '战争神之枪',
-//         action_6: '世界树之干',
-//         action_7: '河流神之瓶',
-//         action_8: '建筑神之塔',
-//         action_9: '王冠之领主',
-//         action_10: '王冠之贵妇' } },
+  '自动发卡(测试)': 
+   { actions: 
+      { action_1: '出卡',
+        action_2: '小奥秘卡',
+        action_3: '太阳神之衡',
+        action_4: '放浪神之箭',
+        action_5: '战争神之枪',
+        action_6: '世界树之干',
+        action_7: '河流神之瓶',
+        action_8: '建筑神之塔',
+        action_9: '王冠之领主',
+        action_10: '王冠之贵妇' } },
   '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '生辰', action_3: '即刻咏唱' } } },
 '贤者': { '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '复苏', action_3: '即刻咏唱' } } },
 '其他': { '重置': { actions: null } } }
