@@ -84,7 +84,6 @@
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or">
-          <ConditionSingle Enabled="false" ExpressionL="${card}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
         </Condition>
         <Conditions />
       </Trigger>

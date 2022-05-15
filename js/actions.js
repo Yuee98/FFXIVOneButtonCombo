@@ -446,19 +446,17 @@ const actions = { '骑士':
 '占星师': 
 { 
   '抽卡-重抽': { actions: { action_1: '抽卡', action_2: '重抽' } },
-//   '出卡-小奥秘卡': { actions: { action_1: '出卡', action_2: '小奥秘卡' } },
+  '出卡-星力': { actions: { action_1: '出卡', action_2: '星力' } },
   '自动发卡(测试)': 
    { actions: 
       { action_1: '出卡',
-        action_2: '小奥秘卡',
+        action_2: '星力',
         action_3: '太阳神之衡',
         action_4: '放浪神之箭',
         action_5: '战争神之枪',
         action_6: '世界树之干',
         action_7: '河流神之瓶',
-        action_8: '建筑神之塔',
-        action_9: '王冠之领主',
-        action_10: '王冠之贵妇' } },
+        action_8: '建筑神之塔' } },
   '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '生辰', action_3: '即刻咏唱' } } },
 '贤者': { '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '复苏', action_3: '即刻咏唱' } } },
 '其他': { '重置': { actions: null } } }
@@ -467,6 +465,7 @@ const base = {
    '赤魔-基础(※)': 'redmage_var.xml',
    '镰刀-基础(※)': 'reaper_var.xml',
    '武僧-基础(※)': 'monk_var.xml',
+   '自动发卡(测试)': 'ast_auto_play.xml',
 }
  
 const special = { 
@@ -513,9 +512,8 @@ const special = {
 '超荷-热冲击': 'machinist_heat.xml',
 '散射-自动弩': 'machinist_heat.xml',
 '炮塔-自爆': 'machinist_battery.xml',
-'抽卡-重抽': 'astrologian.xml',
-'出卡-小奥秘卡': 'astrologian2.xml',
-'自动发卡(测试)': 'ast_auto_play.xml',
+'抽卡-重抽': 'astrologian_draw.xml',
+'出卡-星力': 'astrologian_play.xml',
 '歌曲循环': 'bard_song.xml',
 '普通连': 'ninja_3x1.xml',
 '风遁连': 'ninja_3x1.xml',
