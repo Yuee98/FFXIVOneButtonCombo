@@ -442,7 +442,6 @@ const actions = { '骑士':
 '白魔法师': { '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '复活', action_3: '即刻咏唱' } } },
 '学者': 
 { '以太-吸收': { actions: { action_1: '以太超流', action_2: '能量吸收', action_3: '以太超流' } },
-  '祥光-慰藉': { actions: { action_1: '异想的祥光', action_2: '慰藉' } },
   '即刻复活': { actions: { action_1: '即刻咏唱', action_2: '复生', action_3: '即刻咏唱' } } },
 '占星师': 
 { 
