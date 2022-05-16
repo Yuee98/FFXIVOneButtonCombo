@@ -247,7 +247,15 @@ const actions = { '骑士':
         action_4: '明镜止水',
         action_5: '风光' },
      key_levels: [ 35 ] },
-  '默想-照破': { actions: { action_1: '默想', action_2: '照破' } } },
+  '默想-照破': { actions: { action_1: '默想', action_2: '照破' } },
+  '意气冲天-斩浪':
+  { actions: 
+   { action_1: '意气冲天',
+     action_2: '奥义斩浪',
+     action_3: '奥义斩浪预备',
+     action_4: '回返斩浪',
+     action_5: 5000 }},
+},
 '钐镰客':
 { '镰刀-基础(※)': 
    { actions: 
@@ -491,6 +499,7 @@ const special = {
 'AOE花连': 'samurai_aoe.xml',
 'AOE月连': 'samurai_aoe.xml',
 '默想-照破': 'samurai_meditate.xml',
+'意气冲天-斩浪': 'samurai_namikiri.xml',
 '(旧)背身位': 'monk.xml',
 '(旧)侧身位': 'monk.xml',
 '武僧AOE': 'monk.xml',
