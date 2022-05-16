@@ -46,6 +46,8 @@
                   <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="%action_9%" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                 </ConditionGroup>
                 <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="%key_level_0%" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
               </ConditionGroup>
             </Condition>
           </Action>
@@ -58,16 +60,22 @@
                   <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="%action_9%" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                 </ConditionGroup>
                 <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="%key_level_0%" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
               </ConditionGroup>
             </Condition>
           </Action>
           <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_4%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
             <Condition Enabled="true" Grouping="And">
+              <ConditionGroup Enabled="true" Grouping="And">
+                <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+              </ConditionGroup>
+              <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="%key_level_0%" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
               <ConditionGroup Enabled="true" Grouping="Or">
                 <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="%action_9%" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
                 <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="%action_9%" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
               </ConditionGroup>
-              <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="%key_level_0%" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
             </Condition>
           </Action>
         </Actions>
@@ -127,6 +135,8 @@
                   <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="%action_9%" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                 </ConditionGroup>
                 <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="%key_level_0%" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
               </ConditionGroup>
             </Condition>
           </Action>
@@ -139,6 +149,8 @@
                   <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="%action_9%" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
                 </ConditionGroup>
                 <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="%key_level_0%" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
               </ConditionGroup>
             </Condition>
           </Action>
@@ -149,6 +161,10 @@
                 <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="%action_9%" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
               </ConditionGroup>
               <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="%key_level_0%" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+              <ConditionGroup Enabled="true" Grouping="And">
+                <ConditionSingle Enabled="true" ExpressionL="${var:t_Veno}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                <ConditionSingle Enabled="true" ExpressionL="${var:t_Wind}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+              </ConditionGroup>
             </Condition>
           </Action>
         </Actions>
