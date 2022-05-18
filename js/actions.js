@@ -262,7 +262,9 @@ const actions = { '骑士':
       { action_1: '绞决', 
         action_2: '缢杀', 
         action_3: '绞决效果提高', 
-        action_4: '缢杀效果提高' }},
+        action_4: '缢杀效果提高', 
+        action_5: '虚无收割效果提高', 
+        action_6: '交错收割效果提高' }},
    '基础连': { actions: { action_1: '切割', action_2: '增盈切割', action_3: '地狱切割' },
    key_levels: [ 5, 30 ] },
    'AOE连': { actions: { action_1: '旋转钐割', action_2: '噩梦钐割' },
@@ -277,7 +279,11 @@ const actions = { '骑士':
         action_6: '交错收割效果提高', 
         action_7: '隐匿挥割', 
         action_8: '妖异之镰',
-        action_9: '夜游魂' }},
+        action_9: '夜游魂',
+        action_10: '夜游魂切割',
+        action_11: '夜游魂钐割',
+        action_12: '团契' },
+        key_levels: [ 86, 90 ]},
    '※绞决-缢杀-暴食': 
    { actions: 
       { action_1: '绞决', 
@@ -289,7 +295,17 @@ const actions = { '骑士':
          action_7: '暴食', 
          action_8: '妖异之镰',
          action_9: '夜游魂' }},
-   '束缚挥割-断首': { actions: { action_1: '束缚挥割', action_2: '断首', action_3: '妖异之镰', action_4: '夜游魂' }},
+   '※束缚挥割-断首': 
+   { actions: 
+      { action_1: '束缚挥割', 
+        action_2: '断首', 
+        action_3: '妖异之镰', 
+        action_4: '夜游魂', 
+        action_5: '夜游魂钐割', 
+        action_6: '夜游魂切割', 
+        action_7: '团契', 
+        action_8: '阴冷收割' },
+        key_levels: [ 86, 90 ]},
 },
 
 '诗人': 
@@ -520,8 +536,8 @@ const special = {
 '※军体拳-演武': 'monk_aux.xml',
 '震脚-必杀技': 'monk_blitz.xml',
 '※绞决-缢杀-隐匿挥割': 'reaper_buff.xml',
-'※绞决-缢杀-暴食': 'reaper_buff.xml',
-'束缚挥割-断首': 'reaper_buff_aoe.xml',
+'※绞决-缢杀-暴食': 'reaper_buff_reduced.xml',
+'※束缚挥割-断首': 'reaper_buff_aoe.xml',
 '(冰)火3-(火)冰3': 'blackmage_base.xml',
 '(冰)冰2-(火)火2': 'blackmage_base.xml',
 '(冰)玄冰-(火)核爆': 'blackmage_base.xml',
