@@ -1,5 +1,21 @@
 const actions = { '骑士': 
-{ '王权连': 
+{  '王权赎罪连': 
+   { actions: 
+      { action_1: '先锋剑',
+      action_2: '暴乱剑',
+      action_3: '王权剑',
+      action_4: '赎罪剑',
+      action_5: '忠义之剑',
+      action_6: '沥血剑' },
+     key_levels: [ 4, 26, 76 ] },
+   '安魂-圣灵-大宝剑': 
+   { actions: 
+      { action_1: '安魂祈祷', 
+        action_2: '圣灵', 
+        action_3: '悔罪', 
+        action_4: '英勇之剑' },
+     key_levels: [ 80, 90 ] },
+   '王权连': 
    { actions: 
       { action_1: '先锋剑',
         action_2: '暴乱剑',
@@ -13,15 +29,6 @@ const actions = { '骑士':
         action_3: '沥血剑',
         action_4: '王权剑' },
      key_levels: [ 4, 54 ] },
-  '王权赎罪连': 
-   { actions: 
-      { action_1: '先锋剑',
-        action_2: '暴乱剑',
-        action_3: '王权剑',
-        action_4: '赎罪剑',
-        action_5: '忠义之剑',
-        action_6: '沥血剑' },
-     key_levels: [ 4, 26, 76 ] },
   'AOE连': 
    { actions: { action_1: '全蚀斩', action_2: '日珥斩' },
      key_levels: [ 40 ] },
@@ -73,7 +80,25 @@ const actions = { '骑士':
    { actions: { action_1: '恶魔切', action_2: '恶魔杀', action_3: '命运之环' },
      key_levels: [ 40, 72 ] } },
 '龙骑士': 
-{ '直刺连': 
+{ '直刺-樱花连': 
+   { actions: 
+      { action_1: '精准刺',
+        action_2: '贯通刺',
+        action_3: '开膛枪',
+        action_4: '直刺',
+        action_5: '樱花怒放',
+        action_6: '龙眼雷电',
+        action_7: '龙牙龙爪',
+        action_8: '龙牙龙爪预备',
+        action_9: '龙尾大回旋',
+        action_10: '龙尾大回旋预备',
+        action_11: '苍穹刺',
+        action_12: '樱花缭乱',
+        action_13: '龙枪',
+        action_14: 10000,
+        action_15: 15000 },
+     key_levels: [ 4, 18, 26, 50] },
+   '直刺连': 
    { actions: 
       { action_1: '精准刺',
         action_2: '贯通刺',
@@ -517,7 +542,9 @@ const special = {
 '※AOE雷-散碎': 'redmage_base.xml',
 '魔三连': 'redmage_3x.xml',
 '王权赎罪连': 'paladin.xml',
+'安魂-圣灵-大宝剑': 'paladin_magic.xml',
 '子弹连': 'gunbreaker.xml',
+'直刺-樱花连': 'dragoon_aio.xml',
 '直刺连': 'dragoon.xml',
 '樱花连': 'dragoon.xml',
 '龙骑AOE': 'dragoon_aoe.xml',
