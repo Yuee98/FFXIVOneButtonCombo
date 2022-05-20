@@ -70,7 +70,8 @@ const actions = {
                 action_2: '凶残裂',
                 action_3: '暴风斩',
                 action_4: '暴风碎',
-                action_5: '战场风暴'
+                action_5: '原初之魂',
+                action_6: '原初的解放'
             },
             key_levels: [4, 26, 50],
             key_times: [10000]
