@@ -54,7 +54,17 @@ const actions = {
         }
     },
     '战士': {
-        '绿-红斩连': {
+        '战士-基础(※)': {
+            actions: {
+                action_1: '重劈',
+                action_2: '凶残裂',
+                action_3: '暴风斩',
+                action_4: '暴风碎',
+                action_5: '战场风暴'
+            },
+            key_levels: [4, 26, 50]
+        },
+        '※绿-红斩连': {
             actions: {
                 action_1: '重劈',
                 action_2: '凶残裂',
@@ -65,23 +75,29 @@ const actions = {
             key_levels: [4, 26, 50],
             key_times: [10000]
         },
-        '绿斩连': {
+        '※绿斩连': {
             actions: {
                 action_1: '重劈',
                 action_2: '凶残裂',
                 action_3: '暴风斩',
-                action_4: '暴风碎'
+                action_4: '暴风碎',
+                action_5: '原初之魂',
+                action_6: '原初的解放'
             },
-            key_levels: [4, 26]
+            key_levels: [4, 26],
+            variables: ['war_3x']
         },
-        '红斩连': {
+        '※红斩连': {
             actions: {
                 action_1: '重劈',
                 action_2: '凶残裂',
                 action_3: '暴风碎',
-                action_4: '暴风斩'
+                action_4: '暴风斩',
+                action_5: '原初之魂',
+                action_6: '原初的解放'
             },
-            key_levels: [4, 50]
+            key_levels: [4, 50],
+            variables: ['war_3x']
         },
         '解放-崩裂': {
             actions: {
@@ -273,7 +289,8 @@ const actions = {
                 action_5: '月影雷兽牙',
                 action_6: '月影雷兽预备'
             },
-            key_levels: [4, 26]
+            key_levels: [4, 26],
+            variables: ['ninja_3x']
         },
         '※风遁连': {
             actions: {
@@ -284,7 +301,8 @@ const actions = {
                 action_5: '月影雷兽爪',
                 action_6: '月影雷兽预备'
             },
-            key_levels: [4, 54]
+            key_levels: [4, 54],
+            variables: ['ninja_3x']
         },
         '天地人-命水': {
             actions: {
@@ -1003,90 +1021,93 @@ const actions = {
 }
 
 const base = { 
-   '赤魔-基础(※)': 'redmage_var.xml',
-   '镰刀-基础(※)': 'melee/reaper_var.xml',
-   '武僧-基础(※)': 'melee/monk_var.xml',
-   '忍者-基础(※)': 'melee/ninja_var.xml',
-   '自动发卡(测试)': 'healer/ast_auto_play.xml',
+    '战士-基础(※)': 'tank/warrior_var.xml',
+    '赤魔-基础(※)': 'magic/redmage_var.xml',
+    '镰刀-基础(※)': 'melee/reaper_var.xml',
+    '武僧-基础(※)': 'melee/monk_var.xml',
+    '忍者-基础(※)': 'melee/ninja_var.xml',
+    '自动发卡(测试)': 'healer/ast_auto_play.xml',
 }
  
 const special = { 
    // T
-   '王权赎罪连': 'tank/paladin.xml',
-   '安魂-圣灵-大宝剑': 'tank/paladin_magic.xml',
-   '绿-红斩连': 'tank/warrior_aio.xml',
-   '子弹连': 'tank/gunbreaker.xml',
+    '王权赎罪连': 'tank/paladin.xml',
+    '安魂-圣灵-大宝剑': 'tank/paladin_magic.xml',
+    '※绿-红斩连': 'tank/warrior_aio.xml',
+    '※绿斩连': 'melee/ninja_3x1.xml',
+    '※红斩连': 'melee/ninja_3x1.xml',
+    '子弹连': 'tank/gunbreaker.xml',
 
-   // H
-   '抽卡-重抽': 'healer/astrologian_draw.xml',
-   '出卡-星力': 'healer/astrologian_play.xml',
-   '小奥秘-王冠': 'healer/astrologian_crown.xml',
-   '祥光-慰藉': 'healer/scholar.xml', 
+    // H
+    '抽卡-重抽': 'healer/astrologian_draw.xml',
+    '出卡-星力': 'healer/astrologian_play.xml',
+    '小奥秘-王冠': 'healer/astrologian_crown.xml',
+    '祥光-慰藉': 'healer/scholar.xml', 
 
-   // melee
-   '(旧)背身位': 'melee/monk.xml',
-   '(旧)侧身位': 'melee/monk.xml',
-   '武僧AOE': 'melee/monk.xml',
-   '※军体拳-连击': 'melee/monk_aio.xml',
-   '※军体拳-星导脚': 'melee/monk_aux.xml',
-   '※军体拳-演武': 'melee/monk_aux.xml',
-   '震脚-必杀技': 'melee/monk_blitz.xml',
+    // melee
+    '(旧)背身位': 'melee/monk.xml',
+    '(旧)侧身位': 'melee/monk.xml',
+    '武僧AOE': 'melee/monk.xml',
+    '※军体拳-连击': 'melee/monk_aio.xml',
+    '※军体拳-星导脚': 'melee/monk_aux.xml',
+    '※军体拳-演武': 'melee/monk_aux.xml',
+    '震脚-必杀技': 'melee/monk_blitz.xml',
 
-   '花连': 'melee/samurai_ka.xml',
-   '月连': 'melee/samurai_getsu.xml',
-   '雪连': 'melee/samurai_setsu.xml',
-   'AOE花连': 'melee/samurai_aoe.xml',
-   'AOE月连': 'melee/samurai_aoe.xml',
-   '默想-照破': 'melee/samurai_meditate.xml',
-   '意气冲天-斩浪': 'melee/samurai_namikiri.xml',
+    '花连': 'melee/samurai_ka.xml',
+    '月连': 'melee/samurai_getsu.xml',
+    '雪连': 'melee/samurai_setsu.xml',
+    'AOE花连': 'melee/samurai_aoe.xml',
+    'AOE月连': 'melee/samurai_aoe.xml',
+    '默想-照破': 'melee/samurai_meditate.xml',
+    '意气冲天-斩浪': 'melee/samurai_namikiri.xml',
 
-   '直刺-樱花连': 'melee/dragoon_aio.xml',
-   '直刺连': 'melee/dragoon.xml',
-   '樱花连': 'melee/dragoon.xml',
-   '龙骑AOE': 'melee/dragoon_aoe.xml',
+    '直刺-樱花连': 'melee/dragoon_aio.xml',
+    '直刺连': 'melee/dragoon.xml',
+    '樱花连': 'melee/dragoon.xml',
+    '龙骑AOE': 'melee/dragoon_aoe.xml',
 
-   '※绞决-缢杀-隐匿挥割': 'melee/reaper_buff.xml',
-   '※绞决-缢杀-暴食': 'melee/reaper_buff_reduced.xml',
-   '※束缚挥割-断首': 'melee/reaper_buff_aoe.xml',
+    '※绞决-缢杀-隐匿挥割': 'melee/reaper_buff.xml',
+    '※绞决-缢杀-暴食': 'melee/reaper_buff_reduced.xml',
+    '※束缚挥割-断首': 'melee/reaper_buff_aoe.xml',
 
-   '※普通-风遁连': 'melee/ninja_aio.xml',
-   '※普通连': 'melee/ninja_3x1.xml',
-   '※风遁连': 'melee/ninja_3x1.xml',
-   '天之印': 'melee/ninja_mudra.xml',
-   '地之印': 'melee/ninja_mudra.xml',
-   '人之印': 'melee/ninja_mudra.xml',
+    '※普通-风遁连': 'melee/ninja_aio.xml',
+    '※普通连': 'melee/ninja_3x1.xml',
+    '※风遁连': 'melee/ninja_3x1.xml',
+    '天之印': 'melee/ninja_mudra.xml',
+    '地之印': 'melee/ninja_mudra.xml',
+    '人之印': 'melee/ninja_mudra.xml',
 
-   // range
-   '歌曲循环': 'range/bard_song.xml',
-   '强力-辉煌-伶牙俐齿': 'range/bard_aio.xml',
+    // range
+    '歌曲循环': 'range/bard_song.xml',
+    '强力-辉煌-伶牙俐齿': 'range/bard_aio.xml',
 
-   '机工子弹连': 'range/machinist.xml',
-   '超荷-热冲击': 'range/machinist_heat.xml',
-   '散射-自动弩': 'range/machinist_heat.xml',
-   '炮塔-自爆': 'range/machinist_battery.xml',
+    '机工子弹连': 'range/machinist.xml',
+    '超荷-热冲击': 'range/machinist_heat.xml',
+    '散射-自动弩': 'range/machinist_heat.xml',
+    '炮塔-自爆': 'range/machinist_battery.xml',
 
-   '标准舞步': 'range/dancer_std.xml',
-   '技巧舞步': 'range/dancer_tech.xml',
+    '标准舞步': 'range/dancer_std.xml',
+    '技巧舞步': 'range/dancer_tech.xml',
 
-   // magic
-   '(冰)火3-(火)冰3': 'magic/blackmage_base.xml',
-   '(冰)冰2-(火)火2': 'magic/blackmage_base.xml',
-   '(冰)玄冰-(火)核爆': 'magic/blackmage_base.xml',
-   '(冰)灵极魂-(火)绝望': 'magic/blackmage_base.xml',
-   '(冰)冰1-(火)火1-火苗': 'magic/blackmage_buff.xml',
-   '(冰)冰4-(火)火4-绝望': 'magic/blackmage_mp.xml',
+    // magic
+    '(冰)火3-(火)冰3': 'magic/blackmage_base.xml',
+    '(冰)冰2-(火)火2': 'magic/blackmage_base.xml',
+    '(冰)玄冰-(火)核爆': 'magic/blackmage_base.xml',
+    '(冰)灵极魂-(火)绝望': 'magic/blackmage_base.xml',
+    '(冰)冰1-(火)火1-火苗': 'magic/blackmage_buff.xml',
+    '(冰)冰4-(火)火4-绝望': 'magic/blackmage_mp.xml',
 
-   '毁灭-宝石耀': 'magic/summoner_gcd.xml',
-   '迸裂-宝石辉-星极超流': 'magic/summoner_aoe.xml',
-   '龙神-迸发': 'magic/summoner_baha.xml',
-   '毁绝-星极超流': 'magic/summoner_baha.xml',
-   '三神-龙神-迸发':  'magic/summoner_tri.xml',
+    '毁灭-宝石耀': 'magic/summoner_gcd.xml',
+    '迸裂-宝石辉-星极超流': 'magic/summoner_aoe.xml',
+    '龙神-迸发': 'magic/summoner_baha.xml',
+    '毁绝-星极超流': 'magic/summoner_baha.xml',
+    '三神-龙神-迸发':  'magic/summoner_tri.xml',
 
-   '※石-风': 'magic/redmage_base.xml',
-   '※火-雷': 'magic/redmage_base.xml',
-   '※AOE风-散碎': 'magic/redmage_base.xml',
-   '※AOE雷-散碎': 'magic/redmage_base.xml',
-   '魔三连': 'magic/redmage_3x.xml',
+    '※石-风': 'magic/redmage_base.xml',
+    '※火-雷': 'magic/redmage_base.xml',
+    '※AOE风-散碎': 'magic/redmage_base.xml',
+    '※AOE雷-散碎': 'magic/redmage_base.xml',
+    '魔三连': 'magic/redmage_3x.xml',
 
 }
 
