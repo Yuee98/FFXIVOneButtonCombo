@@ -60,10 +60,10 @@ const actions = {
                 action_2: '凶残裂',
                 action_3: '暴风斩',
                 action_4: '暴风碎',
-                action_5: '战场风暴',
-                action_6: 10000
+                action_5: '战场风暴'
             },
-            key_levels: [4, 26, 50]
+            key_levels: [4, 26, 50],
+            key_times: [10000]
         },
         '绿斩连': {
             actions: {
@@ -192,11 +192,10 @@ const actions = {
                 action_10: '龙尾大回旋预备',
                 action_11: '苍穹刺',
                 action_12: '樱花缭乱',
-                action_13: '龙枪',
-                action_14: 10000,
-                action_15: 15000
+                action_13: '龙枪'
             },
-            key_levels: [4, 18, 26, 50]
+            key_levels: [4, 18, 26, 50],
+            key_times: [10000, 15000]
         },
         '直刺连': {
             actions: {
@@ -260,10 +259,10 @@ const actions = {
                 action_3: '旋风刃',
                 action_4: '强甲破点突',
                 action_5: '月影雷兽牙',
-                action_6: '月影雷兽预备',
-                action_7: 10000
+                action_6: '月影雷兽预备'
             },
-            key_levels: [4, 26, 54]
+            key_levels: [4, 26, 54],
+            key_times: [10000]
         },
         '※普通连': {
             actions: {
@@ -343,9 +342,9 @@ const actions = {
                 action_8: '盗龙形',
                 action_9: '猛豹形',
                 action_10: '震脚',
-                action_11: '无相身形',
-                action_12: 7000
-            }
+                action_11: '无相身形'
+            },
+            key_times: [7000]
         },
         '※军体拳-演武': {
             actions: {
@@ -353,10 +352,10 @@ const actions = {
                 action_2: '正拳',
                 action_3: '双掌打',
                 action_4: '演武',
-                action_5: '无相身形',
-                action_6: 7000,
-                action_7: 'timeTwinSnakes'
-            }
+                action_5: '无相身形'
+            },
+            key_times: [7000],
+            variables: ['timeTwinSnakes']
         },
         '※军体拳-星导脚': {
             actions: {
@@ -364,10 +363,10 @@ const actions = {
                 action_2: '崩拳',
                 action_3: '破碎拳',
                 action_4: '六合星导脚',
-                action_5: '无相身形',
-                action_6: 7000,
-                action_7: 'timeDemolish'
-            }
+                action_5: '无相身形'
+            },
+            key_times: [7000],
+            variables: ['timeDemolish']
         },
         '震脚-必杀技': {
             actions: {
@@ -481,9 +480,9 @@ const actions = {
                 action_1: '意气冲天',
                 action_2: '奥义斩浪',
                 action_3: '奥义斩浪预备',
-                action_4: '回返斩浪',
-                action_5: 5000
-            }
+                action_4: '回返斩浪'
+            },
+            key_times: [5000]
         },
     },
     '钐镰客': {
@@ -563,10 +562,9 @@ const actions = {
                 action_1: '放浪神的小步舞曲',
                 action_2: '贤者的叙事谣',
                 action_3: '军神的赞美歌',
-                action_4: '完美音调',
-                action_5: 3000,
-                action_6: 5000
-            }
+                action_4: '完美音调'
+            },
+            key_times: [3000, 5000]
         },
         '强力-辉煌-伶牙俐齿': {
             actions: {
@@ -577,10 +575,10 @@ const actions = {
                 action_5: '毒咬箭',
                 action_6: '烈毒咬箭',
                 action_7: '风蚀箭',
-                action_8: '狂风蚀箭',
-                action_9: 5000
+                action_8: '狂风蚀箭'
             },
-            key_levels: [56]
+            key_levels: [56],
+            key_times: [5000]
         },
         '强力-辉煌': {
             actions: {

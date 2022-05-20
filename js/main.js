@@ -73,6 +73,20 @@ async function parseNormal(job, combo, path) {
             // console.log(settings)
         }
     }
+    if (actions[job][combo]['key_times']){
+        for (let j in actions[job][combo]['key_times']) {
+            // console.log(actions[job][combo]['key_times'][j])
+            settings[`key_time_${j}`] = actions[job][combo]['key_times'][j]
+            // console.log(settings)
+        }
+    }
+    if (actions[job][combo]['variables']){
+        for (let j in actions[job][combo]['variables']) {
+            // console.log(actions[job][combo]['key_times'][j])
+            settings[`var_${j}`] = actions[job][combo]['variables'][j]
+            // console.log(settings)
+        }
+    }
     settings['position'] = $("#pos_1").val() + ' ' + $("#pos_2").val()
     if (jQuery.inArray(combo, Object.keys(base)) != -1) {
         settings['combo'] = $("#combo").val()

@@ -8,12 +8,12 @@
           <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="t_Wanderer" VariableExpression="hex2dec(${time})+${_timestampms}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
             <Condition Enabled="true" Grouping="And">
               <ConditionSingle Enabled="true" ExpressionL="hex2dec(${flag})%4" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-              <ConditionSingle Enabled="true" ExpressionL="hex2dec(${time})" ExpressionTypeL="Numeric" ExpressionR="%action_5%" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="hex2dec(${time})" ExpressionTypeL="Numeric" ExpressionR="%key_time_0%" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
             </Condition>
           </Action>
           <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_4% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="true" Grouping="And">
-              <ConditionSingle Enabled="true" ExpressionL="hex2dec(${time})" ExpressionTypeL="Numeric" ExpressionR="%action_5%" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="hex2dec(${time})" ExpressionTypeL="Numeric" ExpressionR="%key_time_0%" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
               <ConditionSingle Enabled="true" ExpressionL="hex2dec(${flag})%4" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
           </Action>
@@ -34,7 +34,7 @@
               <ConditionSingle Enabled="true" ExpressionL="hex2dec(${flag})" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
           </Action>
-          <Action OrderNumber="6" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_3% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="%action_6%">
+          <Action OrderNumber="6" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set %action_3% %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="%key_time_1%">
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="hex2dec(${flag})%4" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
             </Condition>
@@ -47,7 +47,7 @@
         <Actions>
           <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_2%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
             <Condition Enabled="true" Grouping="Or">
-              <ConditionSingle Enabled="true" ExpressionL="${var:t_Wanderer}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="%action_5%" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+              <ConditionSingle Enabled="true" ExpressionL="${var:t_Wanderer}-${_timestampms}" ExpressionTypeL="Numeric" ExpressionR="%key_time_0%" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
             </Condition>
           </Action>
         </Actions>

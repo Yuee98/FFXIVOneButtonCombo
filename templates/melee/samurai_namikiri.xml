@@ -33,7 +33,7 @@
       </Trigger>
       <Trigger Enabled="true" Name="%action_3%off" Id="%id_action_3%" RegularExpression="^.{14} StatusRemove 1E:[^:]*:%action_3%:(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):" PrevActions="Interrupt">
         <Actions>
-          <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_1%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="%action_5%">
+          <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_1%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="%key_time_0%">
             <Condition Enabled="false" Grouping="And" />
           </Action>
         </Actions>
