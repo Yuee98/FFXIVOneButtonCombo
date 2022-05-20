@@ -34,7 +34,16 @@ const actions = { '骑士':
      key_levels: [ 40 ] },
   '安魂-悔罪': { actions: { action_1: '安魂祈祷', action_2: '悔罪', action_3: '安魂祈祷' } } },
 '战士': 
-{ '绿斩连': 
+{ '绿-红斩连': 
+   { actions: 
+      { action_1: '重劈',
+      action_2: '凶残裂',
+      action_3: '暴风斩',
+      action_4: '暴风碎',
+      action_5: '战场风暴',
+      action_6: 10000 },
+   key_levels: [ 4, 26, 50 ] },
+   '绿斩连': 
    { actions: 
       { action_1: '重劈',
         action_2: '凶残裂',
@@ -611,7 +620,8 @@ const special = {
 '天之印': 'ninja_mudra.xml',
 '地之印': 'ninja_mudra.xml',
 '人之印': 'ninja_mudra.xml',
-'祥光-慰藉': 'scholar.xml' }
+'祥光-慰藉': 'scholar.xml', 
+}
 
 
 
