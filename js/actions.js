@@ -127,7 +127,24 @@ const actions = { '骑士':
    { actions: { action_1: '死天枪', action_2: '音速刺', action_3: '山境酷刑', action_4: '龙眼苍穹' },
      key_levels: [ 62, 72 ] } },
 '忍者': 
-{ '普通连': 
+{  '忍者-基础(※)': 
+   { actions: 
+      { action_1: '双刃旋',
+        action_2: '绝风',
+        action_3: '旋风刃',
+        action_4: '强甲破点突' },
+     key_levels: [ 4, 26, 54 ] },
+   '※普通-风遁连': 
+   { actions: 
+      { action_1: '双刃旋',
+         action_2: '绝风',
+         action_3: '旋风刃',
+         action_4: '强甲破点突',
+         action_5: '月影雷兽牙',
+         action_6: '月影雷兽预备',
+         action_7: 10000 },
+      key_levels: [ 4, 26, 54 ] },
+   '※普通连': 
    { actions: 
       { action_1: '双刃旋',
         action_2: '绝风',
@@ -136,7 +153,7 @@ const actions = { '骑士':
         action_5: '月影雷兽牙',
         action_6: '月影雷兽预备' },
      key_levels: [ 4, 26 ] },
-  '风遁连': 
+  '※风遁连': 
    { actions: 
       { action_1: '双刃旋',
         action_2: '绝风',
@@ -532,6 +549,7 @@ const base = {
    '赤魔-基础(※)': 'redmage_var.xml',
    '镰刀-基础(※)': 'reaper_var.xml',
    '武僧-基础(※)': 'monk_var.xml',
+   '忍者-基础(※)': 'ninja_var.xml',
    '自动发卡(测试)': 'ast_auto_play.xml',
 }
  
@@ -587,8 +605,9 @@ const special = {
 '小奥秘-王冠': 'astrologian_crown.xml',
 '歌曲循环': 'bard_song.xml',
 '强力-辉煌-伶牙俐齿': 'bard_aio.xml',
-'普通连': 'ninja_3x1.xml',
-'风遁连': 'ninja_3x1.xml',
+'※普通-风遁连': 'ninja_aio.xml',
+'※普通连': 'ninja_3x1.xml',
+'※风遁连': 'ninja_3x1.xml',
 '天之印': 'ninja_mudra.xml',
 '地之印': 'ninja_mudra.xml',
 '人之印': 'ninja_mudra.xml',
