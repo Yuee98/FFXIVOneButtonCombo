@@ -114,12 +114,15 @@ const actions = {
                 action_3: '原初的混沌'
             }
         },
-        'AOE连': {
+        '战士AOE连': {
             actions: {
                 action_1: '超压斧',
-                action_2: '秘银暴风'
+                action_2: '秘银暴风',
+                action_3: '钢铁旋风',
+                action_4: '原初的解放'
             },
-            key_levels: [40]
+            key_levels: [40],
+            variables: ['war_2x']
         }
     },
     '暗黑骑士': {
@@ -1037,6 +1040,7 @@ const special = {
     '※绿-红斩连': 'tank/warrior_aio.xml',
     '※绿斩连': 'melee/ninja_3x1.xml',
     '※红斩连': 'melee/ninja_3x1.xml',
+    '战士AOE连': 'tank/warrior_aoe.xml',
     '子弹连': 'tank/gunbreaker.xml',
 
     // H
