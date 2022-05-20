@@ -57,7 +57,8 @@ const actions = { '骑士':
         action_3: '暴风碎',
         action_4: '暴风斩' },
      key_levels: [ 4, 50 ] },
-  '解放-崩裂': { actions: { action_1: '原初的解放', action_2: '蛮荒崩裂', action_3: '原初的解放' } },
+  '解放-崩裂': { actions: { action_1: '原初的解放', action_2: '蛮荒崩裂', action_3: '蛮荒崩裂预备' } },
+  '战嚎-狂魂': { actions: { action_1: '战嚎', action_2: '原初之魂', action_3: '原初的混沌' } },
   'AOE连': 
    { actions: { action_1: '超压斧', action_2: '秘银暴风' },
      key_levels: [ 40 ] } },
@@ -570,6 +571,7 @@ const special = {
 '魔三连': 'redmage_3x.xml',
 '王权赎罪连': 'paladin.xml',
 '安魂-圣灵-大宝剑': 'paladin_magic.xml',
+'绿-红斩连': 'warrior_aio.xml',
 '子弹连': 'gunbreaker.xml',
 '直刺-樱花连': 'dragoon_aio.xml',
 '直刺连': 'dragoon.xml',
@@ -628,7 +630,7 @@ const special = {
 const changeWithBuff = ['安魂-悔罪', '高跳-幻象冲',
  '强力-辉煌', '即刻复活', '扇舞序-急', '扇舞破-急' , 
  '吸收-溃烂', '鸟1-鸟2',  '以太-吸收', '天地人-命水',
- '无情-音速破', '解放-崩裂', '血乱-拜年', '连珠-影噬',
+ '无情-音速破', '解放-崩裂', '战嚎-狂魂', '血乱-拜年', '连珠-影噬',
  '抽取-核爆',  '逆-瀑泻', '坠-喷泉', '升-风车', '落-血雨', '百花-终', 
  '探戈-流星舞', '爆发击-超高速',
  '均衡-诊断', '心关-拯救'] 
