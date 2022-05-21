@@ -54,7 +54,7 @@
         </Condition>
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="buff off" Id="%id_action_8%" RegularExpression="^.{14} Status(Add|Remove) 1(?&lt;effect&gt;A|E):[^:]*:(%action_4%|%action_5%|%action_6%):(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="buff off" Id="%id_action_8%" RegularExpression="^.{14} Status(Add|Remove) 1(?&lt;effect&gt;A|E):[^:]*:(%action_4%|%action_5%|%action_6%|%action_7%):(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="%id_action_8%" ActionType="Trigger" RefireInterrupt="True">
             <Condition Enabled="true" Grouping="Or">
