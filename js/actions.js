@@ -366,6 +366,7 @@ const actions = {
                 action_10: '震脚',
                 action_11: '无相身形'
             },
+            key_levels: [18, 30, 50],
             key_times: [7000]
         },
         '※军体拳-演武': {
