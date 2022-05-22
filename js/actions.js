@@ -367,7 +367,7 @@ const actions = {
                 action_11: '无相身形'
             },
             key_levels: [18, 30, 50],
-            key_times: [7500]
+            key_times: [8000]
         },
         '※军体拳-演武': {
             actions: {
@@ -377,7 +377,7 @@ const actions = {
                 action_4: '演武',
                 action_5: '无相身形'
             },
-            key_times: [7500],
+            key_times: [8000],
             variables: ['timeTwinSnakes']
         },
         '※军体拳-星导脚': {
@@ -388,7 +388,7 @@ const actions = {
                 action_4: '六合星导脚',
                 action_5: '无相身形'
             },
-            key_times: [7500],
+            key_times: [8000],
             variables: ['timeDemolish']
         },
         '震脚-必杀技': {
