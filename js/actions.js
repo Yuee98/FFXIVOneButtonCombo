@@ -402,7 +402,8 @@ const actions = {
                 action_7: '震脚',
                 action_8: '无相身形'
             },
-            key_levels: [82]
+            key_levels: [82],
+            key_times: [6000]
         },
         '震脚-必杀技': {
             actions: {
