@@ -391,6 +391,19 @@ const actions = {
             key_times: [8000],
             variables: ['timeDemolish']
         },
+        '※武僧AOE': {
+            actions: {
+                action_1: '破坏神冲',
+                action_2: '四面脚',
+                action_3: '地烈劲',
+                action_4: '魔猿形',
+                action_5: '盗龙形',
+                action_6: '猛豹形',
+                action_7: '震脚',
+                action_8: '无相身形'
+            },
+            key_levels: [82]
+        },
         '震脚-必杀技': {
             actions: {
                 action_1: '震脚',
@@ -422,19 +435,6 @@ const actions = {
                 action_7: '震脚',
                 action_8: '无相身形',
                 action_9: '双龙脚'
-            }
-        },
-        '武僧AOE': {
-            actions: {
-                action_1: '破坏神冲',
-                action_2: '四面脚',
-                action_3: '地烈劲',
-                action_4: '魔猿形',
-                action_5: '盗龙形',
-                action_6: '猛豹形',
-                action_7: '震脚',
-                action_8: '无相身形',
-                action_9: '破坏神冲'
             }
         }
     },
@@ -1054,7 +1054,7 @@ const special = {
     // melee
     '(旧)背身位': 'melee/monk.xml',
     '(旧)侧身位': 'melee/monk.xml',
-    '武僧AOE': 'melee/monk.xml',
+    '※武僧AOE': 'melee/monk_aoe.xml',
     '※军体拳-连击': 'melee/monk_aio.xml',
     '※军体拳-星导脚': 'melee/monk_aux.xml',
     '※军体拳-演武': 'melee/monk_aux.xml',
