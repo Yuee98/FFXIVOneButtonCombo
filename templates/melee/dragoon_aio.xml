@@ -191,6 +191,16 @@
           <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
         </Condition>
       </Trigger>
+      <Trigger Enabled="true" Name="%action_14%" Id="%id_action_14%" RegularExpression="^.{14} (AOE)?ActionEffect 1[56]:.{8}:(?&lt;player&gt;[^:]+?):[^:]+:(%action_14%|%action_15%)" PrevActions="Interrupt">
+        <Actions>
+          <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_1%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="200" Asynchronous="False" RefireInterrupt="True">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="true" Grouping="Or">
+          <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+        </Condition>
+      </Trigger>
     </Triggers>
   </ExportedFolder>
 </TriggernometryExport>

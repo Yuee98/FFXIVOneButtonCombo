@@ -51,7 +51,7 @@ function parseCombo() {
         var path = 'templates/changewithbuff.xml'
     } else {
         let l = Object.keys(actions[job][combo]['actions']).length
-        var path = `templates/combo${l}stage.xml`
+        var path = `templates/combo${l-1}stage.xml`
     }
     parseNormal(job, combo, path)
 }

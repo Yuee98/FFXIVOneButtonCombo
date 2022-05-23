@@ -53,7 +53,7 @@
         </Condition>
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="3%action_3%" Id="%id_action_3%" RegularExpression="^.{14} (AOE)?ActionEffect 1[56]:.{8}:(?&lt;player&gt;[^:]+?):[^:]+:%action_3%" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="3%action_3%" Id="%id_action_3%" RegularExpression="^.{14} (AOE)?ActionEffect 1[56]:.{8}:(?&lt;player&gt;[^:]+?):[^:]+:(%action_3%|%action_4%)" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="%id_action_2%" ActionType="Trigger">
             <Condition Enabled="false" Grouping="Or" />

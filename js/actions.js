@@ -7,7 +7,8 @@ const actions = {
                 action_3: '王权剑',
                 action_4: '赎罪剑',
                 action_5: '忠义之剑',
-                action_6: '沥血剑'
+                action_6: '沥血剑',
+                action_7: '全蚀斩'
             },
             key_levels: [4, 26, 76]
         },
@@ -25,7 +26,8 @@ const actions = {
                 action_1: '先锋剑',
                 action_2: '暴乱剑',
                 action_3: '王权剑',
-                action_4: '沥血剑'
+                action_4: '沥血剑',
+                action_5: '全蚀斩'
             },
             key_levels: [4, 26]
         },
@@ -34,14 +36,16 @@ const actions = {
                 action_1: '先锋剑',
                 action_2: '暴乱剑',
                 action_3: '沥血剑',
-                action_4: '王权剑'
+                action_4: '王权剑',
+                action_5: '全蚀斩'
             },
             key_levels: [4, 54]
         },
         'AOE连': {
             actions: {
                 action_1: '全蚀斩',
-                action_2: '日珥斩'
+                action_2: '日珥斩',
+                action_3: '先锋剑'
             },
             key_levels: [40]
         },
@@ -71,7 +75,8 @@ const actions = {
                 action_3: '暴风斩',
                 action_4: '暴风碎',
                 action_5: '原初之魂',
-                action_6: '原初的解放'
+                action_6: '原初的解放',
+                action_7: '超压斧'
             },
             key_levels: [4, 26, 50],
             key_times: [10000]
@@ -83,7 +88,8 @@ const actions = {
                 action_3: '暴风斩',
                 action_4: '暴风碎',
                 action_5: '原初之魂',
-                action_6: '原初的解放'
+                action_6: '原初的解放',
+                action_7: '超压斧'
             },
             key_levels: [4, 26],
             variables: ['war_3x']
@@ -95,7 +101,8 @@ const actions = {
                 action_3: '暴风碎',
                 action_4: '暴风斩',
                 action_5: '原初之魂',
-                action_6: '原初的解放'
+                action_6: '原初的解放',
+                action_7: '超压斧'
             },
             key_levels: [4, 50],
             variables: ['war_3x']
@@ -119,7 +126,8 @@ const actions = {
                 action_1: '超压斧',
                 action_2: '秘银暴风',
                 action_3: '钢铁旋风',
-                action_4: '原初的解放'
+                action_4: '原初的解放',
+                action_5: '重劈'
             },
             key_levels: [40],
             variables: ['war_2x']
@@ -130,7 +138,8 @@ const actions = {
             actions: {
                 action_1: '重斩',
                 action_2: '吸收斩',
-                action_3: '噬魂斩'
+                action_3: '噬魂斩',
+                action_4: '释放'
             },
             key_levels: [2, 26]
         },
@@ -144,7 +153,8 @@ const actions = {
         'AOE连': {
             actions: {
                 action_1: '释放',
-                action_2: '刚魂'
+                action_2: '刚魂',
+                action_3: '重斩'
             },
             key_levels: [72]
         }
@@ -154,7 +164,8 @@ const actions = {
             actions: {
                 action_1: '利刃斩',
                 action_2: '残暴弹',
-                action_3: '迅连斩'
+                action_3: '迅连斩',
+                action_4: '恶魔切'
             },
             key_levels: [4, 26]
         },
@@ -184,7 +195,8 @@ const actions = {
         'AOE连': {
             actions: {
                 action_1: '恶魔切',
-                action_2: '恶魔杀'
+                action_2: '恶魔杀',
+                action_3: '利刃斩'
             },
             key_levels: [40]
         },
@@ -192,7 +204,8 @@ const actions = {
             actions: {
                 action_1: '恶魔切',
                 action_2: '恶魔杀',
-                action_3: '命运之环'
+                action_3: '命运之环',
+                action_4: '利刃斩'
             },
             key_levels: [40, 72]
         }
@@ -212,7 +225,9 @@ const actions = {
                 action_10: '龙尾大回旋预备',
                 action_11: '苍穹刺',
                 action_12: '樱花缭乱',
-                action_13: '龙枪'
+                action_13: '龙枪',
+                action_14: '死天枪',
+                action_15: '龙眼苍穹'
             },
             key_levels: [4, 18, 26, 50],
             key_times: [10000, 15000]
@@ -227,7 +242,9 @@ const actions = {
                 action_6: '龙眼雷电',
                 action_7: '龙牙龙爪预备',
                 action_8: '苍穹刺',
-                action_9: '樱花缭乱'
+                action_9: '樱花缭乱',
+                action_10: '死天枪',
+                action_11: '龙眼苍穹'
             },
             key_levels: [4, 26]
         },
@@ -241,7 +258,9 @@ const actions = {
                 action_6: '龙眼雷电',
                 action_7: '龙尾大回旋预备',
                 action_8: '樱花缭乱',
-                action_9: '苍穹刺'
+                action_9: '苍穹刺',
+                action_10: '死天枪',
+                action_11: '龙眼苍穹'
             },
             key_levels: [18, 50]
         },
@@ -257,7 +276,9 @@ const actions = {
                 action_1: '死天枪',
                 action_2: '音速刺',
                 action_3: '山境酷刑',
-                action_4: '龙眼苍穹'
+                action_4: '龙眼苍穹',
+                action_5: '精准刺',
+                action_6: '龙眼雷电'
             },
             key_levels: [62, 72]
         }
@@ -279,7 +300,8 @@ const actions = {
                 action_3: '旋风刃',
                 action_4: '强甲破点突',
                 action_5: '月影雷兽牙',
-                action_6: '月影雷兽预备'
+                action_6: '月影雷兽预备',
+                action_7: '血雨飞花'
             },
             key_levels: [4, 26, 54],
             key_times: [10000]
@@ -291,7 +313,8 @@ const actions = {
                 action_3: '旋风刃',
                 action_4: '强甲破点突',
                 action_5: '月影雷兽牙',
-                action_6: '月影雷兽预备'
+                action_6: '月影雷兽预备',
+                action_7: '血雨飞花'
             },
             key_levels: [4, 26],
             variables: ['ninja_3x']
@@ -303,7 +326,8 @@ const actions = {
                 action_3: '强甲破点突',
                 action_4: '旋风刃',
                 action_5: '月影雷兽爪',
-                action_6: '月影雷兽预备'
+                action_6: '月影雷兽预备',
+                action_7: '血雨飞花'
             },
             key_levels: [4, 54],
             variables: ['ninja_3x']
@@ -318,7 +342,8 @@ const actions = {
         'AOE连': {
             actions: {
                 action_1: '血雨飞花',
-                action_2: '八卦无刃杀'
+                action_2: '八卦无刃杀',
+                action_3: '双刃旋'
             },
             key_levels: [52]
         },
@@ -448,7 +473,9 @@ const actions = {
                 action_4: '月光',
                 action_5: '雪风',
                 action_6: '明镜止水',
-                action_7: '叶隐'
+                action_7: '叶隐',
+                action_8: '风雅',
+                action_9: '风光'
             },
             key_levels: [18, 40, 68]
         },
@@ -460,7 +487,9 @@ const actions = {
                 action_4: '花车',
                 action_5: '雪风',
                 action_6: '明镜止水',
-                action_7: '叶隐'
+                action_7: '叶隐',
+                action_8: '风雅',
+                action_9: '风光'
             },
             key_levels: [4, 30, 68]
         },
@@ -470,7 +499,9 @@ const actions = {
                 action_2: '雪风',
                 action_3: '月光',
                 action_4: '花车',
-                action_5: '明镜止水'
+                action_5: '明镜止水',
+                action_6: '风雅',
+                action_7: '风光'
             },
             key_levels: [50]
         },
@@ -480,7 +511,8 @@ const actions = {
                 action_2: '樱花',
                 action_3: '满月',
                 action_4: '明镜止水',
-                action_5: '风光'
+                action_5: '风光',
+                action_6: '刃风'
             },
             key_levels: [45]
         },
@@ -490,7 +522,8 @@ const actions = {
                 action_2: '满月',
                 action_3: '樱花',
                 action_4: '明镜止水',
-                action_5: '风光'
+                action_5: '风光',
+                action_6: '刃风'
             },
             key_levels: [35]
         },
@@ -525,14 +558,16 @@ const actions = {
             actions: {
                 action_1: '切割',
                 action_2: '增盈切割',
-                action_3: '地狱切割'
+                action_3: '地狱切割',
+                action_4: '旋转钐割'
             },
             key_levels: [5, 30]
         },
         'AOE连': {
             actions: {
                 action_1: '旋转钐割',
-                action_2: '噩梦钐割'
+                action_2: '噩梦钐割',
+                action_3: '切割'
             },
             key_levels: [45]
         },
@@ -628,16 +663,11 @@ const actions = {
                 action_3: '狙击弹',
                 action_4: '热分裂弹',
                 action_5: '热独头弹',
-                action_6: '热狙击弹'
+                action_6: '热狙击弹',
+                action_7: '散射',
+                action_8: '霰弹枪'
             },
             key_levels: [2, 26]
-        },
-        '钻-锚': {
-            actions: {
-                action_1: '钻头',
-                action_2: '空气锚'
-            },
-            key_levels: [58]
         },
         '超荷-热冲击': {
             actions: {
