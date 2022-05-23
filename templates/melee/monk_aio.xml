@@ -70,46 +70,6 @@
         </Condition>
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="%action_10%on" Id="%id_action_1%" RegularExpression="^.{14} (AOE)?ActionEffect 1[56]:.{8}:(?&lt;player&gt;[^:]+?):[^:]+:%action_10%" PrevActions="Interrupt">
-        <Actions>
-          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_1%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
-            <Condition Enabled="true" Grouping="Or">
-              <ConditionSingle Enabled="true" ExpressionL="${var:isLeadenFist}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-            </Condition>
-            <Conditions />
-          </Action>
-          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_4%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
-            <Condition Enabled="true" Grouping="Or">
-              <ConditionSingle Enabled="true" ExpressionL="${var:isLeadenFist}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
-            </Condition>
-            <Conditions />
-          </Action>
-        </Actions>
-        <Condition Enabled="true" Grouping="Or">
-          <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-        </Condition>
-        <Conditions />
-      </Trigger>
-      <Trigger Enabled="true" Name="%action_10%off" Id="%id_action_2%" RegularExpression="^.{14} StatusRemove 1E:[^:]*:%action_10%:(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):" PrevActions="Interrupt">
-        <Actions>
-          <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_1%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="100" RefireInterrupt="True">
-            <Condition Enabled="true" Grouping="Or">
-              <ConditionSingle Enabled="true" ExpressionL="${var:isLeadenFist}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-            </Condition>
-            <Conditions />
-          </Action>
-          <Action OrderNumber="2" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_4%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
-            <Condition Enabled="true" Grouping="Or">
-              <ConditionSingle Enabled="true" ExpressionL="${var:isLeadenFist}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
-            </Condition>
-            <Conditions />
-          </Action>
-        </Actions>
-        <Condition Enabled="true" Grouping="Or">
-          <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-        </Condition>
-        <Conditions />
-      </Trigger>
       <Trigger Enabled="true" Name="%action_7%" Id="%id_action_7%" RegularExpression="^.{14} StatusAdd 1A:[^:]*:%action_7%:(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_1%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
@@ -132,7 +92,7 @@
         </Condition>
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="buff off" Id="%id_action_11%" RegularExpression="^.{14} Status(Add|Remove) 1(?&lt;effect&gt;A|E):[^:]*:(%action_7%|%action_8%|%action_9%):(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="buff off" Id="%id_action_11%" RegularExpression="^.{14} Status(Add|Remove) 1(?&lt;effect&gt;A|E):[^:]*:(%action_7%|%action_8%|%action_9%|%action_10%):(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="%id_action_11%" ActionType="Trigger" RefireInterrupt="True">
             <Condition Enabled="true" Grouping="Or">
@@ -140,8 +100,15 @@
             </Condition>
           </Action>
           <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_1%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="100" RefireInterrupt="True">
-            <Condition Enabled="true" Grouping="Or">
+            <Condition Enabled="true" Grouping="And">
               <ConditionSingle Enabled="true" ExpressionL="${effect}" ExpressionTypeL="String" ExpressionR="E" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+              <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="%key_level_2%" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_4%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" RefireInterrupt="True">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${effect}" ExpressionTypeL="String" ExpressionR="E" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+              <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].level}" ExpressionTypeL="Numeric" ExpressionR="%key_level_2%" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
             </Condition>
           </Action>
         </Actions>
