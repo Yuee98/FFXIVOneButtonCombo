@@ -65,6 +65,20 @@
         <Condition Enabled="false" Grouping="Or" />
         <Conditions />
       </Trigger>
+      <Trigger Enabled="true" Name="Reset" Id="%id_combo%" RegularExpression="^.{14} (AddCombatant 03:[^:]*:(?&lt;player&gt;.+?):(?&lt;job&gt;.+?):|Director 21:.{8}:4000001(?&lt;d&gt;[026]))">
+        <Actions>
+          <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_1%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="true" Grouping="Or">
+          <ConditionSingle Enabled="true" ExpressionL="${d}" ExpressionTypeL="String" ExpressionR="" ExpressionTypeR="String" ConditionType="StringNotEqualCase" />
+          <ConditionGroup Enabled="true" Grouping="And">
+            <ConditionSingle Enabled="true" ExpressionL="hex2dec(${job})" ExpressionTypeL="Numeric" ExpressionR="${_ffxivparty[${_ffxivplayer}].jobid}" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+          </ConditionGroup>
+        </Condition>
+      </Trigger>
     </Triggers>
   </ExportedFolder>
 </TriggernometryExport>
