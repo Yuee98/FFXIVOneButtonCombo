@@ -475,7 +475,10 @@ const actions = {
                 action_6: '明镜止水',
                 action_7: '叶隐',
                 action_8: '风雅',
-                action_9: '风光'
+                action_9: '风光',
+                action_10: '彼岸花',
+                action_11: '天下五剑',
+                action_12: '纷乱雪月花'
             },
             key_levels: [18, 40, 68]
         },
@@ -489,7 +492,10 @@ const actions = {
                 action_6: '明镜止水',
                 action_7: '叶隐',
                 action_8: '风雅',
-                action_9: '风光'
+                action_9: '风光',
+                action_10: '彼岸花',
+                action_11: '天下五剑',
+                action_12: '纷乱雪月花'
             },
             key_levels: [4, 30, 68]
         },
