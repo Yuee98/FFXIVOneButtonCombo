@@ -37,7 +37,7 @@
       </Trigger>
       <Trigger Enabled="true" Name="Reset" Id="%id_combo%" RegularExpression="^.{14} (AddCombatant 03:[^:]*:(?&lt;player&gt;.+?):(?&lt;job&gt;.+?):|Director 21:.{8}:4000001(?&lt;d&gt;[026]))">
         <Actions>
-          <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_1%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+          <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/%is_cross%hotbar set &quot;%action_4%&quot; %position% " TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
             <Condition Enabled="false" Grouping="Or" />
           </Action>
         </Actions>
