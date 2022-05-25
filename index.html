@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
             integrity="sha256-T/zFmO5s/0aSwc6ics2KLxlfbewyRz6UNw1s3Ppf5gE=" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.6.0/dist/slate/bootstrap.min.css" 
@@ -54,7 +53,6 @@
                 </div>
             </nav>
             <br />
-            <!-- <h2>最终幻想14一键连击生成器</h2> -->
             <br />
             <br />
             <br />
@@ -161,51 +159,6 @@
                     <br />
                 </div>
             </div>
-            <div class="row d-none" id="special_parser">
-                <div class="col-lg-3">
-                    <div class="row d-none" id="position">
-                        <div class="col-lg-6">
-                            <label>备份热键栏</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="备份热键栏" id="pos_back" value="8">
-                        </div>
-                        <div class="col-lg-6">
-                            <label>当前热键栏</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="当前热键栏" id="pos_current" value="1">
-                        </div>
-                    </div>
-                    <br />
-                    <label>操作方式</label>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="is_corss_reset" id="is_corss_false_reset">
-                                    键盘
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="is_corss_reset" id="is_corss_true_reset" checked>
-                                    手柄
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <br />
-                    <button type="button" class="btn btn-primary" id="generate_button">生成</button>
-                    <button type="button" class="btn btn-primary" id="clipboard_button">复制到剪切板</button>
-                    <br />
-                    <br />
-                </div>   
-
-            </div>
-            
-            <!-- <div class="row" id="normal_parser_2">
-
-
-            </div> -->
             <div class="row">
                 <div class="col-lg-9 output-anchor">
                     <textarea class="form-control" id="trigger_output" rows="10"></textarea>

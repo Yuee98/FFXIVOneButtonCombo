@@ -2,17 +2,12 @@
 function fillActions() {
     let job = $("#job_selected").val()
     let combo = $("#combo_selected").val()
-    if (combo == '重置') {
-        fillReset()
-        return
-    } 
+
     if (jQuery.inArray(combo, Object.keys(base)) != -1) {
         $('.need-hid').attr("disabled", true)
     } else {
         $('.need-hid').attr("disabled", false)
     }
-    $("#special_parser").addClass("d-none")
-    $("#normal_parser").removeClass("d-none")
     fillNormal(job, combo)
 }
 
@@ -29,10 +24,6 @@ function fillNormal(job, combo) {
     $("#combo").val(combo)
 }   
 
-function fillReset() {
-    $("#is_corss_false").removeClass("d-none")
-    $("#normal_parser").addClass("d-none")
-}
 
 function parseCombo() {
     let job = $("#job_selected").val()
@@ -40,10 +31,7 @@ function parseCombo() {
     var isSpecial = jQuery.inArray(combo, Object.keys(special))
     var isBase = jQuery.inArray(combo, Object.keys(base))
     
-    if (combo == '重置') {
-        parseReset()
-        return
-    } else if (isBase != -1){
+    if (isBase != -1){
         var path = 'templates/' + base[combo]
     } else if (isSpecial != -1){
         var path = 'templates/' + special[combo]
@@ -106,22 +94,6 @@ async function parseNormal(job, combo, path) {
 
 }   
 
-async function parseReset() {
-    var settings = {}
-    let template = await fetch('templates/reset.xml').then(response => response.text())
-    if ($('#is_corss_true_reset').prop('checked')) {
-        settings['is_cross'] = 'c'
-    } else {
-        settings['is_cross'] = ''
-    }
-    // settings['pos_back'] = $('#pos_back').val()
-    // settings['pos_current'] = $('#pos_current').val()
-    for (key in settings){
-        template = template.replace(new RegExp(`%${key}%`,'g'), settings[key])
-    }
-    // console.log(settings)
-    $("#trigger_output").val(template)
-}
 
 function refreshJob() {
     $("#job_selected").empty()

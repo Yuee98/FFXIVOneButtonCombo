@@ -1070,11 +1070,11 @@ const actions = {
             }
         },
     },
-    '其他': {
-        '重置': {
-            actions: null
-        }
-    }
+    // '其他': {
+    //     '重置': {
+    //         actions: null
+    //     }
+    // }
 }
 
 const base = { 
