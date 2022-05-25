@@ -24,6 +24,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 - 所有按键均使用/hotbar set放置，无需占用额外按键栏
 - 一定程度的异常处理
 - 带有等级判断，不够等级的技能自动跳过
+- 每个键位都有自动复位功能，进本、团灭、切换地图时自动重置
 - 支持键盘和手柄按键
 
 
@@ -49,10 +50,6 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 
     ![image](./image/导入.png)
 
-
-
-## 关于复位
-每个键位都有自动复位功能，进本、团灭、切换地图时自动重置
 
 
 ## 职业说明
