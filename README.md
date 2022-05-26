@@ -10,6 +10,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 - ~~钐镰客只做了基本的练级做完了80级以下循环，86技能还没放进去，也是等满级再继续写~~ 写完了
 - ~~占星技能大改，有空再看看还需不需要自动发卡~~ 写完了
 - **有前缀※的连击需要添加对应职业的基础触发器(※)，** 例如忍者的 "**※普通-风遁连**" 需要添加 "**忍者-基础(※)**"
+- 新增一次性生成多个职业触发器的工具(需要python环境) -> [点击这里](https://github.com/Yuee98/One-Button-Auxiliary-Tool)
 ****
 
 
