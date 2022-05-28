@@ -3,7 +3,7 @@
   <ExportedFolder Id="%id_combo%" Name="%combo%" Enabled="true">
     <Folders />
     <Triggers>
-      <Trigger Enabled="true" Name="%action_1%on" Id="%id_action_1%" RegularExpression="^.{14} StatusAdd 1A:[^:]*:(%action_1%|%action_2%|%action_3%):(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?)" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_1%on" Id="%id_action_1%" RegularExpression="^.{14} StatusAdd 1A:[^:]*:(%action_1%|%action_2%|%action_3%):(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="n_Cast" VariableExpression="${var:n_Cast}+1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="50" Asynchronous="False">
             <Condition Enabled="true" Grouping="Or">
@@ -21,7 +21,7 @@
         </Condition>
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="%action_1%off" Id="%id_action_2%" RegularExpression="^.{14} StatusRemove 1E:[^:]*:(%action_1%|%action_2%|%action_3%):(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?)" PrevActions="Interrupt">
+      <Trigger Enabled="true" Name="%action_1%off" Id="%id_action_2%" RegularExpression="^.{14} StatusRemove 1E:[^:]*:(%action_1%|%action_2%|%action_3%):(?&lt;duration&gt;.+?):[^:]*:(?&lt;player&gt;.+?):" PrevActions="Interrupt">
         <Actions>
           <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="n_Cast" VariableExpression="${var:n_Cast}-1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="50" Asynchronous="False">
             <Condition Enabled="true" Grouping="Or">
