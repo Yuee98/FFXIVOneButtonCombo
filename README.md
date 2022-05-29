@@ -54,7 +54,7 @@ FFXIV one button combo based on Triggernometry and PostNamazu
 
 
 ## 职业说明
-
+以下说明均为5.x旧版本，6.0版请根据触发器名称自行推断
 <details><summary><font size=4>骑士</font></summary>
 <ul>
 <li>王权连、沥血连和AOE连<ul>
