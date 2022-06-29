@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<TriggernometryExport Version="1">
+  <ExportedFolder Id="%id_combo%" Name="%combo%" Enabled="true">
+    <Folders />
+    <Triggers>
+      <Trigger Enabled="true" Name="Gauge" Id="4a337a65-361a-4dfe-a5be-3e8f67cefd3d" RegularExpression="^.{14} Gauge 1F:[^:]*:(?&lt;l&gt;[^:]{2})[^:]{4}20:[^:]*(?&lt;h&gt;[^:]{2})">
+        <Actions>
+          <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="t_Darkside" VariableExpression="${_timestampms}+hex2dec(${h}${l})" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
+      </Trigger>
+    </Triggers>
+  </ExportedFolder>
+</TriggernometryExport>

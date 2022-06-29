@@ -141,6 +141,8 @@ const actions = {
         }
     },
     '暗黑骑士': {
+        '黑骑-基础(※)': {
+        },
         '基础连': {
             actions: {
                 action_1: '重斩',
@@ -149,6 +151,19 @@ const actions = {
                 action_4: '释放'
             },
             key_levels: [2, 26]
+        },
+        '※基础-buff连': {
+            actions: {
+                action_1: '重斩',
+                action_2: '吸收斩',
+                action_3: '噬魂斩',
+                action_4: '释放',
+                action_5: '暗影锋',
+                action_6: '暗黑锋'
+            },
+            key_levels: [2, 26, 40],
+            key_times: [5000],
+            variables: ['drk_3x', 't_Darkside']
         },
         '血乱-拜年': {
             actions: {
@@ -164,6 +179,18 @@ const actions = {
                 action_3: '重斩'
             },
             key_levels: [72]
+        },
+        '※AOE-buff连': {
+            actions: {
+                action_1: '释放',
+                action_2: '刚魂',
+                action_3: '重斩',
+                action_4: '暗影波动',
+                action_5: '暗黑波动'
+            },
+            key_levels: [72, 30],
+            key_times: [5000],
+            variables: ['drk_2x', 't_Darkside']
         }
     },
     '绝枪战士': {
@@ -583,11 +610,12 @@ const actions = {
                 action_2: '增盈切割',
                 action_3: '地狱切割',
                 action_4: '旋转钐割',
-                action_5: '死亡烙印',
+                action_5: '死亡之涡',
                 action_6: '死亡之影'
             },
             key_levels: [5, 30, 10],
-            key_times: [5000]
+            key_times: [5000],
+            variables: ['rpr_3x', 't_Death']
         },
         'AOE连': {
             actions: {
@@ -602,11 +630,12 @@ const actions = {
                 action_1: '旋转钐割',
                 action_2: '噩梦钐割',
                 action_3: '切割',
-                action_4: '死亡烙印',
+                action_4: '死亡之影',
                 action_5: '死亡之涡'
             },
             key_levels: [45, 35],
-            key_times: [5000]
+            key_times: [5000],
+            variables: ['rpr_2x', 't_Death']
         },
         '※绞决-缢杀-隐匿挥割': {
             actions: {
@@ -1103,6 +1132,7 @@ const actions = {
 
 const base = { 
     '战士-基础(※)': 'tank/warrior_var.xml',
+    '黑骑-基础(※)': 'tank/darkknight_var.xml',
     '赤魔-基础(※)': 'magic/redmage_var.xml',
     '镰刀-基础(※)': 'melee/reaper_var.xml',
     '武僧-基础(※)': 'melee/monk_var.xml',
