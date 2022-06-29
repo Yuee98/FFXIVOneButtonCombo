@@ -564,7 +564,8 @@ const actions = {
                 action_3: '绞决效果提高',
                 action_4: '缢杀效果提高',
                 action_5: '虚无收割效果提高',
-                action_6: '交错收割效果提高'
+                action_6: '交错收割效果提高',
+                action_7: '死亡烙印'
             }
         },
         '基础连': {
@@ -576,6 +577,18 @@ const actions = {
             },
             key_levels: [5, 30]
         },
+        '※基础-buff连': {
+            actions: {
+                action_1: '切割',
+                action_2: '增盈切割',
+                action_3: '地狱切割',
+                action_4: '旋转钐割',
+                action_5: '死亡烙印',
+                action_6: '死亡之影'
+            },
+            key_levels: [5, 30, 10],
+            key_times: [5000]
+        },
         'AOE连': {
             actions: {
                 action_1: '旋转钐割',
@@ -583,6 +596,17 @@ const actions = {
                 action_3: '切割'
             },
             key_levels: [45]
+        },
+        '※AOE-buff连': {
+            actions: {
+                action_1: '旋转钐割',
+                action_2: '噩梦钐割',
+                action_3: '切割',
+                action_4: '死亡烙印',
+                action_5: '死亡之涡'
+            },
+            key_levels: [45, 35],
+            key_times: [5000]
         },
         '※绞决-缢杀-隐匿挥割': {
             actions: {
@@ -1127,6 +1151,8 @@ const special = {
     '※绞决-缢杀-隐匿挥割': 'melee/reaper_buff.xml',
     '※绞决-缢杀-暴食': 'melee/reaper_buff_reduced.xml',
     '※束缚挥割-断首': 'melee/reaper_buff_aoe.xml',
+    '※基础-buff连': 'melee/reaper_3xbuff.xml',
+    '※AOE-buff连': 'melee/reaper_2xbuff.xml',
 
     '※普通-风遁连': 'melee/ninja_aio.xml',
     '※普通连': 'melee/ninja_3x1.xml',
