@@ -143,7 +143,7 @@ const actions = {
     '暗黑骑士': {
         '黑骑-基础(※)': {
             actions: {
-                action_1: null
+                action_1: 'null'
             },
         },
         '基础连': {
