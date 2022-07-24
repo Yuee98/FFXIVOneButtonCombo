@@ -229,22 +229,14 @@ const actions = {
                 action_3: '无情'
             }
         },
-        'AOE连': {
-            actions: {
-                action_1: '恶魔切',
-                action_2: '恶魔杀',
-                action_3: '利刃斩'
-            },
-            key_levels: [40]
-        },
-        'AOE+子弹': {
+        'AOE-子弹连': {
             actions: {
                 action_1: '恶魔切',
                 action_2: '恶魔杀',
                 action_3: '命运之环',
                 action_4: '利刃斩'
             },
-            key_levels: [40, 72]
+            key_levels: [40, 72, 88]
         }
     },
     '龙骑士': {
@@ -1152,6 +1144,7 @@ const special = {
     '※红斩连': 'melee/ninja_3x1.xml',
     '战士AOE连': 'tank/warrior_aoe.xml',
     '子弹连': 'tank/gunbreaker.xml',
+    'AOE-子弹连': 'tank/gunbreaker_aoe.xml',
 
     // H
     '抽卡-重抽': 'healer/astrologian_draw.xml',
