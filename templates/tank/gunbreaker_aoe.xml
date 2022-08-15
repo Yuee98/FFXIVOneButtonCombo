@@ -92,7 +92,7 @@
         </Condition>
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="Gauge" Id="%id_action_4%" RegularExpression="^.{14} Gauge 1F:[^:]*:(?&lt;ammo&gt;[^:])25:">
+      <Trigger Enabled="true" Name="Gauge" Id="%id_action_4%" RegularExpression="^.{14} Gauge 1F:[^:]*:[^:]*(?&lt;ammo&gt;[^:])25:">
         <Actions>
           <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="n_Ammo" VariableExpression="${ammo}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
             <Condition Enabled="false" Grouping="Or" />
