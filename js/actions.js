@@ -963,7 +963,10 @@ const actions = {
                 action_1: '连续咏唱',
                 action_2: '即刻咏唱',
                 action_3: '促进',
-            }
+                action_4: '赤飞石预备',
+                action_5: '赤火炎预备'
+            },
+            variables: ['is_Stone', 'is_Fire']
         },
         '魔三连': {
             actions: {
@@ -989,7 +992,8 @@ const actions = {
                 action_10: '决断',
                 action_11: '赤疾风'
             },
-            key_levels: [70, 80, 90]
+            key_levels: [70, 80, 90],
+            variables: ['is_Stone']
         },
         '※火-雷': {
             actions: {
@@ -1005,13 +1009,14 @@ const actions = {
                 action_10: '决断',
                 action_11: '赤闪雷'
             },
-            key_levels: [68, 80, 90]
+            key_levels: [68, 80, 90],
+            variables: ['is_Fire']
         },
         '※AOE风-散碎': {
             actions: {
                 action_1: '赤烈风',
                 action_2: '散碎',
-                action_3: '散碎',
+                action_3: '赤烈风',
                 action_4: '赤核爆',
                 action_5: '赤神圣',
                 action_6: '连续咏唱',
@@ -1027,7 +1032,7 @@ const actions = {
             actions: {
                 action_1: '赤震雷',
                 action_2: '散碎',
-                action_3: '散碎',
+                action_3: '赤震雷',
                 action_4: '赤核爆',
                 action_5: '赤神圣',
                 action_6: '连续咏唱',
