@@ -683,7 +683,6 @@ const actions = {
             }
         }
     },
-
     '诗人': {
         '歌曲循环': {
             actions: {
@@ -757,6 +756,15 @@ const actions = {
         }
     },
     '舞者': {
+        '舞者-基础(※)': {
+            actions: {
+                action_1: '对称投掷',
+                action_2: '对称投掷·百花争艳',
+                action_3: '非对称投掷',
+                action_4: '非对称投掷·百花争艳'
+            },
+            variables: ['n_Sym', 'n_Flow']
+        },
         '标准舞步': {
             actions: {
                 action_1: '标准舞步',
@@ -775,33 +783,41 @@ const actions = {
                 action_5: '坠喷泉'
             }
         },
-        '逆-瀑泻': {
+        '※逆-瀑泻': {
             actions: {
                 action_1: '瀑泻',
                 action_2: '逆瀑泻',
-                action_3: '对称投掷'
-            }
+                action_3: '对称投掷',
+                action_4: '对称投掷·百花争艳'
+            },
+            variables: ['n_Sym']
         },
-        '坠-喷泉': {
+        '※坠-喷泉': {
             actions: {
                 action_1: '喷泉',
                 action_2: '坠喷泉',
-                action_3: '非对称投掷'
-            }
+                action_3: '非对称投掷',
+                action_4: '非对称投掷·百花争艳'
+            },
+            variables: ['n_Flow']
         },
-        '升-风车': {
+        '※升-风车': {
             actions: {
                 action_1: '风车',
                 action_2: '升风车',
-                action_3: '对称投掷'
-            }
+                action_3: '对称投掷',
+                action_4: '对称投掷·百花争艳'
+            },
+            variables: ['n_Sym']
         },
-        '落-血雨': {
+        '※落-血雨': {
             actions: {
                 action_1: '落刃雨',
                 action_2: '落血雨',
-                action_3: '非对称投掷'
-            }
+                action_3: '非对称投掷',
+                action_4: '非对称投掷·百花争艳'
+            },
+            variables: ['n_Flow']
         },
         '扇舞序-急': {
             actions: {
@@ -1128,10 +1144,11 @@ const actions = {
 const base = { 
     '战士-基础(※)': 'tank/warrior_var.xml',
     '黑骑-基础(※)': 'tank/darkknight_var.xml',
-    '赤魔-基础(※)': 'magic/redmage_var.xml',
     '镰刀-基础(※)': 'melee/reaper_var.xml',
     '武僧-基础(※)': 'melee/monk_var.xml',
     '忍者-基础(※)': 'melee/ninja_var.xml',
+    '舞者-基础(※)': 'range/dancer_var.xml',
+    '赤魔-基础(※)': 'magic/redmage_var.xml',
     '自动发卡(测试)': 'healer/ast_auto_play.xml',
 }
  
@@ -1196,6 +1213,10 @@ const special = {
     '散射-自动弩': 'range/machinist_heat.xml',
     '炮塔-自爆': 'range/machinist_battery.xml',
 
+    '※逆-瀑泻': 'range/dancer_base.xml',
+    '※坠-喷泉': 'range/dancer_base.xml',
+    '※升-风车': 'range/dancer_base.xml',
+    '※落-血雨': 'range/dancer_base.xml',
     '标准舞步': 'range/dancer_std.xml',
     '技巧舞步': 'range/dancer_tech.xml',
 
@@ -1231,7 +1252,7 @@ const changeWithBuff = [
    '即刻复活', '均衡-诊断', '心关-拯救', '吸收-溃烂',
    '高跳-幻象冲', '天地人-命水', '神秘环-大丰收',
    '强力-辉煌', '连珠-影噬',
-   '扇舞序-急', '扇舞破-急', '逆-瀑泻', '坠-喷泉', '升-风车', '落-血雨', '百花-终', '探戈-流星舞', 
+   '扇舞序-急', '扇舞破-急', '百花-终', '探戈-流星舞', 
    '以太-吸收', '抽取-核爆',  
 ] 
 
