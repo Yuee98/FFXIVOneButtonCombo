@@ -989,8 +989,7 @@ const actions = {
                 action_7: '即刻咏唱',
                 action_8: '促进',
                 action_9: '焦热',
-                action_10: '决断',
-                action_11: '赤疾风'
+                action_10: '决断'
             },
             key_levels: [70, 80, 90],
             variables: ['is_Stone']
@@ -1006,8 +1005,7 @@ const actions = {
                 action_7: '即刻咏唱',
                 action_8: '促进',
                 action_9: '焦热',
-                action_10: '决断',
-                action_11: '赤闪雷'
+                action_10: '决断'
             },
             key_levels: [68, 80, 90],
             variables: ['is_Fire']
@@ -1016,15 +1014,14 @@ const actions = {
             actions: {
                 action_1: '赤烈风',
                 action_2: '散碎',
-                action_3: '赤烈风',
+                action_3: '摇荡',
                 action_4: '赤核爆',
                 action_5: '赤神圣',
                 action_6: '连续咏唱',
                 action_7: '即刻咏唱',
                 action_8: '促进',
                 action_9: '焦热',
-                action_10: '决断',
-                action_11: '赤烈风'
+                action_10: '决断'
             },
             key_levels: [70, 80, 90]
         },
@@ -1032,15 +1029,14 @@ const actions = {
             actions: {
                 action_1: '赤震雷',
                 action_2: '散碎',
-                action_3: '赤震雷',
+                action_3: '摇荡',
                 action_4: '赤核爆',
                 action_5: '赤神圣',
                 action_6: '连续咏唱',
                 action_7: '即刻咏唱',
                 action_8: '促进',
                 action_9: '焦热',
-                action_10: '决断',
-                action_11: '赤震雷'
+                action_10: '决断'
             },
             key_levels: [68, 80, 90]
         },
@@ -1241,8 +1237,8 @@ const special = {
 
     '※石-风': 'magic/redmage_base.xml',
     '※火-雷': 'magic/redmage_base.xml',
-    '※AOE风-散碎': 'magic/redmage_base.xml',
-    '※AOE雷-散碎': 'magic/redmage_base.xml',
+    '※AOE风-散碎': 'magic/redmage_aoe.xml',
+    '※AOE雷-散碎': 'magic/redmage_aoe.xml',
     '魔三连': 'magic/redmage_3x.xml',
 
 }
