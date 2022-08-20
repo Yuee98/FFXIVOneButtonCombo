@@ -166,17 +166,17 @@
         <Condition Enabled="false" Grouping="Or" />
         <Conditions />
       </Trigger>
-      <Trigger Enabled="true" Name="判断花色" Id="%id_action_3%" RegularExpression="^.{14} Gauge 1F:[^:]*:21:((?&lt;seal2&gt;[0-9])0(?&lt;seal1&gt;[0-9])(?&lt;crown&gt;[0-9])(?&lt;card&gt;[0-9])00:[^:]*0(?&lt;seal3&gt;[0-9]):|(?&lt;seal1&gt;[0-9])(?&lt;crown&gt;[0-9])(?&lt;card&gt;[0-9])00:|(?&lt;crown&gt;[0-9])?(?&lt;card&gt;[0-9])00:|00:)">
+      <Trigger Enabled="true" Name="判断花色" Id="%id_action_3%" RegularExpression="^.{14} Gauge 1F:[^:]*:21:((?&lt;seal&gt;[^:]*)(?&lt;crown&gt;[0-9])(?&lt;card&gt;[0-9])0000|(?&lt;card&gt;[0-9])0000|00):">
         <Actions>
           <Action OrderNumber="1" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetNumeric" VariableName="playType" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
             <Condition Enabled="true" Grouping="Or">
-              <ConditionSingle Enabled="true" ExpressionL="${seal3}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-              <ConditionSingle Enabled="true" ExpressionL="${seal3}" ExpressionTypeL="String" ExpressionR="" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+              <ConditionSingle Enabled="true" ExpressionL="hex2dec(${seal})" ExpressionTypeL="Numeric" ExpressionR="16" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+              <ConditionSingle Enabled="true" ExpressionL="${seal}" ExpressionTypeL="String" ExpressionR="" ExpressionTypeR="String" ConditionType="StringEqualCase" />
             </Condition>
           </Action>
           <Action OrderNumber="2" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetNumeric" VariableName="playType" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
             <Condition Enabled="true" Grouping="Or">
-              <ConditionSingle Enabled="true" ExpressionL="${seal3}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="hex2dec(${seal})" ExpressionTypeL="Numeric" ExpressionR="16" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
             </Condition>
           </Action>
           <Action OrderNumber="3" LogLevel="-1" MouseX="" MouseY="" VariableOp="SetNumeric" VariableName="cardType" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
