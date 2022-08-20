@@ -989,7 +989,8 @@ const actions = {
                 action_7: '即刻咏唱',
                 action_8: '促进',
                 action_9: '焦热',
-                action_10: '决断'
+                action_10: '决断',
+                action_11: '赤飞石预备'
             },
             key_levels: [70, 80, 90],
             variables: ['is_Stone']
@@ -1005,7 +1006,8 @@ const actions = {
                 action_7: '即刻咏唱',
                 action_8: '促进',
                 action_9: '焦热',
-                action_10: '决断'
+                action_10: '决断',
+                action_11: '赤火炎预备'
             },
             key_levels: [68, 80, 90],
             variables: ['is_Fire']
