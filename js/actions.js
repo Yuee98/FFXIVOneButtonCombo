@@ -218,8 +218,8 @@ const actions = {
         '爆发击-超高速': {
             actions: {
                 action_1: '爆发击',
-                action_2: '超高速',
-                action_3: '超高速预备'
+                action_2: '续剑',
+                action_3: '超高速'
             }
         },
         '无情-音速破': {
