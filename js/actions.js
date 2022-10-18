@@ -1165,6 +1165,8 @@ const special = {
     '战士AOE连': 'tank/warrior_aoe.xml',
     '子弹连': 'tank/gunbreaker.xml',
     'AOE-子弹连': 'tank/gunbreaker_aoe.xml',
+    // '※基础-buff连': 'melee/reaper_3xbuff.xml',
+    // '※AOE-buff连': 'melee/reaper_2xbuff.xml', DRK复用RPR的
 
     // H
     '抽卡-重抽': 'healer/astrologian_draw.xml',
