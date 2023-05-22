@@ -3,7 +3,7 @@
   <ExportedFolder Id="%id_combo%" Name="%combo%" Enabled="true">
     <Folders />
     <Triggers>
-      <Trigger Enabled="true" Name="Gauge" Id="%id_action_4%" RegularExpression="^.{14} Gauge 1F:[^:]*:(?&lt;duration&gt;[^:]{4})1E:">
+      <Trigger Enabled="true" Name="Gauge" Id="%id_action_4%" RegularExpression="^.{14} Gauge 1F:[^:]*:[^:]{1,2}?(?&lt;duration&gt;[^:]{4})1E:">
         <Actions>
           <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="t_Huton" VariableExpression="hex2dec(${duration})+${_timestampms}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
             <Condition Enabled="false" Grouping="Or" />
