@@ -7,9 +7,8 @@ const actions = {
                 action_3: '王权剑',
                 action_4: '赎罪剑',
                 action_5: '忠义之剑',
-                action_6: '沥血剑',
-                action_7: '全蚀斩',
-                action_8: '战女神之怒'
+                action_6: '战女神之怒',
+                action_7: '全蚀斩'
             },
             key_levels: [4, 26, 76]
         },
