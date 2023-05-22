@@ -13,37 +13,6 @@ const actions = {
             },
             key_levels: [4, 26, 76]
         },
-        '安魂-圣灵-大宝剑': {
-            actions: {
-                action_1: '安魂祈祷',
-                action_2: '圣灵',
-                action_3: '悔罪',
-                action_4: '英勇之剑'
-            },
-            key_levels: [80, 90]
-        },
-        '王权连': {
-            actions: {
-                action_1: '先锋剑',
-                action_2: '暴乱剑',
-                action_3: '王权剑',
-                action_4: '沥血剑',
-                action_5: '全蚀斩',
-                action_6: '战女神之怒'
-            },
-            key_levels: [4, 26]
-        },
-        '沥血连': {
-            actions: {
-                action_1: '先锋剑',
-                action_2: '暴乱剑',
-                action_3: '沥血剑',
-                action_4: '王权剑',
-                action_5: '全蚀斩',
-                action_6: '战女神之怒'
-            },
-            key_levels: [4, 54]
-        },
         'AOE连': {
             actions: {
                 action_1: '全蚀斩',
@@ -58,7 +27,22 @@ const actions = {
                 action_2: '悔罪',
                 action_3: '安魂祈祷'
             }
+        },
+        '战逃-沥血': {
+            actions: {
+                action_1: '战逃反应',
+                action_2: '沥血剑',
+                action_3: '战逃反应'
+            }
+        },
+        '投盾-圣灵': {
+            actions: {
+                action_1: '投盾',
+                action_2: '圣灵',
+                action_3: '神圣魔法效果提高'
+            }
         }
+    
     },
     '战士': {
         '战士-基础(※)': {
@@ -1163,7 +1147,6 @@ const base = {
 const special = { 
    // T
     '王权赎罪连': 'tank/paladin.xml',
-    '安魂-圣灵-大宝剑': 'tank/paladin_magic.xml',
     '※绿-红斩连': 'tank/warrior_aio.xml',
     '※绿斩连': 'melee/ninja_3x1.xml',
     '※红斩连': 'melee/ninja_3x1.xml',
@@ -1253,7 +1236,7 @@ const special = {
 
 
 const changeWithBuff = [
-   '安魂-悔罪',  
+   '安魂-悔罪', '战逃-沥血', '投盾-圣灵', 
    '解放-崩裂', '战嚎-狂魂', '战嚎-混沌旋风', 
    '血乱-拜年', 
    '无情-音速破', '爆发击-超高速',
