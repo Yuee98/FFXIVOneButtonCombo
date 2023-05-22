@@ -742,13 +742,15 @@ const actions = {
         '超荷-热冲击': {
             actions: {
                 action_1: '超荷',
-                action_2: '热冲击'
+                action_2: '热冲击',
+                action_3: '过热'
             }
         },
         '散射-自动弩': {
             actions: {
                 action_1: '散射',
-                action_2: '自动弩'
+                action_2: '自动弩',
+                action_3: '过热'
             }
         },
         '炮塔-自爆': {
@@ -1217,8 +1219,6 @@ const special = {
     '强力-辉煌-伶牙俐齿': 'range/bard_aio.xml',
 
     '机工子弹连': 'range/machinist.xml',
-    '超荷-热冲击': 'range/machinist_heat.xml',
-    '散射-自动弩': 'range/machinist_heat.xml',
     '炮塔-自爆': 'range/machinist_battery.xml',
 
     '※逆-瀑泻': 'range/dancer_base.xml',
@@ -1260,6 +1260,7 @@ const changeWithBuff = [
    '即刻复活', '均衡-诊断', '心关-拯救', '吸收-溃烂',
    '高跳-幻象冲', '天地人-命水', '神秘环-大丰收',
    '强力-辉煌', '连珠-影噬',
+   '超荷-热冲击', '散射-自动弩',
    '扇舞序-急', '扇舞破-急', '百花-终', '探戈-流星舞', 
    '以太-吸收', '抽取-核爆',  
 ] 
